@@ -1,0 +1,1091 @@
+---
+title: "O'zbekistonda: Kambag'allik va Ta'lim"
+author: "Ulug'bek Tursunov, Ijtimoiy siyosat laboratoriyasi tadqiqotchisi"
+date: today
+format:
+  html:
+    theme:
+      light: cosmo
+      dark: darkly
+    toc: true
+    toc-depth: 3
+    toc-location: left
+    toc-title: "Mundarija"
+    number-sections: true
+    number-depth: 1
+    code-fold: true
+    code-summary: "Kodni ko'rsatish"
+    fig-width: 9
+    fig-height: 6
+    fig-dpi: 150
+    smooth-scroll: true
+    page-layout: full
+    self-contained: true
+    anchor-sections: true
+    citations-hover: true
+    footnotes-hover: true
+bibliography: references.bib
+csl: chicago-author-date-17th-edition.csl
+bibliography-title: "Foydalanilgan adabiyotlar"
+mainfont: "Times New Roman"
+lang: uz
+execute:
+  echo: false
+  warning: false
+  message: false
+---
+
+```{r setup}
+#| include: false
+library(dplyr)
+library(readr)
+library(readxl)
+library(ggplot2)
+library(plotly)
+library(DT)
+library(htmltools)
+
+# Set theme for all ggplot graphs
+theme_set(theme_minimal(base_size = 14))
+
+# Plotly config function
+plotly_config <- function(p) {
+  p %>%
+    config(
+      displayModeBar = TRUE,
+      modeBarButtonsToRemove = c("lasso2d", "select2d"),
+      displaylogo = FALSE,
+      toImageButtonOptions = list(
+        format = "png",
+        filename = "grafik",
+        height = 600,
+        width = 900,
+        scale = 2
+      )
+    ) %>%
+    layout(
+      hoverlabel = list(
+        bgcolor = "white",
+        font = list(size = 14)
+      )
+    )
+}
+
+# Color palettes
+mics_gender_palette <- c("Erkak" = "#0072B2", "Ayol" = "#D55E00")
+mics_ur_palette <- c("Shahar" = "#009E73", "Qishloq" = "#CC79A7")
+```
+
+# Kirish {#sec-kirish}
+
+::: {.callout-note}
+## Tadqiqot maqsadi
+Ushbu tadqiqot O'zbekistonda ta'lim va kambag'allik o'rtasidagi bog'liqlikni tahlil qilishga bag'ishlangan. PISA 2022, HBS 2024 va MICS 2021-2022 ma'lumotlaridan foydalanilgan.
+:::
+
+Ta'limning kambag'allikni kamaytirishdagi roli borasidagi o'rganishlar muhim tadqiqot yo'nalishi sifatida e'tirof etiladi. So'nggi o'n yilliklarda tadqiqotlar ta'limning inson kapitalini oshirish, daromadlar o'rtasidagi tengsizlikni kamaytirish va ijtimoiy mobillikni rag'batlantirishda muhim o'ringa ega ekanligi butun dunyoda, xususan, Xitoy, Braziliya va Janubiy Afrika kabi rivojlanayotgan mamlakatlarda qilingan tadqiqotlarda o'z tasdig'ini topib kelmoqda (@Vian_Dhanda_2024, @Dorte_Verner_2004, @Md_Mahbubur_Rahman_2024).
+
+Global miqyosda, kambag'allik darajasi 1990-yildagi 43.6 foizdan 2023-yilda 10.2 foizga qisqarganiga qaramay @WorldBankOpen, rivojlanayotgan malakatlarda xususan qishloq hududlarida ta'lim olish imkoniyati cheklanganligi bo'yicha muammolar saqlanib qolmoqda (@Xiaowen_Xie_2023; @Alessia_Spada_2023). COVID-19 pandemiyasi davrida ta'limdagi tengsizlik yanada yanada yaqqolroq ko'rina boshladi va kuchaydi, bu esa ijtimoiy himoya va ta'lim sohalarida samarali siyosiy intervensiyalarning dolzarb zaruratini ko'rsatmoqda (@terziPhilosophicalReflectionsChild2023; @beesonDoesTacklingPoverty2024).
+
+Ushbu tadqiqotda biz quyidagi ma'lumot manbalaridan foydalangan holda tahlilni olib boramiz:
+
+::: {.panel-tabset}
+
+## PISA 2022
+PISA dasturi yordamida O'zbekistonda 2022-yil 15-yoshli o'quvchilarning o'zlashtirish ko'rsatkichlari ma'lumotlaridan foydalanib, o'quvchilarning ta'lim ko'rsatkichlari va oilaning umumiy iqtisodiy holati o'rtasidagi bog'liqlikni o'rganamiz.
+
+## HBS 2024
+Milliy statistika qo'mitasining 2024-yilgi Uy xo'jaligi daromadlari va xarajatlari so'rovnomasiga ko'ra, o'quvchilar ta'lim olishi uchun xarajatlarni tahlili qilish uchun foydalaniladi.
+
+## MICS 2021-2022
+UNICEF hamda Milliy Statistika Qo'mitasi tomonidan o'tkazilgan multiindikator klaster kuzatuvi (MICS) so'rovnomasi asosida oila a'zolarining o'quvchi ta'limidagi ishtirokini o'rganish uchun foydalaniladi.
+
+:::
+
+Tahlil PISA 2022 tenglik ma'lumotlaridan kengroq ijtimoiy siyosat uchun diagnostika vositasi sifatida foydalanishni ko'zda tutadi. Asosiy maqsad O'zbekistonda 15 yoshli bolalar o'rtasida kambag'allik, demografik va uy sharoitlaridagi tafovutlar ta'limda: o'quvchilarning o'zlashtirish ko'rsatkichlarida qanday namoyon bo'lishini aniqlashdir.
+
+Ushbu muammolarni tahlil qilish orqali hisobot ta'limdagi to'siqlarni bevosita bartaraf etishi va inson kapitalini shakllantirishga hissa qo'shishi mumkin bo'lgan maqsadli, dalillarga asoslangan ijtimoiy himoya siyosatiga oid takliflarni ishlab chiqishga qaratilgan.
+
+# Tahlil va natijalar {#sec-tahlil}
+
+## O'quvchilarning ta'lim ko'rsatkichlari va ular yashayotgan oilalarning ijtimoiy-iqtisodiy statusi
+
+Kambag'allikni faqat monetar asoslarda emas, balki, ko'p o'lchamli miqyosda qaralganda, eng muhim omillardan biri bu ta'lim hisoblanadi. Iqtisodiy tadqiqotlar va ishlohotlar markazi hisoblagan Ko'p o'lchovli kambag'allik indeksi natijalariga ko'ra, kambag'allikka eng ko'p hissa qo'shayotgan omil bu ta'lim hisoblanadi @cerrandundpcountryofficeinuzbekistanUzbekistanPilotMultidimensional2023.
+
+Xususan, 2025-yilning birinchi yarmida "Kambag'allik reestri" ma'lumotlari asosida hisoblangan ko'p o'lchovli kambag'allik indeksi natijalari ham ta'limdagi deprivatsiya ko'p o'lchovli kambag'allik indeksi hissa qo'shayotgan eng katta omil ekanligini ko'rsatadi.
+
+Kambag'allikning ta'limga ko'rsatkichlariga ta'sirini baholash uchun ushbu hisobot asosiy tahliliy o'zgaruvchi sifatida PISA oilaning ijtimoiy-iqtisodiy statusi indeksidan (IIS) foydalanadi. IIS Iqtisodiy hamkorlik va taraqqiyot tashkiloti tomonidan yaratilgan murakkab indeks bo'lib, u o'quvchining ijtimoiy-iqtisodiy kelib chiqishini har tomonlama o'lchaydi hamda uchta asosiy tarkibiy qism asosida hisoblanadi:
+
+1) **Ota-onalar ta'limi** - ota-onalar erishgan eng yuqori ta'lim darajasi
+2) **Ota-onaning kasbi** - Ota-onaning eng yuqori kasbiy maqomi
+3) **Uyda mavjud jihozlar** - Oilaning boyligi va uydagi madaniy va ta'lim resurslaridan foydalanish imkoniyati (masalan, kitoblar soni, tinch o'quv joyiga kirish imkoniyati, internetga ulanish imkoniyati)
+
+PISA natijalari ma'lumotlarini IIS indeksi nuqtayi nazaridan tahlil qilish orqali biz bolaning ijtimoiy-iqtisodiy kelib chiqishi uning bugungi kunda O'zbekistonda ta'lim olishi va o'zlashtirishi imkoniyatlariga qay darajada ta'sir qilishini aniq miqdoriy baholashimiz mumkin.
+
+### Ko'p o'lchovli kambag'allik indeksi (MPI)
+
+```{r}
+#| label: fig-mpi
+#| fig-cap: "Kambag'allik reestridagi oilalar uchun hisoblangan ko'p o'lchovli kambag'allik indeksi (Ijtimoiy himoya milli agentligi ma'lumotlari asosida tayyorlandi)"
+
+plot_data_mpi <- read_csv("tables/mpi_contributions.csv", show_col_types = FALSE)
+
+# Define colors
+bilc_vars <- c("bilc_overcrowding", "bilc_housing", "bilc_heatingfuel",
+               "bilc_sanitation", "bilc_drinkningwater", "bilc_assetownership")
+hsc_vars <- c("hsc_affordmedicine", "hsc_education", "hsc_commtech")
+unemp_var <- "unemp_unemployment"
+
+bilc_colors <- colorRampPalette(c("#659961", "#bcd2b7"))(length(bilc_vars))
+hsc_colors <- colorRampPalette(c("#f39200", "#fbe2bb"))(length(hsc_vars))
+unemp_color <- "darkgray"
+
+indicator_labels <- c(
+  "bilc_overcrowding" = "Haddan tashqari zich yashash",
+  "bilc_housing" = "Uy-joy materiali",
+  "bilc_heatingfuel" = "Isitish manbai",
+  "bilc_sanitation" = "Sanitariya holati",
+  "bilc_drinkningwater" = "Ichimlik suvi",
+  "bilc_assetownership" = "Aktivlar mavjudligi",
+  "hsc_affordmedicine" = "Dori xarid qilish imkoniyati",
+  "hsc_education" = "Ta'lim darajasi",
+  "hsc_commtech" = "Aloqa va texnologiya",
+  "unemp_unemployment" = "Ishsizlik"
+)
+
+indicator_colors <- setNames(
+  c(bilc_colors, hsc_colors, unemp_color),
+  c(bilc_vars, hsc_vars, unemp_var)
+)
+
+plot_data_mpi <- plot_data_mpi %>%
+  mutate(group = factor(group, levels = c("Umumiy", "Qishloq", "Shahar")))
+
+p <- ggplot(plot_data_mpi, aes(x = group, y = contribution_share * 100, fill = indicator_label,
+                                text = paste0("Hudud: ", group,
+                                             "<br>Indikator: ", indicator_label,
+                                             "<br>Hissa: ", round(contribution_share * 100, 1), "%"))) +
+  geom_col(position = "stack") +
+  scale_fill_manual(values = setNames(indicator_colors, indicator_labels)) +
+  labs(x = NULL, y = "Hissasi (%)", fill = "Indikator") +
+  theme_minimal(base_size = 13) +
+  theme(axis.text.x = element_text(angle = 0, hjust = 0.5))
+
+ggplotly(p, tooltip = "text") %>%
+  plotly_config() %>%
+  layout(
+    autosize = TRUE,
+    legend = list(orientation = "v", x = 1.02, y = 0.5)
+  )
+```
+
+### PISA 2-daraja o'zlashtirish ko'rsatkichlari
+
+PISA tizimida o'qish, matematika va tabiiy fanlar bo'yicha o'quvchilar o'zlashtirish ko'rsatkichlari o'rganilgan. Ushbu fanlar bo'yicha o'zlashtirish ko'rsatkichlari turli darajalarga bo'linadi, bunda 2-daraja matematika, o'qish va tabiiy fanlar bo'yicha o'quvchilar bilimini o'lchash uchun muhim asos bo'lib xizmat qiladi. Bu daraja shunchaki statistik ko'rsatkich emas, u o'quvchilarning jamiyatda faol ishtirok etishi va o'z hissasini qo'shishi uchun fundamental deb hisoblangan muhim ko'nikma va bilimlarni o'zlashtirishini ifodalaydi.
+IISi 1-detsilidagi oila o'quvchilarining o'qish, matematika va tabiiy fanlar bo'yicha 2-darajada o'zlashtirish darajasi 10-detsildagi oila o'quvchilariga nisbatan qariyb 3 barobar past ekanligini ko'rishimiz mumkin. O'zlashtirish darajasi IISning 7-detsilidan boshlab sezilarli oshib bormoqda.
+IIS ning barcha detsillarida shahar hududida yashovchi o'quvchilar qishloqlarda yashovchi o'quvchilarga nisbatan o'qish, matematika va tabiiy fanlar bo'yicha 2-darajada o'zlashtirish darajasi yuqori ekanligini ko'rsatadi. Ayniqsa o'qish darajasida, shahar hududida yashovchi o'quvchilar qishloqlarda yashovchi o'quvchilarga nisbatan IIS barcha detsillarida yaxshi o'zlashtirmoqda. Matematika va tabiiy fanlarda esa, IIS ning birinchi detsildan boshlab farqlar juda kam, o'zlashtirish darajasidagi farqlar asosan IISning yuqori detsillarida ko'rinadi.
+O'zbekistonda IIS ning barcha detsillarida matematika fanidan o'g'il bolalar qiz bolalarga nisbatan o'zlashtirishi yuqori. O'qish borasida esa qiz bolalar o'g'il bolalarga nisbatan yaxshiroq o'zlashtirmoqda. Tabiiy fanlarda esa, dastlabki detsillarda o'g'il bolalar, yuqori detsillarda esa qiz bolalar yaxshiroq o'zlashtirgan. Bu yerda ham 2-rasmda qayd etilganidek, IISning 1-detsilidagi oila farzandlari boshqalarga nisbatan ancha past natijani qayd qilgan hamda o'zlashtirish darajasi ikkala jins bo'yicha ham IISning 7-detsilidan boshlab o'sib bormoqda.
+
+```{r}
+#| label: pisa-level2-load
+#| include: false
+
+level2_all <- read_csv("tables/pisa_level2_all.csv", show_col_types = FALSE)
+level2_rural_all <- read_csv("tables/pisa_level2_rural.csv", show_col_types = FALSE) %>%
+  mutate(Subject = factor(Subject, levels = c("Matematika", "O'qish", "Tabiiy fanlar")))
+level2_gender_all <- read_csv("tables/pisa_level2_gender.csv", show_col_types = FALSE) %>%
+  mutate(Subject = factor(Subject, levels = c("Matematika", "O'qish", "Tabiiy fanlar")))
+```
+
+::: {.panel-tabset}
+
+## Barcha fanlar
+
+```{r}
+#| label: fig-level2-interactive
+#| fig-cap: "2-darajaga erishgan o'quvchilar ulushi: IIS detsillari kesimida (PISA 2022, O'zbekiston)"
+
+p <- ggplot(level2_all, aes(x = Decile_num, y = Percentage, color = Subject, group = Subject,
+                             text = paste0("IIS Detsili: D", Decile_num,
+                                          "<br>Fan: ", Subject,
+                                          "<br>Foiz: ", round(Percentage, 1), "%"))) +
+  geom_line(linewidth = 1.3) +
+  geom_point(size = 4) +
+  scale_x_continuous(breaks = 1:10, labels = paste0("D", 1:10)) +
+  scale_color_manual(values = c("Matematika" = "#E41A1C", "O'qish" = "#377EB8", "Tabiiy fanlar" = "#4DAF4A")) +
+  labs(
+    x = "IIS Detsili",
+    y = "Foiz (%)",
+    color = "Fan"
+  ) +
+  theme_minimal(base_size = 14) +
+  theme(
+    legend.position = "top",
+    panel.grid.minor = element_blank()
+  ) +
+  ylim(0, max(level2_all$Percentage) * 1.15)
+
+ggplotly(p, tooltip = "text") %>%
+  plotly_config() %>%
+  layout(
+    legend = list(orientation = "h", x = 0.3, y = 1.1),
+    hovermode = "x unified"
+  )
+```
+
+
+## Shahar/Qishloq bo'yicha 
+
+```{r}
+#| label: fig-level2-rural-interactive
+#| fig-cap: "2-darajaga erishgan o'quvchilar ulushi: aholi yashash punkti tipi kesimida"
+
+p <- ggplot(level2_rural_all, aes(x = Decile_num, y = Percentage, color = rural, group = rural,
+                                   text = paste0("Detsil: D", Decile_num,
+                                                "<br>Hudud: ", rural,
+                                                "<br>Foiz: ", round(Percentage, 1), "%"))) +
+  geom_line(linewidth = 1.2) +
+  geom_point(size = 3) +
+  facet_wrap(~ Subject, ncol = 3) +
+  scale_x_continuous(breaks = seq(1, 10, 2), labels = paste0("D", seq(1, 10, 2))) +
+  scale_color_manual(values = c("Shahar" = "#1B9E77", "Qishloq" = "#D95F02")) +
+  labs(x = "IIS Detsili", y = "Foiz (%)", color = "Hudud") +
+  theme_minimal(base_size = 13) +
+  theme(
+    legend.position = "top",
+    strip.text = element_text(size = 13, face = "bold"),
+    axis.text.x = element_text(size = 10),
+    panel.spacing = unit(1.5, "lines")
+  )
+
+ggplotly(p, tooltip = "text") %>%
+  plotly_config() %>%
+  layout(
+    autosize = TRUE,
+    legend = list(orientation = "h", x = 0.35, y = 1.15)
+  )
+```
+
+
+
+## Jins bo'yicha
+
+```{r}
+#| label: fig-level2-gender-interactive
+#| fig-cap: "2-darajaga erishgan o'quvchilar ulushi: jins kesimida"
+
+p <- ggplot(level2_gender_all, aes(x = Decile_num, y = Percentage, color = Gender, group = Gender,
+                                    text = paste0("Detsil: D", Decile_num,
+                                                 "<br>Jins: ", Gender,
+                                                 "<br>Foiz: ", round(Percentage, 1), "%"))) +
+  geom_line(linewidth = 1.2) +
+  geom_point(size = 3) +
+  facet_wrap(~ Subject, ncol = 3) +
+  scale_x_continuous(breaks = seq(1, 10, 2), labels = paste0("D", seq(1, 10, 2))) +
+  scale_color_manual(values = c("Qiz" = "#E7298A", "O'g'il" = "#7570B3")) +
+  labs(x = "IIS Detsili", y = "Foiz (%)", color = "Jins") +
+  theme_minimal(base_size = 13) +
+  theme(
+    legend.position = "top",
+    strip.text = element_text(size = 13, face = "bold"),
+    axis.text.x = element_text(size = 10),
+    panel.spacing = unit(1.5, "lines")
+  )
+
+ggplotly(p, tooltip = "text") %>%
+  plotly_config() %>%
+  layout(
+    autosize = TRUE,
+    legend = list(orientation = "h", x = 0.4, y = 1.15)
+  )
+```
+
+
+
+:::
+
+## O'quvchilarga uyda mavjud sharoitlar va oilaning ijtimoiy-iqtisodiy statusi {#sec-uy-sharoitlari}
+
+O'quvchilar ta'lim olishida ularga uyda yaratib berilayotgan sharoit muhim ahamiyat kasb etadi. Ayniqsa, hozirgi zamonaviy texnologiyalar ta'limda keng qo'llanilayotgan sharoitda, o'quvchilarga uyda ta'lim olish uchun yaratib berilayotgan shart-sharoitlarning ahamiyati yana oshdi.
+
+PISA savolnomasi asosida quyidagi savollarga o'quvchilarning javoblari IIS detsillari bo'yicha tahlil qilindi:
+
+1) O'z xonasi bormi?
+2) O'qish uchun kompyuteri (planshet, noutbuk) bormi?
+3) Ta'lim dasturiy ta'minotlaridan foydalanadimi?
+4) Uyda internet bormi?
+
+```{r}
+#| label: fig-home-conditions-interactive
+#| fig-cap: "O'quvchilar ta'lim olishi uchun uy sharoitlari: IIS detsillari kesimida"
+
+percentages <- read_csv("tables/pisa_home_conditions.csv", show_col_types = FALSE)
+
+p <- ggplot(percentages, aes(x = Decile_num, y = Percent, color = Variable_label, group = Variable_label,
+                              text = paste0("Detsil: D", Decile_num,
+                                           "<br>Ko'rsatkich: ", Variable_label,
+                                           "<br>Foiz: ", round(Percent, 1), "%"))) +
+  geom_line(linewidth = 1.2) +
+  geom_point(size = 3) +
+  scale_x_continuous(breaks = 1:10, labels = paste0("D", 1:10)) +
+  scale_color_brewer(palette = "Set1") +
+  labs(
+    x = "IIS Detsili",
+    y = "Foiz (%)",
+    color = "Ko'rsatkich"
+  ) +
+  theme_minimal(base_size = 14) +
+  theme(legend.position = "top")
+
+ggplotly(p, tooltip = "text") %>%
+  plotly_config() %>%
+  layout(legend = list(orientation = "h", x = 0, y = 1.15))
+```
+
+::: {.callout-warning}
+## Muhim topilma
+IISning 1-detsilidagi oila farzandlarining taqriban uchdan bir qismida uyida kompyuter, planshet kabi bilim olish jarayonida qo'llanishi mumkin bo'lgan elektron vositalar mavjud bo'lsa, 10-detsilda bu ko'rsatkich qariyb **90%**ni tashkil qiladi. Eng katta farqlar o'qish uchun kompyuterning mavjudligi, ta'limga oid dasturiy ta'minotlaridan foydalanish va uy internetga ulanganligida kuzatiladi. O'quvchilar uchun o'z xonasining mavjudligi IIS detsillari bo'yicha taqsimotida tengsizlik qolgan ko'rsatkichlarga nisbatan kamroq.
+:::
+
+### Kompyuter mavjudligi: shahar/qishloq kesimida
+
+```{r}
+#| label: fig-computer-rural-interactive
+#| fig-cap: "Kompyuter mavjudligi: aholi yashash punkti tipi va IIS detsillari kesimida"
+
+computer_rural <- read_csv("tables/pisa_computer_rural.csv", show_col_types = FALSE)
+
+p <- ggplot(computer_rural, aes(x = Decile_num, y = Percent, fill = rural,
+                                 text = paste0("Detsil: D", Decile_num,
+                                              "<br>Hudud: ", rural,
+                                              "<br>Foiz: ", round(Percent, 1), "%"))) +
+  geom_col(position = "dodge", width = 0.7) +
+  scale_x_continuous(breaks = 1:10, labels = paste0("D", 1:10)) +
+  scale_fill_manual(values = c("Shahar" = "#1B9E77", "Qishloq" = "#D95F02")) +
+  labs(
+    x = "IIS Detsili",
+    y = "Foiz (%)",
+    fill = "Hudud"
+  ) +
+  theme_minimal(base_size = 14) +
+  theme(legend.position = "top")
+
+ggplotly(p, tooltip = "text") %>%
+  plotly_config() %>%
+  layout(legend = list(orientation = "h", x = 0.35, y = 1.1))
+```
+
+**Izoh:** Kompyuter mavjudligidagi farqlar aholi yashash punktlar tipini hisobga olganda yanada oshgan: 1 va 2-detsillarda qishloqdagi o'quvchilarda kompyuterning mavjudligi shaharlik tengdoshlariga qaraganda sezilarli darajada past. 7, 8 va 9-detsillarda ham shaharda istiqomat qiluvchi o'quvchilarda kompyuter mavjudligi darajasi yuqori.
+
+## O'quvchilarga ta'lim olish uchun xarajatlar, oila a'zolarning o'qish jarayonidagi ishtiroki va oilaning ijtimoiy iqtisodiy ahvoli {#sec-xarajatlar}
+
+Milliy statistika qo'mitasining 2024-yilgi Uy xo'jaligi daromadlari va xarajatlari so'rovnomasiga ko'ra, jon boshiga daromad detsillari bo'ylab bir o'quvchiga to'g'ri keluvchi xarajatlari oshib boradi: eng quyi detsildagi oilalar bir o'quvchi uchun qiladigan xarajat eng yuqori detsildagi oilalarga qaraganda 2 barobar kam.
+
+Daromad detsillari bo'ylab umumiy maktab ta'limining umumiy iste'mol xarajatlaridagi ulushi qaralganda: 2-detsildan 9-detsilgacha ko'rsatkich sezilarli darajada farq qilmaydi, ammo eng quyi detsilda maktab ta'limi xarajatlarining ulushi nisbatan ancha yuqori **28%** ni tashkil qiladi. Eng yuqori detsilda esa, bu ko'rsatkich nisbatan kam **14.3%** ni tashkil qiladi. Ya'ni daromadning boshqa detsillari (2-9-detsillar) bilan solishtirganda, daromadning quyi detsilidagi oilalarda maktab ta'limi uchun qilingan xarajatlar boshqa xarajatlarni siqib chiqarayotgan bo'lishi mumkin.
+
+```{r}
+#| label: fig-hbs-edu
+#| fig-cap: "O'quvchilar ta'lim olishi uchun xarajatlar va ushbu xarajatlarning umumiy iste'mol xarajatlaridagi ulushi (Uy xo'jaligi daromadlari va xarajatlari so'rovnomasi, 2024)"
+
+decile_edu_cost <- read_xlsx("tables/hbs_edu_2_decile_edu_cost.xlsx")
+ratio_by_decile <- read_xlsx("tables/hbs_edu_2_ratio_by_decile.xlsx")
+
+# Plot 1: Education cost by decile
+p1 <- ggplot(decile_edu_cost, aes(x = decile, y = weighted_avg_edu_cost,
+                                   text = paste0("Detsil: ", decile,
+                                                "<br>Xarajat: ", format(round(weighted_avg_edu_cost), big.mark = " "), " UZS"))) +
+  geom_line(color = "steelblue", linewidth = 1) +
+  geom_point(color = "steelblue", size = 3) +
+  scale_x_continuous(breaks = 1:10) +
+  scale_y_continuous(labels = function(x) format(x, big.mark = " ", scientific = FALSE)) +
+  labs(x = NULL, y = "Xarajat (UZS)", title = "Bir o'quvchiga to'g'ri keluvchi o'rtacha ta'lim xarajati") +
+  theme_minimal(base_size = 12)
+
+# Plot 2: Share of education expenditure
+p2 <- ggplot(ratio_by_decile, aes(x = decile, y = weighted_avg_ratio,
+                                   text = paste0("Detsil: ", decile,
+                                                "<br>Ulushi: ", round(weighted_avg_ratio, 1), "%"))) +
+  geom_line(color = "firebrick", linewidth = 1) +
+  geom_point(color = "firebrick", size = 3) +
+  scale_x_continuous(breaks = 1:10) +
+  scale_y_continuous(labels = function(x) paste0(x, "%")) +
+  labs(x = "Jon boshiga daromad detsillari", y = "Ulushi (%)", title = "Ta'lim xarajatlarining iste'mol xarajatlaridagi ulushi") +
+  theme_minimal(base_size = 12)
+
+# Show first plot (education cost)
+plot1 <- ggplotly(p1, tooltip = "text") %>%
+  plotly_config() %>%
+  layout(autosize = TRUE)
+
+# Show second plot (ratio)
+plot2 <- ggplotly(p2, tooltip = "text") %>%
+  plotly_config() %>%
+  layout(autosize = TRUE)
+
+# Display both
+htmltools::tagList(plot1, plot2)
+```
+
+Ta'lim xarajatlarining jinsiga ko'ra qiyoslansa: o'g'il bolalarga va qiz bolalarga qilingan xarajatlar o'rtasida sezilarli farq yo'q (1-Ilova). Lekin, aholi yashash punktlari tipiga ko'ra solishtirilsa, shaharda yashovchi o'quvchilarga qilingan xarajatlar qishloq hududida yashovchi o'quvchilarga nisbatan daromadning barcha detsillari bo'ylab sezilarli darajada yuqori, hamda ushbu farq daromad detsillari oshgani sari o'sib boradi (1-Ilova).
+
+O'quvchilarning akademik o'zlashtirishining muhim omillaridan biri bu o'quvchilarning o'qish jarayonida oila a'zolarning ishtiroki hisoblanadi. UNICEF hamda Milliy Statistika Qo'mitasi tomonidan o'tkazilgan multiindikator klaster kuzatuvi (MICS) so'rovnomasi asosida to'rtta asosiy ko'rsatkich tahlil qilindi: uyda bolalar kitoblari soni, uy vazifasiga yordam berish darajasi, maktab yig'ilishlarida qatnashish va o'qituvchilar bilan bolalarning o'zlashtirishini muhokama qilish (2-Ilova).
+
+Natijalar shuni ko'rsatadiki, ota-onalarning ta'lim jarayonidagi ishtiroki umuman olganda yuqori va farovonlik detsillari bo'ylab sezilarli darajada farq qilmaydi. Maktab yig'ilishlarida qatnashish va o'qituvchilar bilan suhbatlar barcha detsillarda 90–100% atrofida bo'lib, bu ijtimoiy-iqtisodiy holatdan qat'i nazar rasmiy maktab faoliyatida deyarli universal ishtirokni ko'rsatadi. Ota-onalarning ta'limdagi ishtirokini ko'rsatuvchi boshqa ko'rsatkichlar ham yuqori va farovonlik detsillari bo'ylab sezilarli darajada farq qilmaydi. O'g'il bolalar qizlarga qaraganda biroz ko'proq uy vazifasiga yordam oladi, ammo boshqa ko'rsatkichlarda o'quvchilarning jinsiga bog'liq farqlar yo'q. Xuddi shunday, shahar va qishloq xo'jaliklari barcha o'lchovlar bo'yicha o'xshash darajadagi ota-onalar jalb etilishini namoyish etadi. Umuman olganda, ushbu topilmalar O'zbekiston ta'limda ota-onalarning ishtirok etish darajasi nisbatan tekis taqsimlanganini ko'rsatadi.
+
+## Yuqori iqtisodiy farovonlikka ega bo'lgan hamda quyi iqtisodiy farovonlikka ega bo'lgan oiladagi o'quvchilarning o'zlashtirish darajasidagi farqlarni tushuntirishda maktabdagi ta'lim sifatining ahamiyati {#sec-oaxaca}
+
+Ma'lumki, o'quvchilarning o'zlashtirishidagi yana bir muhim omil bu maktabdagi ta'lim sifati hisoblanadi. Tadqiqotning ushbu qismida, nisbatan farovonligi yuqori va nisbatan farovonligi past oilalardagi o'quvchilarning o'zlashtirishadigi farqlarni tushuntirishda maktabdagi ta'lim sifatining ahamiyati o'rganiladi[^1].
+
+Buning uchun Oaxaca-Blinder dekompozitsiya usuli yordamida maktabdagi ta'lim sifatining o'zlashtirishdagi farqlarga hissasini baholash mumkin. Bunda boy va kambag'al oilalardagi o'quvchilarning matematika fanidan o'zlashtirish darajasidagi farqlarga e'tibor beriladi.
+
+[^1]: Berilgan tahlillarda shartli ravishda, nisbatan farovonligi yuqori bo'lgan oilalarni (5-kvintil) "boy oila"lar deb ataladi. Nisbatan farovonlik darajasi past oilalarni esa "kambag'al oila"lar deb ataladi.
+
+```{r}
+#| label: fig-oaxaca
+#| fig-cap: "Oaxaca-Blinder dekompozitsiyasi"
+
+oaxaca_df <- read_csv("tables/oaxaca_results.csv", show_col_types = FALSE)
+gap_total <- oaxaca_df$gap_total[1]
+gap_se <- oaxaca_df$gap_se[1]
+
+p <- ggplot(oaxaca_df, aes(x = reorder(label, coef), y = coef,
+                            text = paste0("O'zgaruvchi: ", label,
+                                         "<br>Hissa: ", round(coef, 1), " ball",
+                                         "<br>95% CI: [", round(ci_lower, 1), ", ", round(ci_upper, 1), "]",
+                                         "<br>Ulush: ", round(coef/gap_total*100, 1), "%"))) +
+  geom_col(fill = "steelblue", width = 0.7, alpha = 0.8) +
+  geom_errorbar(aes(ymin = ci_lower, ymax = ci_upper),
+                width = 0.25, color = "darkred", linewidth = 0.9) +
+  geom_hline(yintercept = 0, linetype = "dashed", color = "gray40", linewidth = 0.5) +
+  coord_flip() +
+  labs(
+    subtitle = paste0("Umumiy farq: ", round(gap_total, 1), " \u00b1 ", round(1.96*gap_se, 1), " ball (95% CI)"),
+    x = NULL,
+    y = "Ball farqiga hissa (Endowments)"
+  ) +
+  theme_minimal(base_size = 12) +
+  theme(
+    plot.subtitle = element_text(size = 11, color = "gray30"),
+    axis.text.y = element_text(size = 10),
+    panel.grid.major.y = element_blank()
+  )
+
+ggplotly(p, tooltip = "text") %>%
+  plotly_config() %>%
+  layout(autosize = TRUE)
+```
+
+::: {.callout-tip}
+## Asosiy natija
+Tahlil natijalariga ko'ra, boy va kambag'al oilalardagi o'quvchilarning o'zlashtirish darajasidagi farqlar asosan maktabdagi ta'lim sifati darajasi (o'rtacha o'zlashtirish) farqlar bilan tushuntirish mumkin. Xususan, PISA so'rovnomasiga ko'ra, boy va kambag'al oilalardagi o'quvchilarning matematika fanidan o'zlashtirish darajasidagi o'rtacha **27.8 ball**ni tashkil qilgan bo'lsa, ushbu farqning qariyb **50%idan ortig'i** maktabdagi ta'lim sifati bilan tushuntirilishi mumkin.
+
+Tahlilning yana bir muhim natijalaridan biri bu boy va kambag'al oilalardagi o'quvchilar o'rtasidagi farqlar qishloqdagi o'quvchilarning nisbatan yuqori o'zlashtirishi hisobiga kamaymoqda. Demak, shaharda yashovchi o'quvchilarning qishloqdagi o'quvchilarga nisbatan yaxshi o'zlashtiriyotgani haqida tavsifiy natijalar aslida aholi yashash punkti tipidan boshqa omillarning notekis taqsimlanganligi tufayli bo'lishi mumkin.
+:::
+
+# Xulosa va tavsiyalar {#sec-xulosa}
+
+Ushbu tadqiqotda O'zbekistonda ta'lim va kambag'allik o'rtasidagi bog'liqlikni tahlil qilindi. Tadqiqot natijalari quyidagi asosiy xulosalarni ko'rsatdi:
+
+
+
+
+### Ijtimoiy-iqtisodiy status ta'siri
+Oilaning ijtimoiy-iqtisodiy statusi (IIS) o'quvchilarning akademik natijalariga sezilarli ta'sir ko'rsatadi. IISning 1-detsilidagi oila farzandlarining o'qish, matematika va tabiiy fanlar bo'yicha 2-darajaga erishish ko'rsatkichi 10-detsildagi tengdoshlariga nisbatan qariyb **3 barobar past**. O'zlashtirish darajasidagi sezilarli o'sish asosan IISning 7-detsilidan boshlab kuzatiladi, bu esa quyi va o'rta darajadagi oilalar uchun qo'shimcha e'tibor zarurligini ko'rsatadi.
+
+### Shahar-qishloq tengsizligi
+Barcha IIS detsillari bo'ylab shahar hududida yashovchi o'quvchilar qishloq hududidagi tengdoshlaridan yuqori natijalar ko'rsatmoqda. Bu farq ayniqsa o'qish ko'rsatkichlarida yaqqol namoyon bo'ladi.
+
+### Uy sharoitlaridagi farqlar
+Kompyuter, internet va ta'lim dasturiy ta'minotlariga ega bo'lish darajasi IIS detsillari bo'ylab keskin farqlanadi. 1-detsildagi oila farzandlarining uchdan bir qismida kompyuter mavjud bo'lsa, 10-detsilda bu ko'rsatkich **90%**ni tashkil qiladi.
+
+### Maktab ta'lim sifati
+Oaxaca-Blinder dekompozitsiyasi natijalari shuni ko'rsatadiki, boy va kambag'al oilalardagi o'quvchilar o'rtasidagi o'zlashtirish farqining **50%dan ortig'i** maktabdagi ta'lim sifati bilan tushuntiriladi.
+
+### Ota-onalar ishtiroki
+Ota-onalarning ta'lim jarayonidagi ishtiroki barcha ijtimoiy-iqtisodiy guruhlarda nisbatan teng va yuqori darajada ekanligi **ijobiy holat** hisoblanadi.
+
+
+
+## Amaliy tavsiyalar
+
+
+
+
+
+**Maktablararo ta'lim sifati tengsizligini kamaytirish:**
+
+- Nisbatan quyi ijtimoiy-iqtisodiy statusga ega oila farzandlari o'rtacha o'zlashtirish ko'rsatkichi past bo'lgan maktablarda ta'lim olayotganini hisobga olish lozim
+- Ixtisoslashtirilgan maktablarga nisbatan past daromadga ega oilalar farzandlarini jalb qilish bo'yicha maqsadli tadbirlar ishlab chiqish lozim
+- Masalan, ixtisoslashtirilgan maktablar qoshida nisbatan past daromad oladigan oila farzandlari uchun, ixtisoslashtirilgan maktab imtihonlariga tayyorlov kurslari ushbu turdagi oila farzandlariga ixtisoslashtirilgan maktabga kirish ehtimolini oshirishi mumkin
+
+
+
+**Mavjud imtiyozlarning tizimli tadbiq etilishini ko'rsatuvchi yagona monitoring platformasini yaratish:**
+
+- Mavjud qonunchilik normalariga ko'ra daromad past aholi farzandlari uchun ta'lim imtiyozlari mavjud
+- Masalan, O'zbekiston Respublikasining 258-sonli farmoniga ko'ra, Ijtimoiy reyestrga kiritilgan oila farzandlari uchun 12 xil ta'limga oid imtiyozlar ko'zda tutilgan (3-Ilova)
+- Bu imtiyozlarning tizimli tadbiq etilishini ko'rsatuvchi yagona monitoring platformasini yaratish maqsadga muvofiq
+- Bu platforma oila farzandlari uchun ta'lim imtiyozlaridan foydalanish darajasini hududlar va aholining boshqa demografik ko'rsatkichlari kesimida foydalanish darajasini kuzatish mumkin bo'ladi
+
+
+
+# Ilovalar {#sec-ilovalar}
+
+
+
+::: {.callout-note collapse="true"}
+## 1-Ilova: HBS Ta'lim xarajatlari
+
+### 1.1. Ta'lim xarajatlari: jins kesimida
+
+```{r}
+#| label: fig-hbs-gender
+#| fig-cap: "Bir o'quvchiga to'g'ri keluvchi o'rtacha ta'lim xarajati: jon boshiga daromad detsillari va jins kesimida (Uy xo'jaligi daromadlari va xarajatlari so'rovnomasi, 2024)"
+
+gender_decile_cost <- read_xlsx("tables/hbs_edu_2_gender_decile_cost.xlsx")
+
+p <- ggplot(gender_decile_cost, aes(x = decile, y = weighted_avg_edu_cost, color = gender,
+                                     text = paste0("Detsil: ", decile,
+                                                  "<br>Jins: ", gender,
+                                                  "<br>Xarajat: ", format(round(weighted_avg_edu_cost), big.mark = " "), " UZS"))) +
+  geom_line(linewidth = 1) +
+  geom_point(size = 3) +
+  scale_x_continuous(breaks = 1:10) +
+  scale_y_continuous(labels = function(x) format(x, big.mark = " ", scientific = FALSE)) +
+  scale_color_manual(values = c("Qizlar" = "firebrick", "O'g'il bolalar" = "steelblue")) +
+  labs(x = "Jon boshiga daromad detsillari",
+       y = "O'rtacha ta'lim xarajati (UZS)",
+       color = "Jins") +
+  theme_minimal() +
+  theme(legend.position = "top")
+
+ggplotly(p, tooltip = "text") %>%
+  plotly_config() %>%
+  layout(autosize = TRUE, legend = list(orientation = "h", x = 0.35, y = 1.1))
+```
+
+### 1.2. Ta'lim xarajatlari: shahar/qishloq kesimida
+
+```{r}
+#| label: fig-hbs-ur
+#| fig-cap: "Bir o'quvchiga to'g'ri keluvchi o'rtacha ta'lim xarajati: jon boshiga daromad detsillari va aholi yashash punkti tipi kesimida (Uy xo'jaligi daromadlari va xarajatlari so'rovnomasi, 2024)"
+
+urban_decile_avg_cost <- read_xlsx("tables/hbs_edu_2_urban_decile_avg_cost.xlsx")
+
+p <- ggplot(urban_decile_avg_cost, aes(x = decile, y = weighted_avg_cost, color = urban_label,
+                                        text = paste0("Detsil: ", decile,
+                                                     "<br>Hudud: ", urban_label,
+                                                     "<br>Xarajat: ", format(round(weighted_avg_cost), big.mark = " "), " UZS"))) +
+  geom_line(linewidth = 1) +
+  geom_point(size = 3) +
+  scale_x_continuous(breaks = 1:10) +
+  scale_y_continuous(labels = function(x) format(x, big.mark = " ", scientific = FALSE)) +
+  scale_color_manual(values = c("Shahar" = "steelblue", "Qishloq" = "firebrick")) +
+  labs(x = "Jon boshiga daromad detsillari",
+       y = "O'rtacha ta'lim xarajati (UZS)",
+       color = "Hudud") +
+  theme_minimal() +
+  theme(legend.position = "top")
+
+ggplotly(p, tooltip = "text") %>%
+  plotly_config() %>%
+  layout(autosize = TRUE, legend = list(orientation = "h", x = 0.35, y = 1.1))
+```
+
+### 1.3. Darslik va kantselyariya xarajatlari: shahar/qishloq kesimida
+
+```{r}
+#| label: fig-hbs-text
+#| fig-cap: "Darslik va kantselyariya xarajatlari: jon boshiga daromad detsillari va aholi yashash punkti tipi kesimida (Uy xo'jaligi daromadlari va xarajatlari so'rovnomasi, 2024)"
+
+urban_decile_textsupply_avg_cost <- read_xlsx("tables/hbs_edu_2_urban_decile_textsupply_avg_cost.xlsx")
+
+p <- ggplot(urban_decile_textsupply_avg_cost, aes(x = decile, y = weighted_avg_cost, color = urban_label,
+                                                   text = paste0("Detsil: ", decile,
+                                                                "<br>Hudud: ", urban_label,
+                                                                "<br>Xarajat: ", format(round(weighted_avg_cost), big.mark = " "), " UZS"))) +
+  geom_line(linewidth = 1) +
+  geom_point(size = 3) +
+  scale_x_continuous(breaks = 1:10) +
+  scale_y_continuous(labels = function(x) format(x, big.mark = " ", scientific = FALSE)) +
+  scale_color_manual(values = c("Shahar" = "steelblue", "Qishloq" = "firebrick")) +
+  labs(x = "Jon boshiga daromad detsillari",
+       y = "Darslik va kantselyariya xarajatlari (UZS)",
+       color = "Hudud") +
+  theme_minimal() +
+  theme(legend.position = "top")
+
+ggplotly(p, tooltip = "text") %>%
+  plotly_config() %>%
+  layout(autosize = TRUE, legend = list(orientation = "h", x = 0.35, y = 1.1))
+```
+
+
+
+:::
+
+::: {.callout-note collapse="true"}
+## 2-Ilova: MICS Ma'lumotlari Tahlili {#sec-mics}
+
+### Farovonlik detsillari bo'yicha asosiy ko'rsatkichlar
+
+::: {.panel-tabset}
+
+#### Kitoblar soni
+
+```{r books-interactive}
+#| label: fig-books-interactive
+#| fig-cap: "Kitoblarning o'rtacha soni (interaktiv)"
+
+books_by_decile <- read_csv("tables/mics_books_by_decile.csv", show_col_types = FALSE)
+
+p <- ggplot(books_by_decile, aes(x = windex10, y = avg_books,
+                                  text = paste0("Farovonlik detsili: ", windex10,
+                                               "<br>O'rtacha kitoblar: ", round(avg_books, 1),
+                                               "<br>Kuzatuvlar soni: ", format(n, big.mark = " ")))) +
+  geom_line(linewidth = 1.3, color = "#2C7FB8") +
+  geom_point(size = 4, color = "#2C7FB8") +
+  geom_area(alpha = 0.2, fill = "#2C7FB8") +
+  scale_x_continuous(breaks = 1:10) +
+  coord_cartesian(ylim = c(0, NA)) +
+  labs(
+    x = "Farovonlik detsili",
+    y = "Kitoblarning o'rtacha soni"
+  ) +
+  theme_minimal(base_size = 14)
+
+ggplotly(p, tooltip = "text") %>% plotly_config()
+```
+
+#### Uy vazifasiga yordam
+
+```{r help-interactive}
+#| label: fig-help-interactive
+#| fig-cap: "Uy vazifasiga yordam berish darajasi (interaktiv)"
+
+help_by_decile <- read_csv("tables/mics_help_by_decile.csv", show_col_types = FALSE)
+
+p <- ggplot(help_by_decile, aes(x = windex10, y = help_rate_pct,
+                                 text = paste0("Farovonlik detsili: ", windex10,
+                                              "<br>Yordam darajasi: ", round(help_rate_pct, 1), "%",
+                                              "<br>Kuzatuvlar soni: ", format(n, big.mark = " ")))) +
+  geom_line(linewidth = 1.3, color = "#1B9E77") +
+  geom_point(size = 4, color = "#1B9E77") +
+  geom_area(alpha = 0.2, fill = "#1B9E77") +
+  scale_x_continuous(breaks = 1:10) +
+  scale_y_continuous(limits = c(0, 100), labels = function(x) paste0(x, "%")) +
+  labs(
+    x = "Farovonlik detsili",
+    y = "Uy vazifasiga yordam berish darajasi (%)"
+  ) +
+  theme_minimal(base_size = 14)
+
+ggplotly(p, tooltip = "text") %>% plotly_config()
+```
+
+#### Yig'ilishda qatnashish
+
+```{r meeting-interactive}
+#| label: fig-meeting-interactive
+#| fig-cap: "Maktab yig'ilishida qatnashish darajasi (interaktiv)"
+
+meeting_by_decile <- read_csv("tables/mics_meeting_by_decile.csv", show_col_types = FALSE)
+
+p <- ggplot(meeting_by_decile, aes(x = windex10, y = attend_rate_pct,
+                                    text = paste0("Farovonlik detsili: ", windex10,
+                                                 "<br>Qatnashish darajasi: ", round(attend_rate_pct, 1), "%",
+                                                 "<br>Kuzatuvlar soni: ", format(n, big.mark = " ")))) +
+  geom_line(linewidth = 1.3, color = "#D95F02") +
+  geom_point(size = 4, color = "#D95F02") +
+  geom_area(alpha = 0.2, fill = "#D95F02") +
+  scale_x_continuous(breaks = 1:10) +
+  scale_y_continuous(limits = c(0, 100), labels = function(x) paste0(x, "%")) +
+  labs(
+    x = "Farovonlik detsili",
+    y = "Yig'ilishda qatnashish darajasi (%)"
+  ) +
+  theme_minimal(base_size = 14)
+
+ggplotly(p, tooltip = "text") %>% plotly_config()
+```
+
+#### Progress muhokamasi
+
+```{r progress-interactive}
+#| label: fig-progress-interactive
+#| fig-cap: "Bola progressini muhokama qilish (interaktiv)"
+
+progress_disc_by_decile <- read_csv("tables/mics_progress_by_decile.csv", show_col_types = FALSE)
+
+p <- ggplot(progress_disc_by_decile, aes(x = windex10, y = progress_disc_rate_pct,
+                                          text = paste0("Farovonlik detsili: ", windex10,
+                                                       "<br>Muhokama darajasi: ", round(progress_disc_rate_pct, 1), "%",
+                                                       "<br>Kuzatuvlar soni: ", format(n, big.mark = " ")))) +
+  geom_line(linewidth = 1.3, color = "#7570B3") +
+  geom_point(size = 4, color = "#7570B3") +
+  geom_area(alpha = 0.2, fill = "#7570B3") +
+  scale_x_continuous(breaks = 1:10) +
+  scale_y_continuous(limits = c(0, 100), labels = function(x) paste0(x, "%")) +
+  labs(
+    x = "Farovonlik detsili",
+    y = "Bola progressini muhokama qilish (%)"
+  ) +
+  theme_minimal(base_size = 14)
+
+ggplotly(p, tooltip = "text") %>% plotly_config()
+```
+
+#### Barcha ko'rsatkichlar
+
+```{r all-mics-combined}
+#| label: fig-all-mics
+#| fig-cap: "Barcha MICS ko'rsatkichlari birgalikda"
+
+all_mics <- bind_rows(
+  help_by_decile %>% mutate(indicator = "Uy vazifasiga yordam", value = help_rate_pct),
+  meeting_by_decile %>% mutate(indicator = "Yig'ilishda qatnashish", value = attend_rate_pct),
+  progress_disc_by_decile %>% mutate(indicator = "Progress muhokamasi", value = progress_disc_rate_pct)
+)
+
+p <- ggplot(all_mics, aes(x = windex10, y = value, color = indicator, group = indicator,
+                           text = paste0("Detsil: ", windex10,
+                                        "<br>Ko'rsatkich: ", indicator,
+                                        "<br>Qiymat: ", round(value, 1), "%"))) +
+  geom_line(linewidth = 1.2) +
+  geom_point(size = 3) +
+  scale_x_continuous(breaks = 1:10) +
+  scale_y_continuous(limits = c(0, 100), labels = function(x) paste0(x, "%")) +
+  scale_color_brewer(palette = "Set2") +
+  labs(x = "Farovonlik detsili", y = "Foiz (%)", color = "Ko'rsatkich") +
+  theme_minimal(base_size = 14) +
+  theme(legend.position = "top")
+
+ggplotly(p, tooltip = "text") %>%
+  plotly_config() %>%
+  layout(legend = list(orientation = "h", x = 0.1, y = 1.1))
+```
+
+:::
+
+### Jins bo'yicha tahlil
+
+::: {.panel-tabset}
+
+#### Kitoblar
+
+```{r books-gender-interactive}
+#| label: fig-books-gender-interactive
+
+books_by_decile_gender <- read_csv("tables/mics_books_by_gender.csv", show_col_types = FALSE)
+
+p <- ggplot(books_by_decile_gender, aes(x = windex10, y = avg_books, color = gender, group = gender,
+                                         text = paste0("Detsil: ", windex10,
+                                                      "<br>Jinsi: ", gender,
+                                                      "<br>Kitoblar: ", round(avg_books, 1)))) +
+  geom_line(linewidth = 1.2) +
+  geom_point(size = 3) +
+  scale_color_manual(values = mics_gender_palette) +
+  scale_x_continuous(breaks = 1:10) +
+  coord_cartesian(ylim = c(0, NA)) +
+  labs(x = "Farovonlik detsili", y = "Kitoblarning o'rtacha soni", color = "Jinsi") +
+  theme_minimal(base_size = 14) +
+  theme(legend.position = "top")
+
+ggplotly(p, tooltip = "text") %>% plotly_config()
+```
+
+#### Yordam
+
+```{r help-gender-interactive}
+#| label: fig-help-gender-interactive
+
+help_by_decile_gender <- read_csv("tables/mics_help_by_gender.csv", show_col_types = FALSE)
+
+p <- ggplot(help_by_decile_gender, aes(x = windex10, y = rate_pct, color = gender, group = gender,
+                                        text = paste0("Detsil: ", windex10,
+                                                     "<br>Jinsi: ", gender,
+                                                     "<br>Yordam: ", round(rate_pct, 1), "%"))) +
+  geom_line(linewidth = 1.2) +
+  geom_point(size = 3) +
+  scale_color_manual(values = mics_gender_palette) +
+  scale_x_continuous(breaks = 1:10) +
+  scale_y_continuous(limits = c(0, 100), labels = function(x) paste0(x, "%")) +
+  labs(x = "Farovonlik detsili", y = "Yordam darajasi (%)", color = "Jinsi") +
+  theme_minimal(base_size = 14) +
+  theme(legend.position = "top")
+
+ggplotly(p, tooltip = "text") %>% plotly_config()
+```
+
+#### Yig'ilish
+
+```{r meeting-gender-interactive}
+#| label: fig-meeting-gender-interactive
+
+meeting_by_decile_gender <- read_csv("tables/mics_meeting_by_gender.csv", show_col_types = FALSE)
+
+p <- ggplot(meeting_by_decile_gender, aes(x = windex10, y = rate_pct, color = gender, group = gender,
+                                           text = paste0("Detsil: ", windex10,
+                                                        "<br>Jinsi: ", gender,
+                                                        "<br>Qatnashish: ", round(rate_pct, 1), "%"))) +
+  geom_line(linewidth = 1.2) +
+  geom_point(size = 3) +
+  scale_color_manual(values = mics_gender_palette) +
+  scale_x_continuous(breaks = 1:10) +
+  scale_y_continuous(limits = c(0, 100), labels = function(x) paste0(x, "%")) +
+  labs(x = "Farovonlik detsili", y = "Qatnashish darajasi (%)", color = "Jinsi") +
+  theme_minimal(base_size = 14) +
+  theme(legend.position = "top")
+
+ggplotly(p, tooltip = "text") %>% plotly_config()
+```
+
+#### Progress
+
+```{r progress-gender-interactive}
+#| label: fig-progress-gender-interactive
+
+progress_disc_by_decile_gender <- read_csv("tables/mics_progress_by_gender.csv", show_col_types = FALSE)
+
+p <- ggplot(progress_disc_by_decile_gender, aes(x = windex10, y = rate_pct, color = gender, group = gender,
+                                                 text = paste0("Detsil: ", windex10,
+                                                              "<br>Jinsi: ", gender,
+                                                              "<br>Muhokama: ", round(rate_pct, 1), "%"))) +
+  geom_line(linewidth = 1.2) +
+  geom_point(size = 3) +
+  scale_color_manual(values = mics_gender_palette) +
+  scale_x_continuous(breaks = 1:10) +
+  scale_y_continuous(limits = c(0, 100), labels = function(x) paste0(x, "%")) +
+  labs(x = "Farovonlik detsili", y = "Muhokama darajasi (%)", color = "Jinsi") +
+  theme_minimal(base_size = 14) +
+  theme(legend.position = "top")
+
+ggplotly(p, tooltip = "text") %>% plotly_config()
+```
+
+:::
+
+### Shahar/Qishloq bo'yicha tahlil
+
+::: {.panel-tabset}
+
+#### Kitoblar
+
+```{r books-ur-interactive}
+#| label: fig-books-ur-interactive
+
+books_by_decile_ur <- read_csv("tables/mics_books_by_ur.csv", show_col_types = FALSE)
+
+p <- ggplot(books_by_decile_ur, aes(x = windex10, y = avg_books, color = area, group = area,
+                                     text = paste0("Detsil: ", windex10,
+                                                  "<br>Hudud: ", area,
+                                                  "<br>Kitoblar: ", round(avg_books, 1)))) +
+  geom_line(linewidth = 1.2) +
+  geom_point(size = 3) +
+  scale_color_manual(values = mics_ur_palette, drop = FALSE) +
+  scale_x_continuous(breaks = 1:10) +
+  coord_cartesian(ylim = c(0, NA)) +
+  labs(x = "Farovonlik detsili", y = "Kitoblarning o'rtacha soni", color = "Hudud") +
+  theme_minimal(base_size = 14) +
+  theme(legend.position = "top")
+
+ggplotly(p, tooltip = "text") %>% plotly_config()
+```
+
+#### Yordam
+
+```{r help-ur-interactive}
+#| label: fig-help-ur-interactive
+
+help_by_decile_ur <- read_csv("tables/mics_help_by_ur.csv", show_col_types = FALSE)
+
+p <- ggplot(help_by_decile_ur, aes(x = windex10, y = rate_pct, color = area, group = area,
+                                    text = paste0("Detsil: ", windex10,
+                                                 "<br>Hudud: ", area,
+                                                 "<br>Yordam: ", round(rate_pct, 1), "%"))) +
+  geom_line(linewidth = 1.2) +
+  geom_point(size = 3) +
+  scale_color_manual(values = mics_ur_palette) +
+  scale_x_continuous(breaks = 1:10) +
+  scale_y_continuous(limits = c(0, 100), labels = function(x) paste0(x, "%")) +
+  labs(x = "Farovonlik detsili", y = "Yordam darajasi (%)", color = "Hudud") +
+  theme_minimal(base_size = 14) +
+  theme(legend.position = "top")
+
+ggplotly(p, tooltip = "text") %>% plotly_config()
+```
+
+#### Yig'ilish
+
+```{r meeting-ur-interactive}
+#| label: fig-meeting-ur-interactive
+
+meeting_by_decile_ur <- read_csv("tables/mics_meeting_by_ur.csv", show_col_types = FALSE)
+
+p <- ggplot(meeting_by_decile_ur, aes(x = windex10, y = rate_pct, color = area, group = area,
+                                       text = paste0("Detsil: ", windex10,
+                                                    "<br>Hudud: ", area,
+                                                    "<br>Qatnashish: ", round(rate_pct, 1), "%"))) +
+  geom_line(linewidth = 1.2) +
+  geom_point(size = 3) +
+  scale_color_manual(values = mics_ur_palette) +
+  scale_x_continuous(breaks = 1:10) +
+  scale_y_continuous(limits = c(0, 100), labels = function(x) paste0(x, "%")) +
+  labs(x = "Farovonlik detsili", y = "Qatnashish darajasi (%)", color = "Hudud") +
+  theme_minimal(base_size = 14) +
+  theme(legend.position = "top")
+
+ggplotly(p, tooltip = "text") %>% plotly_config()
+```
+
+#### Progress
+
+```{r progress-ur-interactive}
+#| label: fig-progress-ur-interactive
+
+progress_disc_by_decile_ur <- read_csv("tables/mics_progress_by_ur.csv", show_col_types = FALSE)
+
+p <- ggplot(progress_disc_by_decile_ur, aes(x = windex10, y = rate_pct, color = area, group = area,
+                                             text = paste0("Detsil: ", windex10,
+                                                          "<br>Hudud: ", area,
+                                                          "<br>Muhokama: ", round(rate_pct, 1), "%"))) +
+  geom_line(linewidth = 1.2) +
+  geom_point(size = 3) +
+  scale_color_manual(values = mics_ur_palette) +
+  scale_x_continuous(breaks = 1:10) +
+  scale_y_continuous(limits = c(0, 100), labels = function(x) paste0(x, "%")) +
+  labs(x = "Farovonlik detsili", y = "Muhokama darajasi (%)", color = "Hudud") +
+  theme_minimal(base_size = 14) +
+  theme(legend.position = "top")
+
+ggplotly(p, tooltip = "text") %>% plotly_config()
+```
+
+:::
+
+:::
+
+::: {.callout-note collapse="true"}
+## 3-Ilova: Ijtimoiy reestrga kiritilgan oilalar uchun ta'lim sohasidagi imtiyozlar {#sec-imtiyozlar}
+
+**PF-258, 26.12.2025 asosida**
+
+```{r}
+#| label: tbl-imtiyozlar
+#| tbl-cap: "Ijtimoiy reestrga kiritilgan oilalar uchun ta'lim sohasidagi imtiyozlar"
+
+imtiyozlar_df <- data.frame(
+  `№` = 1:12,
+  `Imtiyoz turi` = c(
+    "Maktabgacha ta'lim tashkilotlariga imtiyozli qabul",
+    "Oliy ta'lim kirish test sinovlari to'lovidan ozod etish",
+    "Ta'lim kreditini garov va kafilliksiz olish",
+    "Talabalar turar joyi xarajatlarini qoplash",
+    "\"El-yurt umidi\" jamg'armasi kvotalari",
+    "Xotin-qizlar uchun oliy ta'lim imtiyozlari",
+    "Kasblarga o'qitish stipendiyasi",
+    "Zamonaviy bilim va kasb-hunar kurslari",
+    "Mehnat va ijtimoiy munosabatlar akademiyasida bepul o'qish",
+    "\"Yangi O'zbekiston\" universiteti imtiyozlari",
+    "\"Prezident iqtidorli farzandlari\" dasturi",
+    "Sport maktablarida bepul mashg'ulotlar"
+  ),
+  Tavsifi = c(
+    "Ijtimoiy reestrga kiritilgan oilalar farzandlari davlat maktabgacha ta'lim tashkilotlariga imtiyozli asosda qabul qilinadi",
+    "Ijtimoiy reestrga kiritilgan oilalar a'zolari oliy ta'lim muassasalariga o'qishga qabul qilishda o'tkaziladigan kirish test sinovlarida ishtirok etish uchun undiriladigan to'lovlardan ozod etiladi",
+    "Ijtimoiy reestrga kiritilgan oilalar farzandlaridan ta'lim krediti uchun garov va kafilliklar talab etilmaydi. \"3\" va undan yuqori o'zlashtirish bahosi bo'lganda kredit to'lov-kontrakt summasi miqdorida ajratiladi",
+    "2025/2026 o'quv yilidan boshlab Ijtimoiy reestrga kiritilgan oilalar farzandlarining davlat oliy ta'lim muassasalari talabalar turar joylaridagi yashash xarajatlari Davlat byudjeti hisobidan qoplab beriladi",
+    "2025-yildan boshlab \"El-yurt umidi\" jamg'armasi tomonidan Ijtimoiy reestrga kiritilgan oilalarning farzandlari uchun xorijda ta'lim olish bo'yicha alohida kvotalar ajratiladi",
+    "Ijtimoiy himoya yagona reestriga kiritilgan oilalarning xotin-qizlariga ajratiladigan ta'lim kreditlari uchun garov va kafilliklar talab etilmaydi",
+    "Bandlikka ko'maklashish davlat jamg'armasi mablag'lari hisobidan kasblarga o'qitish maqsadida ajratiladigan stipendiyalar muddati uch oydan ko'p davom etadigan o'quv kurslariga qabul qilingan Ijtimoiy reestrga kiritilgan oilalarning ishsiz a'zolariga to'lanadi",
+    "Ijtimoiy himoya yagona reestri axborot tizimiga kiritilgan oilalar farzandlari bo'lgan yoshlarga axborot texnologiyalari sohasida tahsil olishga ajratiladigan ta'lim krediti uchun garov va kafillik talab etilmaydi",
+    "Har yili 20 nafardan kam bo'lmagan, Akademiyaga kirish imtihonlarida yuqori ball to'plagan, Ijtimoiy reestrga kiritilgan oilalarning farzandlari muassis granti asosida bepul o'qishga qabul qilinadi",
+    "Ijtimoiy reestrga kiritilgan oilalarning farzandlariga \"Yangi O'zbekiston\" universitetida davlat granti asosida ta'lim olishi uchun kvotalar ajratiladi",
+    "Ijtimoiy reestrga kiritilgan oilalarning farzandlari \"Prezident iqtidorli farzandlari\" dasturi doirasida ta'lim olishida ustuvorlik beriladi",
+    "Ijtimoiy reestrga kiritilgan oilalarning farzandlariga sport maktablarida mashg'ulotlar bepul o'tkaziladi"
+  ),
+  `Huquqiy asosi` = c(
+    "PQ-330, 9-band",
+    "PF-113, 9-band",
+    "PQ-5203, 1-band",
+    "PQ-330, 9-band",
+    "PQ-330, 9-band",
+    "PQ-323, 1-band",
+    "PQ-12, 15-band",
+    "PQ-350, 1-band",
+    "PQ-5227, 7-band",
+    "PQ-5158, 4-band",
+    "PF-86, 8-band",
+    "PQ-268, 3-band"
+  ),
+  check.names = FALSE
+)
+
+datatable(imtiyozlar_df,
+          options = list(
+            dom = 't',
+            pageLength = 12,
+            autoWidth = TRUE,
+            columnDefs = list(
+              list(width = '5%', targets = 0),
+              list(width = '20%', targets = 1),
+              list(width = '55%', targets = 2),
+              list(width = '20%', targets = 3)
+            )
+          ),
+          rownames = FALSE,
+          class = 'display compact')
+```
+
+::: {.callout-warning appearance="simple"}
+**MUHIM IZOHLAR:**
+
+1. Yuqoridagi barcha imtiyozlar Ijtimoiy reestrning uchala toifasi uchun amal qiladi:
+   - Davlat ta'minotidagi oila
+   - Kambag'al oila
+   - Kambag'allik chegarasidagi oila (12 oy davomida)
+2. "Kambag'allik chegarasidagi oila" toifasidagi oilalar uchun imtiyozlar ular reestrga kiritilgan sanadan 12 oy davomida qo'llaniladi.
+3. Imtiyozlardan foydalanish uchun oilaning Ijtimoiy reestrga kiritilganligi tasdiqlanishi kerak.
+:::
+
+:::
+
+# Ma'lumotlar manbalari {#sec-manbalar}
+
+```{r}
+#| label: tbl-sources
+#| tbl-cap: "Tadqiqotda foydalanilgan ma'lumotlar manbalari"
+
+sources_df <- data.frame(
+  `Ma'lumot turi` = c("PISA", "HBS", "MICS", "MPI"),
+  Manba = c(
+    "OECD Programme for International Student Assessment",
+    "Milliy statistika qo'mitasi - Uy xo'jaligi daromadlari va xarajatlari so'rovnomasi",
+    "UNICEF/Milliy statistika qo'mitasi - Multiindikator klaster so'rovnomasi",
+    "Ijtimoiy himoya milliy agentligi - Kambag'allik reestri"
+  ),
+  Yil = c("2022", "2024", "2021-2022", "2025"),
+  Qamrov = c(
+    "15-yoshli o'quvchilar",
+    "Uy xo'jaliklari",
+    "Uy xo'jaliklari va bolalar",
+    "Kambag'allik reestridagi oilalar"
+  ),
+  check.names = FALSE
+)
+
+datatable(sources_df,
+          options = list(
+            dom = 't',
+            pageLength = 10,
+            autoWidth = TRUE,
+            columnDefs = list(
+              list(width = '15%', targets = 0),
+              list(width = '45%', targets = 1),
+              list(width = '15%', targets = 2),
+              list(width = '25%', targets = 3)
+            )
+          ),
+          rownames = FALSE,
+          class = 'display compact')
+```
