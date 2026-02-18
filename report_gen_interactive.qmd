@@ -478,7 +478,7 @@ ggplotly(p, tooltip = "text") %>%
 
 ::: {.callout-tip}
 ## Asosiy natija
-Tahlil natijalariga ko'ra, boy va kambag'al oilalardagi o'quvchilarning o'zlashtirish darajasidagi farqlar asosan maktabdagi ta'lim sifati darajasi (o'rtacha o'zlashtirish) farqlar bilan tushuntirish mumkin. Xususan, PISA so'rovnomasiga ko'ra, boy va kambag'al oilalardagi o'quvchilarning matematika fanidan o'zlashtirish darajasidagi o'rtacha **27.8 ball**ni tashkil qilgan bo'lsa, ushbu farqning qariyb **50%idan ortig'i** maktabdagi ta'lim sifati bilan tushuntirilishi mumkin.
+Tahlil natijalariga ko'ra, boy va kambag'al oilalardagi o'quvchilarning o'zlashtirish darajasidagi farqlar asosan maktabdagi ta'lim sifati darajasi (matematikadan o'rtacha o'zlashtirish) farqlar bilan tushuntirish mumkin. Xususan, PISA so'rovnomasiga ko'ra, boy va kambag'al oilalardagi o'quvchilarning matematika fanidan o'zlashtirish darajasidagi o'rtacha **27.8 ball**ni tashkil qilgan bo'lsa, ushbu farqning qariyb **50%ga yaqini** maktabdagi ta'lim sifati bilan tushuntirilishi mumkin.
 
 Tahlilning yana bir muhim natijalaridan biri bu boy va kambag'al oilalardagi o'quvchilar o'rtasidagi farqlar qishloqdagi o'quvchilarning nisbatan yuqori o'zlashtirishi hisobiga kamaymoqda. Demak, shaharda yashovchi o'quvchilarning qishloqdagi o'quvchilarga nisbatan yaxshi o'zlashtiriyotgani haqida tavsifiy natijalar aslida aholi yashash punkti tipidan boshqa omillarning notekis taqsimlanganligi tufayli bo'lishi mumkin.
 :::
