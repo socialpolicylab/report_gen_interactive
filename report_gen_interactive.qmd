@@ -424,9 +424,9 @@ plot2 <- ggplotly(p2, tooltip = "text") %>%
 htmltools::tagList(plot1, plot2)
 ```
 
-Ta'lim xarajatlarining jinsiga ko'ra qiyoslansa: o'g'il bolalarga va qiz bolalarga qilingan xarajatlar o'rtasida sezilarli farq yo'q (1-Ilova). Lekin, aholi yashash punktlari tipiga ko'ra solishtirilsa, shaharda yashovchi o'quvchilarga qilingan xarajatlar qishloq hududida yashovchi o'quvchilarga nisbatan daromadning barcha detsillari bo'ylab sezilarli darajada yuqori, hamda ushbu farq daromad detsillari oshgani sari o'sib boradi (1-Ilova).
+Ta'lim xarajatlarining jinsiga ko'ra qiyoslansa: o'g'il bolalarga va qiz bolalarga qilingan xarajatlar o'rtasida sezilarli farq yo'q ([1-Ilova](#sec-ilova-1)). Lekin, aholi yashash punktlari tipiga ko'ra solishtirilsa, shaharda yashovchi o'quvchilarga qilingan xarajatlar qishloq hududida yashovchi o'quvchilarga nisbatan daromadning barcha detsillari bo'ylab sezilarli darajada yuqori, hamda ushbu farq daromad detsillari oshgani sari o'sib boradi ([1-Ilova](#sec-ilova-1)).
 
-O'quvchilarning akademik o'zlashtirishining muhim omillaridan biri bu o'quvchilarning o'qish jarayonida oila a'zolarning ishtiroki hisoblanadi. UNICEF hamda Milliy Statistika Qo'mitasi tomonidan o'tkazilgan multiindikator klaster kuzatuvi (MICS) so'rovnomasi asosida to'rtta asosiy ko'rsatkich tahlil qilindi: uyda bolalar kitoblari soni, uy vazifasiga yordam berish darajasi, maktab yig'ilishlarida qatnashish va o'qituvchilar bilan bolalarning o'zlashtirishini muhokama qilish (2-Ilova).
+O'quvchilarning akademik o'zlashtirishining muhim omillaridan biri bu o'quvchilarning o'qish jarayonida oila a'zolarning ishtiroki hisoblanadi. UNICEF hamda Milliy Statistika Qo'mitasi tomonidan o'tkazilgan multiindikator klaster kuzatuvi (MICS) so'rovnomasi asosida to'rtta asosiy ko'rsatkich tahlil qilindi: uyda bolalar kitoblari soni, uy vazifasiga yordam berish darajasi, maktab yig'ilishlarida qatnashish va o'qituvchilar bilan bolalarning o'zlashtirishini muhokama qilish ([2-Ilova](#sec-ilova-2)).
 
 Natijalar shuni ko'rsatadiki, ota-onalarning ta'lim jarayonidagi ishtiroki umuman olganda yuqori va farovonlik detsillari bo'ylab sezilarli darajada farq qilmaydi. Maktab yig'ilishlarida qatnashish va o'qituvchilar bilan suhbatlar barcha detsillarda 90–100% atrofida bo'lib, bu ijtimoiy-iqtisodiy holatdan qat'i nazar rasmiy maktab faoliyatida deyarli universal ishtirokni ko'rsatadi. Ota-onalarning ta'limdagi ishtirokini ko'rsatuvchi boshqa ko'rsatkichlar ham yuqori va farovonlik detsillari bo'ylab sezilarli darajada farq qilmaydi. O'g'il bolalar qizlarga qaraganda biroz ko'proq uy vazifasiga yordam oladi, ammo boshqa ko'rsatkichlarda o'quvchilarning jinsiga bog'liq farqlar yo'q. Xuddi shunday, shahar va qishloq xo'jaliklari barcha o'lchovlar bo'yicha o'xshash darajadagi ota-onalar jalb etilishini namoyish etadi. Umuman olganda, ushbu topilmalar O'zbekiston ta'limda ota-onalarning ishtirok etish darajasi nisbatan tekis taqsimlanganini ko'rsatadi.
 
@@ -520,7 +520,7 @@ Ota-onalarning ta'lim jarayonidagi ishtiroki barcha ijtimoiy-iqtisodiy guruhlard
 **Mavjud imtiyozlarning tizimli tadbiq etilishini ko'rsatuvchi yagona monitoring platformasini yaratish:**
 
 - Mavjud qonunchilik normalariga ko'ra daromad past aholi farzandlari uchun ta'lim imtiyozlari mavjud
-- Masalan, O'zbekiston Respublikasining 258-sonli farmoniga ko'ra, Ijtimoiy reyestrga kiritilgan oila farzandlari uchun 12 xil ta'limga oid imtiyozlar ko'zda tutilgan (3-Ilova)
+- Masalan, O'zbekiston Respublikasining 258-sonli farmoniga ko'ra, Ijtimoiy reyestrga kiritilgan oila farzandlari uchun 12 xil ta'limga oid imtiyozlar ko'zda tutilgan ([3-Ilova](#sec-ilova-3))
 - Bu imtiyozlarning tizimli tadbiq etilishini ko'rsatuvchi yagona monitoring platformasini yaratish maqsadga muvofiq
 - Bu platforma oila farzandlari uchun ta'lim imtiyozlaridan foydalanish darajasini hududlar va aholining boshqa demografik ko'rsatkichlari kesimida foydalanish darajasini kuzatish mumkin bo'ladi
 
@@ -529,6 +529,8 @@ Ota-onalarning ta'lim jarayonidagi ishtiroki barcha ijtimoiy-iqtisodiy guruhlard
 # Ilovalar {#sec-ilovalar}
 
 
+
+<div id="sec-ilova-1"></div>
 
 ::: {.callout-note collapse="true"}
 ## 1-Ilova: HBS Ta'lim xarajatlari
@@ -621,8 +623,10 @@ ggplotly(p, tooltip = "text") %>%
 
 :::
 
+<div id="sec-ilova-2"></div>
+
 ::: {.callout-note collapse="true"}
-## 2-Ilova: MICS Ma'lumotlari Tahlili {#sec-mics}
+## 2-Ilova: MICS Ma'lumotlari Tahlili
 
 ### Farovonlik detsillari bo'yicha asosiy ko'rsatkichlar
 
@@ -962,8 +966,10 @@ ggplotly(p, tooltip = "text") %>% plotly_config()
 
 :::
 
+<div id="sec-ilova-3"></div>
+
 ::: {.callout-note collapse="true"}
-## 3-Ilova: Ijtimoiy reestrga kiritilgan oilalar uchun ta'lim sohasidagi imtiyozlar {#sec-imtiyozlar}
+## 3-Ilova: Ijtimoiy reestrga kiritilgan oilalar uchun ta'lim sohasidagi imtiyozlar
 
 **PF-258, 26.12.2025 asosida**
 
