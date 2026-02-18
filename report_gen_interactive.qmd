@@ -279,10 +279,9 @@ ggplotly(p, tooltip = "text") %>%
   layout(legend = list(orientation = "h", x = 0, y = 1.15))
 ```
 
-::: {.callout-warning}
-## Muhim topilma
+
 IISning 1-detsilidagi oila farzandlarining taqriban uchdan bir qismida uyida kompyuter, planshet kabi bilim olish jarayonida qo'llanishi mumkin bo'lgan elektron vositalar mavjud bo'lsa, 10-detsilda bu ko'rsatkich qariyb **90%**ni tashkil qiladi. Eng katta farqlar o'qish uchun kompyuterning mavjudligi, ta'limga oid dasturiy ta'minotlaridan foydalanish va uy internetga ulanganligida kuzatiladi. O'quvchilar uchun o'z xonasining mavjudligi IIS detsillari bo'yicha taqsimotida tengsizlik qolgan ko'rsatkichlarga nisbatan kamroq.
-:::
+
 
 ### Kompyuter mavjudligi: shahar/qishloq kesimida
 
