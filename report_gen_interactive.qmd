@@ -1,7 +1,5 @@
 ---
 title: "O'zbekistonda: Kambag'allik va Ta'lim"
-author: "Ulug'bek Tursunov, Ijtimoiy siyosat laboratoriyasi tadqiqotchisi"
-date: today
 format:
   html:
     theme:
@@ -85,7 +83,7 @@ Ushbu tadqiqot O'zbekistonda ta'lim va kambag'allik o'rtasidagi bog'liqlikni tah
 
 Ta'limning kambag'allikni kamaytirishdagi roli borasidagi o'rganishlar muhim tadqiqot yo'nalishi sifatida e'tirof etiladi. So'nggi o'n yilliklarda tadqiqotlar ta'limning inson kapitalini oshirish, daromadlar o'rtasidagi tengsizlikni kamaytirish va ijtimoiy mobillikni rag'batlantirishda muhim o'ringa ega ekanligi butun dunyoda, xususan, Xitoy, Braziliya va Janubiy Afrika kabi rivojlanayotgan mamlakatlarda qilingan tadqiqotlarda o'z tasdig'ini topib kelmoqda (@Vian_Dhanda_2024, @Dorte_Verner_2004, @Md_Mahbubur_Rahman_2024).
 
-Global miqyosda, kambag'allik darajasi 1990-yildagi 43.6 foizdan 2023-yilda 10.2 foizga qisqarganiga qaramay @WorldBankOpen, rivojlanayotgan malakatlarda xususan qishloq hududlarida ta'lim olish imkoniyati cheklanganligi bo'yicha muammolar saqlanib qolmoqda (@Xiaowen_Xie_2023; @Alessia_Spada_2023). COVID-19 pandemiyasi davrida ta'limdagi tengsizlik yanada yanada yaqqolroq ko'rina boshladi va kuchaydi, bu esa ijtimoiy himoya va ta'lim sohalarida samarali siyosiy intervensiyalarning dolzarb zaruratini ko'rsatmoqda (@terziPhilosophicalReflectionsChild2023; @beesonDoesTacklingPoverty2024).
+Global miqyosda, kambag'allik darajasi 1990-yildagi 43.6 foizdan 2023-yilda 10.2 foizga qisqarganiga qaramay( @WorldBankOpen), rivojlanayotgan malakatlarda xususan qishloq hududlarida ta'lim olish imkoniyati cheklanganligi bo'yicha muammolar saqlanib qolmoqda (@Xiaowen_Xie_2023; @Alessia_Spada_2023). COVID-19 pandemiyasi davrida ta'limdagi tengsizlik yanada yanada yaqqolroq ko'rina boshladi va kuchaydi, bu esa ijtimoiy himoya va ta'lim sohalarida samarali siyosiy intervensiyalarning dolzarb zaruratini ko'rsatmoqda (@terziPhilosophicalReflectionsChild2023; @beesonDoesTacklingPoverty2024).
 
 Ushbu tadqiqotda biz quyidagi ma'lumot manbalaridan foydalangan holda tahlilni olib boramiz:
 
@@ -95,10 +93,10 @@ Ushbu tadqiqotda biz quyidagi ma'lumot manbalaridan foydalangan holda tahlilni o
 PISA dasturi yordamida O'zbekistonda 2022-yil 15-yoshli o'quvchilarning o'zlashtirish ko'rsatkichlari ma'lumotlaridan foydalanib, o'quvchilarning ta'lim ko'rsatkichlari va oilaning umumiy iqtisodiy holati o'rtasidagi bog'liqlikni o'rganamiz.
 
 ## HBS 2024
-Milliy statistika qo'mitasining 2024-yilgi Uy xo'jaligi daromadlari va xarajatlari so'rovnomasiga ko'ra, o'quvchilar ta'lim olishi uchun xarajatlarni tahlili qilish uchun foydalaniladi.
+Milliy statistika qo'mitasining 2024-yilgi Uy xo'jaligi daromadlari va xarajatlari so'rovnomasidan o'quvchilar ta'lim olishi uchun xarajatlarni tahlil qilish uchun foydalaniladi.
 
 ## MICS 2021-2022
-UNICEF hamda Milliy Statistika Qo'mitasi tomonidan o'tkazilgan multiindikator klaster kuzatuvi (MICS) so'rovnomasi asosida oila a'zolarining o'quvchi ta'limidagi ishtirokini o'rganish uchun foydalaniladi.
+UNICEF hamda Milliy Statistika Qo'mitasi tomonidan o'tkazilgan multiindikator klaster kuzatuvi (MICS) so'rovnomasidan oila a'zolarining o'quvchi ta'limidagi ishtirokini o'rganish uchun foydalaniladi.
 
 :::
 
@@ -125,8 +123,8 @@ PISA natijalari ma'lumotlarini IIS indeksi nuqtayi nazaridan tahlil qilish orqal
 ### Ko'p o'lchovli kambag'allik indeksi (MPI)
 
 ```{r}
-#| label: fig-mpi
-#| fig-cap: "Kambag'allik reestridagi oilalar uchun hisoblangan ko'p o'lchovli kambag'allik indeksi (Ijtimoiy himoya milli agentligi ma'lumotlari asosida tayyorlandi)"
+#| label: mpi
+#| fig-cap: "1-rasm. Kambag'allik reestridagi oilalar uchun hisoblangan ko'p o'lchovli kambag'allik indeksi (Ijtimoiy himoya milli agentligi ma'lumotlari asosida tayyorlandi)"
 
 plot_data_mpi <- read_csv("tables/mpi_contributions.csv", show_col_types = FALSE)
 
@@ -202,8 +200,8 @@ level2_gender_all <- read_csv("tables/pisa_level2_gender.csv", show_col_types = 
 ## Barcha fanlar
 
 ```{r}
-#| label: fig-level2-interactive
-#| fig-cap: "2-darajaga erishgan o'quvchilar ulushi: IIS detsillari kesimida (PISA 2022, O'zbekiston)"
+#| label: level2-interactive
+#| fig-cap: "2-rasm. 2-darajaga erishgan o'quvchilar ulushi: IIS detsillari kesimida (PISA 2022, O'zbekiston)"
 
 p <- ggplot(level2_all, aes(x = Decile_num, y = Percentage, color = Subject, group = Subject,
                              text = paste0("IIS Detsili: D", Decile_num,
@@ -237,8 +235,8 @@ ggplotly(p, tooltip = "text") %>%
 ## Shahar/Qishloq bo'yicha 
 
 ```{r}
-#| label: fig-level2-rural-interactive
-#| fig-cap: "2-darajaga erishgan o'quvchilar ulushi: aholi yashash punkti tipi kesimida"
+#| label: level2-rural-interactive
+#| fig-cap: "3-rasm. 2-darajaga erishgan o'quvchilar ulushi: aholi yashash punkti tipi kesimida"
 
 p <- ggplot(level2_rural_all, aes(x = Decile_num, y = Percentage, color = rural, group = rural,
                                    text = paste0("Detsil: D", Decile_num,
@@ -271,8 +269,8 @@ ggplotly(p, tooltip = "text") %>%
 ## Jins bo'yicha
 
 ```{r}
-#| label: fig-level2-gender-interactive
-#| fig-cap: "2-darajaga erishgan o'quvchilar ulushi: jins kesimida"
+#| label: level2-gender-interactive
+#| fig-cap: "4-rasm. 2-darajaga erishgan o'quvchilar ulushi: jins kesimida"
 
 p <- ggplot(level2_gender_all, aes(x = Decile_num, y = Percentage, color = Gender, group = Gender,
                                     text = paste0("Detsil: D", Decile_num,
@@ -316,8 +314,8 @@ PISA savolnomasi asosida quyidagi savollarga o'quvchilarning javoblari IIS detsi
 4) Uyda internet bormi?
 
 ```{r}
-#| label: fig-home-conditions-interactive
-#| fig-cap: "O'quvchilar ta'lim olishi uchun uy sharoitlari: IIS detsillari kesimida"
+#| label: home-conditions-interactive
+#| fig-cap: "5-rasm. O'quvchilar ta'lim olishi uchun uy sharoitlari: IIS detsillari kesimida"
 
 percentages <- read_csv("tables/pisa_home_conditions.csv", show_col_types = FALSE)
 
@@ -350,8 +348,8 @@ IISning 1-detsilidagi oila farzandlarining taqriban uchdan bir qismida uyida kom
 ### Kompyuter mavjudligi: shahar/qishloq kesimida
 
 ```{r}
-#| label: fig-computer-rural-interactive
-#| fig-cap: "Kompyuter mavjudligi: aholi yashash punkti tipi va IIS detsillari kesimida"
+#| label: computer-rural-interactive
+#| fig-cap: "6-rasm. Kompyuter mavjudligi: aholi yashash punkti tipi va IIS detsillari kesimida"
 
 computer_rural <- read_csv("tables/pisa_computer_rural.csv", show_col_types = FALSE)
 
@@ -384,8 +382,8 @@ Milliy statistika qo'mitasining 2024-yilgi Uy xo'jaligi daromadlari va xarajatla
 Daromad detsillari bo'ylab umumiy maktab ta'limining umumiy iste'mol xarajatlaridagi ulushi qaralganda: 2-detsildan 9-detsilgacha ko'rsatkich sezilarli darajada farq qilmaydi, ammo eng quyi detsilda maktab ta'limi xarajatlarining ulushi nisbatan ancha yuqori **28%** ni tashkil qiladi. Eng yuqori detsilda esa, bu ko'rsatkich nisbatan kam **14.3%** ni tashkil qiladi. Ya'ni daromadning boshqa detsillari (2-9-detsillar) bilan solishtirganda, daromadning quyi detsilidagi oilalarda maktab ta'limi uchun qilingan xarajatlar boshqa xarajatlarni siqib chiqarayotgan bo'lishi mumkin.
 
 ```{r}
-#| label: fig-hbs-edu
-#| fig-cap: "O'quvchilar ta'lim olishi uchun xarajatlar va ushbu xarajatlarning umumiy iste'mol xarajatlaridagi ulushi (Uy xo'jaligi daromadlari va xarajatlari so'rovnomasi, 2024)"
+#| label: hbs-edu
+#| fig-cap: "7-rasm. O'quvchilar ta'lim olishi uchun xarajatlar va ushbu xarajatlarning umumiy iste'mol xarajatlaridagi ulushi (Uy xo'jaligi daromadlari va xarajatlari so'rovnomasi, 2024)"
 
 decile_edu_cost <- read_xlsx("tables/hbs_edu_2_decile_edu_cost.xlsx")
 ratio_by_decile <- read_xlsx("tables/hbs_edu_2_ratio_by_decile.xlsx")
@@ -436,13 +434,16 @@ Natijalar shuni ko'rsatadiki, ota-onalarning ta'lim jarayonidagi ishtiroki umuma
 
 Ma'lumki, o'quvchilarning o'zlashtirishidagi yana bir muhim omil bu maktabdagi ta'lim sifati hisoblanadi. Tadqiqotning ushbu qismida, nisbatan farovonligi yuqori va nisbatan farovonligi past oilalardagi o'quvchilarning o'zlashtirishadigi farqlarni tushuntirishda maktabdagi ta'lim sifatining ahamiyati o'rganiladi[^1].
 
-Buning uchun Oaxaca-Blinder dekompozitsiya usuli yordamida maktabdagi ta'lim sifatining o'zlashtirishdagi farqlarga hissasini baholash mumkin. Bunda boy va kambag'al oilalardagi o'quvchilarning matematika fanidan o'zlashtirish darajasidagi farqlarga e'tibor beriladi.
+Buning uchun Oaxaka-Blaynder (ingliz tilida Oaxaca-Blinder) dekompozitsiya usuli[^2] yordamida maktabdagi ta'lim sifatining o'zlashtirishdagi farqlarga hissasini baholash mumkin. Bunda boy va kambag'al oilalardagi o'quvchilarning matematika fanidan o'zlashtirish darajasidagi farqlarga e'tibor beriladi.
 
 [^1]: Berilgan tahlillarda shartli ravishda, nisbatan farovonligi yuqori bo'lgan oilalarni (5-kvintil) "boy oila"lar deb ataladi. Nisbatan farovonlik darajasi past oilalarni esa "kambag'al oila"lar deb ataladi.
 
+[^2]:Oaxaka-Blaynder dekompozitsiyasi usuli qo'llanganda metodologik nuqtai nazaridan o'zgaruvchilarning endogen mustaqil o'zgaruvchilarni baholashdagi noxolislik muammosi saqlanib qoladi. Masalan, xususiy repetitorga borish boshqa biz kuzatmayotgan omillar ta'sirida yuz berayotgan bo'lishi mumkin. Ushbu kuzatilmagan o'zgaruvchilar o'z o'rnida o'quvchining matematikadan o'zlashtirishiga ta'sir qilayotgan bo'lishi mumkin.
+
+
 ```{r}
-#| label: fig-oaxaca
-#| fig-cap: "Oaxaca-Blinder dekompozitsiyasi"
+#| label: oaxaca
+#| fig-cap: "8-rasm. Oaxaka-Blaynder dekompozitsiyasi"
 
 oaxaca_df <- read_csv("tables/oaxaca_results.csv", show_col_types = FALSE)
 gap_total <- oaxaca_df$gap_total[1]
@@ -490,7 +491,7 @@ Ushbu tadqiqotda O'zbekistonda ta'lim va kambag'allik o'rtasidagi bog'liqlikni t
 
 
 ### Ijtimoiy-iqtisodiy status ta'siri
-Oilaning ijtimoiy-iqtisodiy statusi (IIS) o'quvchilarning akademik natijalariga sezilarli ta'sir ko'rsatadi. IISning 1-detsilidagi oila farzandlarining o'qish, matematika va tabiiy fanlar bo'yicha 2-darajaga erishish ko'rsatkichi 10-detsildagi tengdoshlariga nisbatan qariyb **3 barobar past**. O'zlashtirish darajasidagi sezilarli o'sish asosan IISning 7-detsilidan boshlab kuzatiladi, bu esa quyi va o'rta darajadagi oilalar uchun qo'shimcha e'tibor zarurligini ko'rsatadi.
+Oilaning ijtimoiy-iqtisodiy statusiga o'quvchilarning akademik natijalariga sezilarli o'zgarib borgan: nisbatan yuqori ijtimoiy-iqtisodiy statusga ega oilalarning farzandlari, nisbatan quyi ijtimoiy-iqtisodiy statusga ega oilalarning farzandlariga nisbatan o'zlashtirish darajada yuqori.
 
 ### Shahar-qishloq tengsizligi
 Barcha IIS detsillari bo'ylab shahar hududida yashovchi o'quvchilar qishloq hududidagi tengdoshlaridan yuqori natijalar ko'rsatmoqda. Bu farq ayniqsa o'qish ko'rsatkichlarida yaqqol namoyon bo'ladi.
@@ -499,7 +500,7 @@ Barcha IIS detsillari bo'ylab shahar hududida yashovchi o'quvchilar qishloq hudu
 Kompyuter, internet va ta'lim dasturiy ta'minotlariga ega bo'lish darajasi IIS detsillari bo'ylab keskin farqlanadi. 1-detsildagi oila farzandlarining uchdan bir qismida kompyuter mavjud bo'lsa, 10-detsilda bu ko'rsatkich **90%**ni tashkil qiladi.
 
 ### Maktab ta'lim sifati
-Oaxaca-Blinder dekompozitsiyasi natijalari shuni ko'rsatadiki, boy va kambag'al oilalardagi o'quvchilar o'rtasidagi o'zlashtirish farqining **50%dan ortig'i** maktabdagi ta'lim sifati bilan tushuntiriladi.
+Oaxakaa-Blaynder dekompozitsiyasi natijalari shuni ko'rsatadiki, boy va kambag'al oilalardagi o'quvchilar o'rtasidagi o'zlashtirish farqining **50%dan ortig'i** maktabdagi ta'lim sifati bilan tushuntiriladi.
 
 ### Ota-onalar ishtiroki
 Ota-onalarning ta'lim jarayonidagi ishtiroki barcha ijtimoiy-iqtisodiy guruhlarda nisbatan teng va yuqori darajada ekanligi **ijobiy holat** hisoblanadi.
@@ -510,13 +511,9 @@ Ota-onalarning ta'lim jarayonidagi ishtiroki barcha ijtimoiy-iqtisodiy guruhlard
 
 
 
-
-
 **Maktablararo ta'lim sifati tengsizligini kamaytirish:**
 
-- Nisbatan quyi ijtimoiy-iqtisodiy statusga ega oila farzandlari o'rtacha o'zlashtirish ko'rsatkichi past bo'lgan maktablarda ta'lim olayotganini hisobga olish lozim
-- Ixtisoslashtirilgan maktablarga nisbatan past daromadga ega oilalar farzandlarini jalb qilish bo'yicha maqsadli tadbirlar ishlab chiqish lozim
-- Masalan, ixtisoslashtirilgan maktablar qoshida nisbatan past daromad oladigan oila farzandlari uchun, ixtisoslashtirilgan maktab imtihonlariga tayyorlov kurslari ushbu turdagi oila farzandlariga ixtisoslashtirilgan maktabga kirish ehtimolini oshirishi mumkin
+- Nisbatan quyi ijtimoiy-iqtisodiy statusga ega oila farzandlari o'rtacha o'zlashtirish ko'rsatkichi past bo'lgan maktablarda ta'lim olayotganini hisobga olish lozim. Shu ma'noda, o'rtacha akademik ko'rsatkichlari past bo'lgan maktablarda ta'lim sifatini yaxshilash nafaqat ta'lim tizimi islohoti sifatida balki **ijtimoiy himoya** siyosati sifatida ham muhim hisoblanadi.
 
 
 
@@ -539,8 +536,8 @@ Ota-onalarning ta'lim jarayonidagi ishtiroki barcha ijtimoiy-iqtisodiy guruhlard
 ### 1.1. Ta'lim xarajatlari: jins kesimida
 
 ```{r}
-#| label: fig-hbs-gender
-#| fig-cap: "Bir o'quvchiga to'g'ri keluvchi o'rtacha ta'lim xarajati: jon boshiga daromad detsillari va jins kesimida (Uy xo'jaligi daromadlari va xarajatlari so'rovnomasi, 2024)"
+#| label: hbs-gender
+#| fig-cap: "9-rasm. Bir o'quvchiga to'g'ri keluvchi o'rtacha ta'lim xarajati: jon boshiga daromad detsillari va jins kesimida (Uy xo'jaligi daromadlari va xarajatlari so'rovnomasi, 2024)"
 
 gender_decile_cost <- read_xlsx("tables/hbs_edu_2_gender_decile_cost.xlsx")
 
@@ -567,8 +564,8 @@ ggplotly(p, tooltip = "text") %>%
 ### 1.2. Ta'lim xarajatlari: shahar/qishloq kesimida
 
 ```{r}
-#| label: fig-hbs-ur
-#| fig-cap: "Bir o'quvchiga to'g'ri keluvchi o'rtacha ta'lim xarajati: jon boshiga daromad detsillari va aholi yashash punkti tipi kesimida (Uy xo'jaligi daromadlari va xarajatlari so'rovnomasi, 2024)"
+#| label: hbs-ur
+#| fig-cap: "10-rasm. Bir o'quvchiga to'g'ri keluvchi o'rtacha ta'lim xarajati: jon boshiga daromad detsillari va aholi yashash punkti tipi kesimida (Uy xo'jaligi daromadlari va xarajatlari so'rovnomasi, 2024)"
 
 urban_decile_avg_cost <- read_xlsx("tables/hbs_edu_2_urban_decile_avg_cost.xlsx")
 
@@ -595,8 +592,8 @@ ggplotly(p, tooltip = "text") %>%
 ### 1.3. Darslik va kantselyariya xarajatlari: shahar/qishloq kesimida
 
 ```{r}
-#| label: fig-hbs-text
-#| fig-cap: "Darslik va kantselyariya xarajatlari: jon boshiga daromad detsillari va aholi yashash punkti tipi kesimida (Uy xo'jaligi daromadlari va xarajatlari so'rovnomasi, 2024)"
+#| label: hbs-text
+#| fig-cap: "11-rasm. Darslik va kantselyariya xarajatlari: jon boshiga daromad detsillari va aholi yashash punkti tipi kesimida (Uy xo'jaligi daromadlari va xarajatlari so'rovnomasi, 2024)"
 
 urban_decile_textsupply_avg_cost <- read_xlsx("tables/hbs_edu_2_urban_decile_textsupply_avg_cost.xlsx")
 
@@ -634,8 +631,8 @@ ggplotly(p, tooltip = "text") %>%
 #### Kitoblar soni
 
 ```{r books-interactive}
-#| label: fig-books-interactive
-#| fig-cap: "Kitoblarning o'rtacha soni (interaktiv)"
+#| label: books-interactive
+#| fig-cap: "12-rasm. Kitoblarning o'rtacha soni (interaktiv)"
 
 books_by_decile <- read_csv("tables/mics_books_by_decile.csv", show_col_types = FALSE)
 
@@ -660,8 +657,8 @@ ggplotly(p, tooltip = "text") %>% plotly_config()
 #### Uy vazifasiga yordam
 
 ```{r help-interactive}
-#| label: fig-help-interactive
-#| fig-cap: "Uy vazifasiga yordam berish darajasi (interaktiv)"
+#| label: help-interactive
+#| fig-cap: "13-rasm. Uy vazifasiga yordam berish darajasi (interaktiv)"
 
 help_by_decile <- read_csv("tables/mics_help_by_decile.csv", show_col_types = FALSE)
 
@@ -686,8 +683,8 @@ ggplotly(p, tooltip = "text") %>% plotly_config()
 #### Yig'ilishda qatnashish
 
 ```{r meeting-interactive}
-#| label: fig-meeting-interactive
-#| fig-cap: "Maktab yig'ilishida qatnashish darajasi (interaktiv)"
+#| label: meeting-interactive
+#| fig-cap: "14-rasm. Maktab yig'ilishida qatnashish darajasi (interaktiv)"
 
 meeting_by_decile <- read_csv("tables/mics_meeting_by_decile.csv", show_col_types = FALSE)
 
@@ -712,8 +709,8 @@ ggplotly(p, tooltip = "text") %>% plotly_config()
 #### Progress muhokamasi
 
 ```{r progress-interactive}
-#| label: fig-progress-interactive
-#| fig-cap: "Bola progressini muhokama qilish (interaktiv)"
+#| label: progress-interactive
+#| fig-cap: "15-rasm. Bola progressini muhokama qilish (interaktiv)"
 
 progress_disc_by_decile <- read_csv("tables/mics_progress_by_decile.csv", show_col_types = FALSE)
 
@@ -738,8 +735,8 @@ ggplotly(p, tooltip = "text") %>% plotly_config()
 #### Barcha ko'rsatkichlar
 
 ```{r all-mics-combined}
-#| label: fig-all-mics
-#| fig-cap: "Barcha MICS ko'rsatkichlari birgalikda"
+#| label: all-mics
+#| fig-cap: "16-rasm. Barcha MICS ko'rsatkichlari birgalikda"
 
 all_mics <- bind_rows(
   help_by_decile %>% mutate(indicator = "Uy vazifasiga yordam", value = help_rate_pct),
@@ -774,7 +771,7 @@ ggplotly(p, tooltip = "text") %>%
 #### Kitoblar
 
 ```{r books-gender-interactive}
-#| label: fig-books-gender-interactive
+#| label: books-gender-interactive
 
 books_by_decile_gender <- read_csv("tables/mics_books_by_gender.csv", show_col_types = FALSE)
 
@@ -797,7 +794,7 @@ ggplotly(p, tooltip = "text") %>% plotly_config()
 #### Yordam
 
 ```{r help-gender-interactive}
-#| label: fig-help-gender-interactive
+#| label: help-gender-interactive
 
 help_by_decile_gender <- read_csv("tables/mics_help_by_gender.csv", show_col_types = FALSE)
 
@@ -820,7 +817,7 @@ ggplotly(p, tooltip = "text") %>% plotly_config()
 #### Yig'ilish
 
 ```{r meeting-gender-interactive}
-#| label: fig-meeting-gender-interactive
+#| label: meeting-gender-interactive
 
 meeting_by_decile_gender <- read_csv("tables/mics_meeting_by_gender.csv", show_col_types = FALSE)
 
@@ -843,7 +840,7 @@ ggplotly(p, tooltip = "text") %>% plotly_config()
 #### Progress
 
 ```{r progress-gender-interactive}
-#| label: fig-progress-gender-interactive
+#| label: progress-gender-interactive
 
 progress_disc_by_decile_gender <- read_csv("tables/mics_progress_by_gender.csv", show_col_types = FALSE)
 
@@ -872,7 +869,7 @@ ggplotly(p, tooltip = "text") %>% plotly_config()
 #### Kitoblar
 
 ```{r books-ur-interactive}
-#| label: fig-books-ur-interactive
+#| label: books-ur-interactive
 
 books_by_decile_ur <- read_csv("tables/mics_books_by_ur.csv", show_col_types = FALSE)
 
@@ -895,7 +892,7 @@ ggplotly(p, tooltip = "text") %>% plotly_config()
 #### Yordam
 
 ```{r help-ur-interactive}
-#| label: fig-help-ur-interactive
+#| label: help-ur-interactive
 
 help_by_decile_ur <- read_csv("tables/mics_help_by_ur.csv", show_col_types = FALSE)
 
@@ -918,7 +915,7 @@ ggplotly(p, tooltip = "text") %>% plotly_config()
 #### Yig'ilish
 
 ```{r meeting-ur-interactive}
-#| label: fig-meeting-ur-interactive
+#| label: meeting-ur-interactive
 
 meeting_by_decile_ur <- read_csv("tables/mics_meeting_by_ur.csv", show_col_types = FALSE)
 
@@ -941,7 +938,7 @@ ggplotly(p, tooltip = "text") %>% plotly_config()
 #### Progress
 
 ```{r progress-ur-interactive}
-#| label: fig-progress-ur-interactive
+#| label: progress-ur-interactive
 
 progress_disc_by_decile_ur <- read_csv("tables/mics_progress_by_ur.csv", show_col_types = FALSE)
 
