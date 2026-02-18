@@ -530,7 +530,7 @@ Ota-onalarning ta'lim jarayonidagi ishtiroki barcha ijtimoiy-iqtisodiy guruhlard
 
 
 
-<div id="sec-ilova-1"></div>
+<div id="sec-ilova-1" style="scroll-margin-top: 20px;"></div>
 
 ::: {.callout-note collapse="true"}
 ## 1-Ilova: HBS Ta'lim xarajatlari
@@ -623,7 +623,7 @@ ggplotly(p, tooltip = "text") %>%
 
 :::
 
-<div id="sec-ilova-2"></div>
+<div id="sec-ilova-2" style="scroll-margin-top: 20px;"></div>
 
 ::: {.callout-note collapse="true"}
 ## 2-Ilova: MICS Ma'lumotlari Tahlili
@@ -966,7 +966,7 @@ ggplotly(p, tooltip = "text") %>% plotly_config()
 
 :::
 
-<div id="sec-ilova-3"></div>
+<div id="sec-ilova-3" style="scroll-margin-top: 20px;"></div>
 
 ::: {.callout-note collapse="true"}
 ## 3-Ilova: Ijtimoiy reestrga kiritilgan oilalar uchun ta'lim sohasidagi imtiyozlar
