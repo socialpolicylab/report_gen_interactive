@@ -1,0 +1,31 @@
+group,indicator,contribution_share,indicator_label
+Qishloq,bilc_assetownership,0.11264783891266432,Aktivlar mavjudligi
+Qishloq,bilc_drinkningwater,0.03332909697159743,Ichimlik suvi
+Qishloq,bilc_heatingfuel,0.09611964166766189,Isitish manbai
+Qishloq,bilc_housing,0.04600688845191208,Uy-joy materiali
+Qishloq,bilc_overcrowding,0.06602721021529445,Haddan tashqari zich yashash
+Qishloq,bilc_sanitation,0.10344684441078063,Sanitariya holati
+Qishloq,hsc_affordmedicine,0.0026197320362828414,Dori xarid qilish imkoniyati
+Qishloq,hsc_commtech,0.24090166808339966,Aloqa va texnologiya
+Qishloq,hsc_education,0.2469368869383175,Ta'lim darajasi
+Qishloq,unemp_unemployment,0.051964192312089146,Ishsizlik
+Shahar,bilc_assetownership,0.1192115347828189,Aktivlar mavjudligi
+Shahar,bilc_drinkningwater,0.017172262874992905,Ichimlik suvi
+Shahar,bilc_heatingfuel,0.04583264138370306,Isitish manbai
+Shahar,bilc_housing,0.05690243405106903,Uy-joy materiali
+Shahar,bilc_overcrowding,0.0699335097717302,Haddan tashqari zich yashash
+Shahar,bilc_sanitation,0.07732458288575579,Sanitariya holati
+Shahar,hsc_affordmedicine,0.0039141576047541675,Dori xarid qilish imkoniyati
+Shahar,hsc_commtech,0.25452535058197345,Aloqa va texnologiya
+Shahar,hsc_education,0.2650654076336584,Ta'lim darajasi
+Shahar,unemp_unemployment,0.09011811842954412,Ishsizlik
+Umumiy,bilc_assetownership,0.11417733597318867,Aktivlar mavjudligi
+Umumiy,bilc_drinkningwater,0.02956415935922442,Ichimlik suvi
+Umumiy,bilc_heatingfuel,0.08440206002764598,Isitish manbai
+Umumiy,bilc_housing,0.04854603860053704,Uy-joy materiali
+Umumiy,bilc_overcrowding,0.06693718326389181,Haddan tashqari zich yashash
+Umumiy,bilc_sanitation,0.09736001402872166,Sanitariya holati
+Umumiy,hsc_affordmedicine,0.002921344131791611,Dori xarid qilish imkoniyati
+Umumiy,hsc_commtech,0.24407624492658922,Aloqa va texnologiya
+Umumiy,hsc_education,0.2511611412247505,Ta'lim darajasi
+Umumiy,unemp_unemployment,0.060854478463659045,Ishsizlik

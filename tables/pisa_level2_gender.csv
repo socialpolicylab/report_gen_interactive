@@ -1,0 +1,67 @@
+ESCS_w_decile,Percentage,Gender,Subject,Decile_num
+D1,7.19,Qiz,Matematika,1
+D1,13.63,O'g'il,Matematika,1
+D2,15.19,Qiz,Matematika,2
+D2,23.43,O'g'il,Matematika,2
+D3,14.42,Qiz,Matematika,3
+D3,21.5,O'g'il,Matematika,3
+D4,12.06,Qiz,Matematika,4
+D4,17.31,O'g'il,Matematika,4
+D5,14.67,Qiz,Matematika,5
+D5,19.77,O'g'il,Matematika,5
+D6,18,Qiz,Matematika,6
+D6,22.96,O'g'il,Matematika,6
+D7,18.92,Qiz,Matematika,7
+D7,20.95,O'g'il,Matematika,7
+D8,18.78,Qiz,Matematika,8
+D8,22.93,O'g'il,Matematika,8
+D9,22.5,Qiz,Matematika,9
+D9,29.33,O'g'il,Matematika,9
+D10,30.42,Qiz,Matematika,10
+D10,34.6,O'g'il,Matematika,10
+NA,13.79,Qiz,Matematika,NA
+NA,11.22,O'g'il,Matematika,NA
+D1,6.89,Qiz,O'qish,1
+D1,6.18,O'g'il,O'qish,1
+D2,13.91,Qiz,O'qish,2
+D2,12.39,O'g'il,O'qish,2
+D3,13.83,Qiz,O'qish,3
+D3,10.88,O'g'il,O'qish,3
+D4,13.67,Qiz,O'qish,4
+D4,9.12,O'g'il,O'qish,4
+D5,15.21,Qiz,O'qish,5
+D5,12.51,O'g'il,O'qish,5
+D6,19.01,Qiz,O'qish,6
+D6,14.05,O'g'il,O'qish,6
+D7,16.75,Qiz,O'qish,7
+D7,11.03,O'g'il,O'qish,7
+D8,20.34,Qiz,O'qish,8
+D8,11.66,O'g'il,O'qish,8
+D9,22.99,Qiz,O'qish,9
+D9,17.26,O'g'il,O'qish,9
+D10,27.02,Qiz,O'qish,10
+D10,19.73,O'g'il,O'qish,10
+NA,5.63,Qiz,O'qish,NA
+NA,1.65,O'g'il,O'qish,NA
+D1,9.16,Qiz,Tabiiy fanlar,1
+D1,10.57,O'g'il,Tabiiy fanlar,1
+D2,17.36,Qiz,Tabiiy fanlar,2
+D2,22.12,O'g'il,Tabiiy fanlar,2
+D3,16.84,Qiz,Tabiiy fanlar,3
+D3,20.41,O'g'il,Tabiiy fanlar,3
+D4,13.39,Qiz,Tabiiy fanlar,4
+D4,15.74,O'g'il,Tabiiy fanlar,4
+D5,16.41,Qiz,Tabiiy fanlar,5
+D5,17.8,O'g'il,Tabiiy fanlar,5
+D6,20.59,Qiz,Tabiiy fanlar,6
+D6,21.01,O'g'il,Tabiiy fanlar,6
+D7,19.69,Qiz,Tabiiy fanlar,7
+D7,18.01,O'g'il,Tabiiy fanlar,7
+D8,22.26,Qiz,Tabiiy fanlar,8
+D8,21.02,O'g'il,Tabiiy fanlar,8
+D9,24.71,Qiz,Tabiiy fanlar,9
+D9,24.43,O'g'il,Tabiiy fanlar,9
+D10,30.13,Qiz,Tabiiy fanlar,10
+D10,27.7,O'g'il,Tabiiy fanlar,10
+NA,17.59,Qiz,Tabiiy fanlar,NA
+NA,12.15,O'g'il,Tabiiy fanlar,NA

@@ -1,0 +1,34 @@
+ESCS_w_decile,Percentage,Subject,Decile_num
+D1,10.26,Matematika,1
+D2,19.1,Matematika,2
+D3,17.99,Matematika,3
+D4,14.92,Matematika,4
+D5,17.47,Matematika,5
+D6,20.57,Matematika,6
+D7,19.98,Matematika,7
+D8,20.94,Matematika,8
+D9,25.95,Matematika,9
+D10,32.4,Matematika,10
+NA,12.44,Matematika,NA
+D1,6.55,O'qish,1
+D2,13.19,O'qish,2
+D3,12.35,O'qish,3
+D4,11.19,O'qish,4
+D5,13.72,O'qish,5
+D6,16.44,O'qish,6
+D7,13.75,O'qish,7
+D8,15.82,O'qish,8
+D9,20.09,O'qish,9
+D10,23.57,O'qish,10
+NA,3.54,O'qish,NA
+D1,9.83,Tabiiy fanlar,1
+D2,19.62,Tabiiy fanlar,2
+D3,18.64,Tabiiy fanlar,3
+D4,14.67,Tabiiy fanlar,4
+D5,17.18,Tabiiy fanlar,5
+D6,20.81,Tabiiy fanlar,6
+D7,18.81,Tabiiy fanlar,7
+D8,21.61,Tabiiy fanlar,8
+D9,24.57,Tabiiy fanlar,9
+D10,28.98,Tabiiy fanlar,10
+NA,14.73,Tabiiy fanlar,NA

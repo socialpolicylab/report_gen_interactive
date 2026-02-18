@@ -1,0 +1,45 @@
+ESCS_w_decile,Variable,Percent,Variable_label,Decile_num
+D1,ST250Q01JA,76.36363636363637,O'z xonasi bormi?,1
+D1,ST250Q02JA,27.912087912087912,O'qish uchun kompyuteri bormi?,1
+D1,ST250Q03JA,40.99099099099099,Ta'lim dasturiy ta'minotlaridan foydalanadimi?,1
+D1,ST250Q05JA,42.1822272215973,Uyda internet bormi?,1
+D2,ST250Q01JA,82.08168642951252,O'z xonasi bormi?,2
+D2,ST250Q02JA,40.50802139037433,O'qish uchun kompyuteri bormi?,2
+D2,ST250Q03JA,45.29331514324693,Ta'lim dasturiy ta'minotlaridan foydalanadimi?,2
+D2,ST250Q05JA,52.2911051212938,Uyda internet bormi?,2
+D3,ST250Q01JA,83.42939481268012,O'z xonasi bormi?,3
+D3,ST250Q02JA,49.25373134328358,O'qish uchun kompyuteri bormi?,3
+D3,ST250Q03JA,50.453172205438065,Ta'lim dasturiy ta'minotlaridan foydalanadimi?,3
+D3,ST250Q05JA,55.338345864661655,Uyda internet bormi?,3
+D4,ST250Q01JA,82.87373004354136,O'z xonasi bormi?,4
+D4,ST250Q02JA,49.17787742899851,O'qish uchun kompyuteri bormi?,4
+D4,ST250Q03JA,54.19847328244275,Ta'lim dasturiy ta'minotlaridan foydalanadimi?,4
+D4,ST250Q05JA,58.28313253012048,Uyda internet bormi?,4
+D5,ST250Q01JA,87.42603550295857,O'z xonasi bormi?,5
+D5,ST250Q02JA,58.35866261398176,O'qish uchun kompyuteri bormi?,5
+D5,ST250Q03JA,59.4679186228482,Ta'lim dasturiy ta'minotlaridan foydalanadimi?,5
+D5,ST250Q05JA,67.85714285714286,Uyda internet bormi?,5
+D6,ST250Q01JA,88.47352024922118,O'z xonasi bormi?,6
+D6,ST250Q02JA,62.11878009630819,O'qish uchun kompyuteri bormi?,6
+D6,ST250Q03JA,58.00653594771242,Ta'lim dasturiy ta'minotlaridan foydalanadimi?,6
+D6,ST250Q05JA,65.08972267536704,Uyda internet bormi?,6
+D7,ST250Q01JA,85.202492211838,O'z xonasi bormi?,7
+D7,ST250Q02JA,63.20907617504052,O'qish uchun kompyuteri bormi?,7
+D7,ST250Q03JA,57.70491803278689,Ta'lim dasturiy ta'minotlaridan foydalanadimi?,7
+D7,ST250Q05JA,66.07431340872375,Uyda internet bormi?,7
+D8,ST250Q01JA,85.949177877429,O'z xonasi bormi?,8
+D8,ST250Q02JA,65.05295007564297,O'qish uchun kompyuteri bormi?,8
+D8,ST250Q03JA,60.33690658499234,Ta'lim dasturiy ta'minotlaridan foydalanadimi?,8
+D8,ST250Q05JA,72.75494672754947,Uyda internet bormi?,8
+D9,ST250Q01JA,92.3076923076923,O'z xonasi bormi?,9
+D9,ST250Q02JA,81.03448275862068,O'qish uchun kompyuteri bormi?,9
+D9,ST250Q03JA,69.05901116427432,Ta'lim dasturiy ta'minotlaridan foydalanadimi?,9
+D9,ST250Q05JA,78.9308176100629,Uyda internet bormi?,9
+D10,ST250Q01JA,94.42675159235668,O'z xonasi bormi?,10
+D10,ST250Q02JA,90.64516129032259,O'qish uchun kompyuteri bormi?,10
+D10,ST250Q03JA,76.3458401305057,Ta'lim dasturiy ta'minotlaridan foydalanadimi?,10
+D10,ST250Q05JA,87.78501628664495,Uyda internet bormi?,10
+NA,ST250Q01JA,76.92307692307693,O'z xonasi bormi?,NA
+NA,ST250Q02JA,45.45454545454545,O'qish uchun kompyuteri bormi?,NA
+NA,ST250Q03JA,70,Ta'lim dasturiy ta'minotlaridan foydalanadimi?,NA
+NA,ST250Q05JA,81.81818181818183,Uyda internet bormi?,NA
