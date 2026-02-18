@@ -110,7 +110,6 @@ Ushbu muammolarni tahlil qilish orqali hisobot ta'limdagi to'siqlarni bevosita b
 
 Kambag'allikni faqat monetar asoslarda emas, balki, ko'p o'lchamli miqyosda qaralganda, eng muhim omillardan biri bu ta'lim hisoblanadi. Iqtisodiy tadqiqotlar va ishlohotlar markazi hisoblagan Ko'p o'lchovli kambag'allik indeksi natijalariga ko'ra, kambag'allikka eng ko'p hissa qo'shayotgan omil bu ta'lim hisoblanadi @cerrandundpcountryofficeinuzbekistanUzbekistanPilotMultidimensional2023.
 
-Xususan, 2025-yilning birinchi yarmida "Kambag'allik reestri" ma'lumotlari asosida hisoblangan ko'p o'lchovli kambag'allik indeksi natijalari ham ta'limdagi deprivatsiya ko'p o'lchovli kambag'allik indeksi hissa qo'shayotgan eng katta omil ekanligini ko'rsatadi.
 
 Kambag'allikning ta'limga ko'rsatkichlariga ta'sirini baholash uchun ushbu hisobot asosiy tahliliy o'zgaruvchi sifatida PISA oilaning ijtimoiy-iqtisodiy statusi indeksidan (IIS) foydalanadi. IIS Iqtisodiy hamkorlik va taraqqiyot tashkiloti tomonidan yaratilgan murakkab indeks bo'lib, u o'quvchining ijtimoiy-iqtisodiy kelib chiqishini har tomonlama o'lchaydi hamda uchta asosiy tarkibiy qism asosida hisoblanadi:
 
@@ -120,69 +119,12 @@ Kambag'allikning ta'limga ko'rsatkichlariga ta'sirini baholash uchun ushbu hisob
 
 PISA natijalari ma'lumotlarini IIS indeksi nuqtayi nazaridan tahlil qilish orqali biz bolaning ijtimoiy-iqtisodiy kelib chiqishi uning bugungi kunda O'zbekistonda ta'lim olishi va o'zlashtirishi imkoniyatlariga qay darajada ta'sir qilishini aniq miqdoriy baholashimiz mumkin.
 
-### Ko'p o'lchovli kambag'allik indeksi (MPI)
-
-```{r}
-#| label: mpi
-#| fig-cap: "1-rasm. Kambag'allik reestridagi oilalar uchun hisoblangan ko'p o'lchovli kambag'allik indeksi (Ijtimoiy himoya milli agentligi ma'lumotlari asosida tayyorlandi)"
-
-plot_data_mpi <- read_csv("tables/mpi_contributions.csv", show_col_types = FALSE)
-
-# Define colors
-bilc_vars <- c("bilc_overcrowding", "bilc_housing", "bilc_heatingfuel",
-               "bilc_sanitation", "bilc_drinkningwater", "bilc_assetownership")
-hsc_vars <- c("hsc_affordmedicine", "hsc_education", "hsc_commtech")
-unemp_var <- "unemp_unemployment"
-
-bilc_colors <- colorRampPalette(c("#659961", "#bcd2b7"))(length(bilc_vars))
-hsc_colors <- colorRampPalette(c("#f39200", "#fbe2bb"))(length(hsc_vars))
-unemp_color <- "darkgray"
-
-indicator_labels <- c(
-  "bilc_overcrowding" = "Haddan tashqari zich yashash",
-  "bilc_housing" = "Uy-joy materiali",
-  "bilc_heatingfuel" = "Isitish manbai",
-  "bilc_sanitation" = "Sanitariya holati",
-  "bilc_drinkningwater" = "Ichimlik suvi",
-  "bilc_assetownership" = "Aktivlar mavjudligi",
-  "hsc_affordmedicine" = "Dori xarid qilish imkoniyati",
-  "hsc_education" = "Ta'lim darajasi",
-  "hsc_commtech" = "Aloqa va texnologiya",
-  "unemp_unemployment" = "Ishsizlik"
-)
-
-indicator_colors <- setNames(
-  c(bilc_colors, hsc_colors, unemp_color),
-  c(bilc_vars, hsc_vars, unemp_var)
-)
-
-plot_data_mpi <- plot_data_mpi %>%
-  mutate(group = factor(group, levels = c("Umumiy", "Qishloq", "Shahar")))
-
-p <- ggplot(plot_data_mpi, aes(x = group, y = contribution_share * 100, fill = indicator_label,
-                                text = paste0("Hudud: ", group,
-                                             "<br>Indikator: ", indicator_label,
-                                             "<br>Hissa: ", round(contribution_share * 100, 1), "%"))) +
-  geom_col(position = "stack") +
-  scale_fill_manual(values = setNames(indicator_colors, indicator_labels)) +
-  labs(x = NULL, y = "Hissasi (%)", fill = "Indikator") +
-  theme_minimal(base_size = 13) +
-  theme(axis.text.x = element_text(angle = 0, hjust = 0.5))
-
-ggplotly(p, tooltip = "text") %>%
-  plotly_config() %>%
-  layout(
-    autosize = TRUE,
-    legend = list(orientation = "v", x = 1.02, y = 0.5)
-  )
-```
-
 ### PISA 2-daraja o'zlashtirish ko'rsatkichlari
 
 PISA tizimida o'qish, matematika va tabiiy fanlar bo'yicha o'quvchilar o'zlashtirish ko'rsatkichlari o'rganilgan. Ushbu fanlar bo'yicha o'zlashtirish ko'rsatkichlari turli darajalarga bo'linadi, bunda 2-daraja matematika, o'qish va tabiiy fanlar bo'yicha o'quvchilar bilimini o'lchash uchun muhim asos bo'lib xizmat qiladi. Bu daraja shunchaki statistik ko'rsatkich emas, u o'quvchilarning jamiyatda faol ishtirok etishi va o'z hissasini qo'shishi uchun fundamental deb hisoblangan muhim ko'nikma va bilimlarni o'zlashtirishini ifodalaydi.
 IISi 1-detsilidagi oila o'quvchilarining o'qish, matematika va tabiiy fanlar bo'yicha 2-darajada o'zlashtirish darajasi 10-detsildagi oila o'quvchilariga nisbatan qariyb 3 barobar past ekanligini ko'rishimiz mumkin. O'zlashtirish darajasi IISning 7-detsilidan boshlab sezilarli oshib bormoqda.
 IIS ning barcha detsillarida shahar hududida yashovchi o'quvchilar qishloqlarda yashovchi o'quvchilarga nisbatan o'qish, matematika va tabiiy fanlar bo'yicha 2-darajada o'zlashtirish darajasi yuqori ekanligini ko'rsatadi. Ayniqsa o'qish darajasida, shahar hududida yashovchi o'quvchilar qishloqlarda yashovchi o'quvchilarga nisbatan IIS barcha detsillarida yaxshi o'zlashtirmoqda. Matematika va tabiiy fanlarda esa, IIS ning birinchi detsildan boshlab farqlar juda kam, o'zlashtirish darajasidagi farqlar asosan IISning yuqori detsillarida ko'rinadi.
-O'zbekistonda IIS ning barcha detsillarida matematika fanidan o'g'il bolalar qiz bolalarga nisbatan o'zlashtirishi yuqori. O'qish borasida esa qiz bolalar o'g'il bolalarga nisbatan yaxshiroq o'zlashtirmoqda. Tabiiy fanlarda esa, dastlabki detsillarda o'g'il bolalar, yuqori detsillarda esa qiz bolalar yaxshiroq o'zlashtirgan. Bu yerda ham 2-rasmda qayd etilganidek, IISning 1-detsilidagi oila farzandlari boshqalarga nisbatan ancha past natijani qayd qilgan hamda o'zlashtirish darajasi ikkala jins bo'yicha ham IISning 7-detsilidan boshlab o'sib bormoqda.
+O'zbekistonda IIS ning barcha detsillarida matematika fanidan o'g'il bolalar qiz bolalarga nisbatan o'zlashtirishi yuqori. O'qish borasida esa qiz bolalar o'g'il bolalarga nisbatan yaxshiroq o'zlashtirmoqda. Tabiiy fanlarda esa, dastlabki detsillarda o'g'il bolalar, yuqori detsillarda esa qiz bolalar yaxshiroq o'zlashtirgan. Bu yerda ham 1-rasmda qayd etilganidek, IISning 1-detsilidagi oila farzandlari boshqalarga nisbatan ancha past natijani qayd qilgan hamda o'zlashtirish darajasi ikkala jins bo'yicha ham IISning 7-detsilidan boshlab o'sib bormoqda.
 
 ```{r}
 #| label: pisa-level2-load
@@ -201,7 +143,7 @@ level2_gender_all <- read_csv("tables/pisa_level2_gender.csv", show_col_types = 
 
 ```{r}
 #| label: level2-interactive
-#| fig-cap: "2-rasm. 2-darajaga erishgan o'quvchilar ulushi: IIS detsillari kesimida (PISA 2022, O'zbekiston)"
+#| fig-cap: "1-rasm. 2-darajaga erishgan o'quvchilar ulushi: IIS detsillari kesimida (PISA 2022, O'zbekiston)"
 
 p <- ggplot(level2_all, aes(x = Decile_num, y = Percentage, color = Subject, group = Subject,
                              text = paste0("IIS Detsili: D", Decile_num,
@@ -236,7 +178,7 @@ ggplotly(p, tooltip = "text") %>%
 
 ```{r}
 #| label: level2-rural-interactive
-#| fig-cap: "3-rasm. 2-darajaga erishgan o'quvchilar ulushi: aholi yashash punkti tipi kesimida"
+#| fig-cap: "2-rasm. 2-darajaga erishgan o'quvchilar ulushi: aholi yashash punkti tipi kesimida"
 
 p <- ggplot(level2_rural_all, aes(x = Decile_num, y = Percentage, color = rural, group = rural,
                                    text = paste0("Detsil: D", Decile_num,
@@ -270,7 +212,7 @@ ggplotly(p, tooltip = "text") %>%
 
 ```{r}
 #| label: level2-gender-interactive
-#| fig-cap: "4-rasm. 2-darajaga erishgan o'quvchilar ulushi: jins kesimida"
+#| fig-cap: "3-rasm. 2-darajaga erishgan o'quvchilar ulushi: jins kesimida"
 
 p <- ggplot(level2_gender_all, aes(x = Decile_num, y = Percentage, color = Gender, group = Gender,
                                     text = paste0("Detsil: D", Decile_num,
@@ -315,7 +257,7 @@ PISA savolnomasi asosida quyidagi savollarga o'quvchilarning javoblari IIS detsi
 
 ```{r}
 #| label: home-conditions-interactive
-#| fig-cap: "5-rasm. O'quvchilar ta'lim olishi uchun uy sharoitlari: IIS detsillari kesimida"
+#| fig-cap: "4-rasm. O'quvchilar ta'lim olishi uchun uy sharoitlari: IIS detsillari kesimida"
 
 percentages <- read_csv("tables/pisa_home_conditions.csv", show_col_types = FALSE)
 
@@ -349,7 +291,7 @@ IISning 1-detsilidagi oila farzandlarining taqriban uchdan bir qismida uyida kom
 
 ```{r}
 #| label: computer-rural-interactive
-#| fig-cap: "6-rasm. Kompyuter mavjudligi: aholi yashash punkti tipi va IIS detsillari kesimida"
+#| fig-cap: "5-rasm. Kompyuter mavjudligi: aholi yashash punkti tipi va IIS detsillari kesimida"
 
 computer_rural <- read_csv("tables/pisa_computer_rural.csv", show_col_types = FALSE)
 
@@ -383,7 +325,7 @@ Daromad detsillari bo'ylab umumiy maktab ta'limining umumiy iste'mol xarajatlari
 
 ```{r}
 #| label: hbs-edu
-#| fig-cap: "7-rasm. O'quvchilar ta'lim olishi uchun xarajatlar va ushbu xarajatlarning umumiy iste'mol xarajatlaridagi ulushi (Uy xo'jaligi daromadlari va xarajatlari so'rovnomasi, 2024)"
+#| fig-cap: "6-rasm. O'quvchilar ta'lim olishi uchun xarajatlar va ushbu xarajatlarning umumiy iste'mol xarajatlaridagi ulushi (Uy xo'jaligi daromadlari va xarajatlari so'rovnomasi, 2024)"
 
 decile_edu_cost <- read_xlsx("tables/hbs_edu_2_decile_edu_cost.xlsx")
 ratio_by_decile <- read_xlsx("tables/hbs_edu_2_ratio_by_decile.xlsx")
@@ -443,7 +385,7 @@ Buning uchun Oaxaka-Blaynder (ingliz tilida Oaxaca-Blinder) dekompozitsiya usuli
 
 ```{r}
 #| label: oaxaca
-#| fig-cap: "8-rasm. Oaxaka-Blaynder dekompozitsiyasi"
+#| fig-cap: "7-rasm. Oaxaka-Blaynder dekompozitsiyasi"
 
 oaxaca_df <- read_csv("tables/oaxaca_results.csv", show_col_types = FALSE)
 gap_total <- oaxaca_df$gap_total[1]
@@ -539,7 +481,7 @@ Ota-onalarning ta'lim jarayonidagi ishtiroki barcha ijtimoiy-iqtisodiy guruhlard
 
 ```{r}
 #| label: hbs-gender
-#| fig-cap: "9-rasm. Bir o'quvchiga to'g'ri keluvchi o'rtacha ta'lim xarajati: jon boshiga daromad detsillari va jins kesimida (Uy xo'jaligi daromadlari va xarajatlari so'rovnomasi, 2024)"
+#| fig-cap: "8-rasm. Bir o'quvchiga to'g'ri keluvchi o'rtacha ta'lim xarajati: jon boshiga daromad detsillari va jins kesimida (Uy xo'jaligi daromadlari va xarajatlari so'rovnomasi, 2024)"
 
 gender_decile_cost <- read_xlsx("tables/hbs_edu_2_gender_decile_cost.xlsx")
 
@@ -567,7 +509,7 @@ ggplotly(p, tooltip = "text") %>%
 
 ```{r}
 #| label: hbs-ur
-#| fig-cap: "10-rasm. Bir o'quvchiga to'g'ri keluvchi o'rtacha ta'lim xarajati: jon boshiga daromad detsillari va aholi yashash punkti tipi kesimida (Uy xo'jaligi daromadlari va xarajatlari so'rovnomasi, 2024)"
+#| fig-cap: "9-rasm. Bir o'quvchiga to'g'ri keluvchi o'rtacha ta'lim xarajati: jon boshiga daromad detsillari va aholi yashash punkti tipi kesimida (Uy xo'jaligi daromadlari va xarajatlari so'rovnomasi, 2024)"
 
 urban_decile_avg_cost <- read_xlsx("tables/hbs_edu_2_urban_decile_avg_cost.xlsx")
 
@@ -595,7 +537,7 @@ ggplotly(p, tooltip = "text") %>%
 
 ```{r}
 #| label: hbs-text
-#| fig-cap: "11-rasm. Darslik va kantselyariya xarajatlari: jon boshiga daromad detsillari va aholi yashash punkti tipi kesimida (Uy xo'jaligi daromadlari va xarajatlari so'rovnomasi, 2024)"
+#| fig-cap: "10-rasm. Darslik va kantselyariya xarajatlari: jon boshiga daromad detsillari va aholi yashash punkti tipi kesimida (Uy xo'jaligi daromadlari va xarajatlari so'rovnomasi, 2024)"
 
 urban_decile_textsupply_avg_cost <- read_xlsx("tables/hbs_edu_2_urban_decile_textsupply_avg_cost.xlsx")
 
@@ -636,7 +578,7 @@ ggplotly(p, tooltip = "text") %>%
 
 ```{r books-interactive}
 #| label: books-interactive
-#| fig-cap: "12-rasm. Kitoblarning o'rtacha soni (interaktiv)"
+#| fig-cap: "11-rasm. Kitoblarning o'rtacha soni (interaktiv)"
 
 books_by_decile <- read_csv("tables/mics_books_by_decile.csv", show_col_types = FALSE)
 
@@ -662,7 +604,7 @@ ggplotly(p, tooltip = "text") %>% plotly_config()
 
 ```{r help-interactive}
 #| label: help-interactive
-#| fig-cap: "13-rasm. Uy vazifasiga yordam berish darajasi (interaktiv)"
+#| fig-cap: "12-rasm. Uy vazifasiga yordam berish darajasi (interaktiv)"
 
 help_by_decile <- read_csv("tables/mics_help_by_decile.csv", show_col_types = FALSE)
 
@@ -688,7 +630,7 @@ ggplotly(p, tooltip = "text") %>% plotly_config()
 
 ```{r meeting-interactive}
 #| label: meeting-interactive
-#| fig-cap: "14-rasm. Maktab yig'ilishida qatnashish darajasi (interaktiv)"
+#| fig-cap: "13-rasm. Maktab yig'ilishida qatnashish darajasi (interaktiv)"
 
 meeting_by_decile <- read_csv("tables/mics_meeting_by_decile.csv", show_col_types = FALSE)
 
@@ -714,7 +656,7 @@ ggplotly(p, tooltip = "text") %>% plotly_config()
 
 ```{r progress-interactive}
 #| label: progress-interactive
-#| fig-cap: "15-rasm. Bola progressini muhokama qilish (interaktiv)"
+#| fig-cap: "14-rasm. Bola progressini muhokama qilish (interaktiv)"
 
 progress_disc_by_decile <- read_csv("tables/mics_progress_by_decile.csv", show_col_types = FALSE)
 
@@ -740,7 +682,7 @@ ggplotly(p, tooltip = "text") %>% plotly_config()
 
 ```{r all-mics-combined}
 #| label: all-mics
-#| fig-cap: "16-rasm. Barcha MICS ko'rsatkichlari birgalikda"
+#| fig-cap: "15-rasm. Barcha MICS ko'rsatkichlari birgalikda"
 
 all_mics <- bind_rows(
   help_by_decile %>% mutate(indicator = "Uy vazifasiga yordam", value = help_rate_pct),
@@ -1060,19 +1002,17 @@ datatable(imtiyozlar_df,
 #| tbl-cap: "Tadqiqotda foydalanilgan ma'lumotlar manbalari"
 
 sources_df <- data.frame(
-  `Ma'lumot turi` = c("PISA", "HBS", "MICS", "MPI"),
+  `Ma'lumot turi` = c("PISA", "HBS", "MICS"),
   Manba = c(
     "OECD Programme for International Student Assessment",
     "Milliy statistika qo'mitasi - Uy xo'jaligi daromadlari va xarajatlari so'rovnomasi",
-    "UNICEF/Milliy statistika qo'mitasi - Multiindikator klaster so'rovnomasi",
-    "Ijtimoiy himoya milliy agentligi - Kambag'allik reestri"
+    "UNICEF/Milliy statistika qo'mitasi - Multiindikator klaster so'rovnomasi"
   ),
-  Yil = c("2022", "2024", "2021-2022", "2025"),
+  Yil = c("2022", "2024", "2021-2022"),
   Qamrov = c(
     "15-yoshli o'quvchilar",
     "Uy xo'jaliklari",
-    "Uy xo'jaliklari va bolalar",
-    "Kambag'allik reestridagi oilalar"
+    "Uy xo'jaliklari va bolalar"
   ),
   check.names = FALSE
 )
@@ -1085,8 +1025,7 @@ datatable(sources_df,
             columnDefs = list(
               list(width = '15%', targets = 0),
               list(width = '45%', targets = 1),
-              list(width = '15%', targets = 2),
-              list(width = '25%', targets = 3)
+              list(width = '15%', targets = 2)
             )
           ),
           rownames = FALSE,
