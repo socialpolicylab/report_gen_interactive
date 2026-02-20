@@ -11,17 +11,20 @@ Ushbu tadqiqotda faqat **endowments** (resurslar farqi) qismi tahlil qilingan.
 
 ## Umumiy farq
 
+
 | Ko'rsatkich                   | Qiymat         |
 | ----------------------------- | -------------- |
 | Umumiy farq (boy − kambag'al) | **-27.6 ball** |
 | Standart xatolik              | 2.0            |
 | 95% ishonch oralig'i          | [-31.6, -23.7] |
 
+
 Manfiy qiymat shuni anglatadiki, **kambag'al oila farzandlari** boy oila farzandlariga nisbatan matematika fanidan o'rtacha **27.6 ball past** natija ko'rsatgan.
 
 ## Koeffitsiyentlar tushuntirishi
 
 Quyidagi jadvalda har bir o'zgaruvchining umumiy farqqa qo'shgan hissasi keltirilgan. **Manfiy koeffitsiyent** — ushbu omil kambag'al oila o'quvchilarining pastroq natijasiga hissa qo'shayotganini bildiradi. **Musbat koeffitsiyent** — ushbu omil farqni kamaytirayotganini (ya'ni kambag'al oila o'quvchilari foydasiga ishlayotganini) bildiradi.
+
 
 | O'zgaruvchi                           | Koeffitsiyent (ball) | Ulushi (%) | Talqin                                                                                                                                                                                                                                                            |
 | ------------------------------------- | -------------------- | ---------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -34,6 +37,7 @@ Quyidagi jadvalda har bir o'zgaruvchining umumiy farqqa qo'shgan hissasi keltiri
 | **Matematika darslari soni**          | +0.1                 | -0.5%      | Kambag'al oila bolalari haftada biroz ko'proq matematika darsiga ega, bu farqni ozgina kamaytiradi                                                                                                                                                                |
 | **Qishloq**                           | +1.5                 | -5.4%      | Kambag'al oilalar ko'proq qishloqda yashaydi, lekin qishloq o'quvchilari bu tahlilda nisbatan **yaxshiroq** natija ko'rsatgan. Bu boshqa omillar (masalan, maktab sifati) hisobga olingandan keyin qishloq o'zi mustaqil salbiy ta'sir ko'rsatmasligini bildiradi |
 
+
 ## Asosiy xulosalar
 
 1. **Maktab sifati eng muhim omil.** Umumiy 27.6 ballik farqning 13.2 balli (48%) kambag'al oila bolalarining sifati pastroq maktablarda o'qishi bilan tushuntiriladi.
@@ -41,8 +45,9 @@ Quyidagi jadvalda har bir o'zgaruvchining umumiy farqqa qo'shgan hissasi keltiri
 3. **Qishloq omili kutilganidan farqli.** Boshqa omillar (ayniqsa maktab sifati) hisobga olinganda, qishloqda yashash o'z-o'zidan salbiy ta'sir ko'rsatmaydi. Tavsifiy tahlilda ko'ringan shahar-qishloq farqi aslida maktab sifati va boshqa omillarning notekis taqsimlanishi bilan bog'liq.
 4. **Xususiy repetitor kambag'al oilalarda ko'proq.** Bu kambag'al oilalarning ta'limdagi kamchiliklarni qoplash uchun qo'shimcha investitsiya qilayotganini ko'rsatishi mumkin.
 
-## Metodologik ogohlantirishlar
+## Metodologik ogohlantirishlar 
 
 - Koeffitsiyentlar **sababiy** aloqani emas, balki **korrelyatsion** bog'liqlikni ko'rsatadi.
 - **Endogenlik muammosi** saqlanib qoladi: masalan, xususiy repetitorga borish biz kuzatmayotgan boshqa omillar ta'sirida yuz berishi mumkin.
 - Natijalar faqat PISA 2022 ma'lumotlari asosida O'zbekiston kontekstida amal qiladi.
+

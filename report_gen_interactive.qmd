@@ -77,8 +77,6 @@ mics_ur_palette <- c("Shahar" = "#009E73", "Qishloq" = "#CC79A7")
 
 # Kirish {#sec-kirish}
 
-
-
 Ta'limning kambag'allikni kamaytirishdagi roli borasidagi o'rganishlar muhim tadqiqot yo'nalishi sifatida e'tirof etiladi. So'nggi o'n yilliklarda tadqiqotlar ta'limning inson kapitalini oshirish, daromadlar o'rtasidagi tengsizlikni kamaytirish va ijtimoiy mobillikni rag'batlantirishda muhim o'ringa ega ekanligi butun dunyoda, xususan, Xitoy, Braziliya va Janubiy Afrika kabi rivojlanayotgan mamlakatlarda qilingan tadqiqotlarda o'z tasdig'ini topib kelmoqda (@Vian_Dhanda_2024, @Dorte_Verner_2004, @Md_Mahbubur_Rahman_2024).
 
 Global miqyosda, kambag'allik darajasi 1990-yildagi 43.6 foizdan 2023-yilda 10.2 foizga qisqarganiga qaramay( @WorldBankOpen), rivojlanayotgan malakatlarda xususan qishloq hududlarida ta'lim olish imkoniyati cheklanganligi bo'yicha muammolar saqlanib qolmoqda (@Xiaowen_Xie_2023; @Alessia_Spada_2023). COVID-19 pandemiyasi davrida ta'limdagi tengsizlik yanada yaqqolroq ko'rina boshladi va kuchaydi, bu esa ijtimoiy himoya va ta'lim sohalarida samarali siyosiy intervensiyalarning dolzarb zaruratini ko'rsatmoqda (@terziPhilosophicalReflectionsChild2023; @beesonDoesTacklingPoverty2024).
@@ -333,7 +331,7 @@ ggplotly(p, tooltip = "text") %>%
 
 Milliy statistika qo'mitasining 2024-yilgi Uy xo'jaligi daromadlari va xarajatlari so'rovnomasiga ko'ra, jon boshiga daromad detsillari bo'ylab bir o'quvchiga to'g'ri keluvchi xarajatlari oshib boradi: eng quyi detsildagi oilalar bir o'quvchi uchun qiladigan xarajat eng yuqori detsildagi oilalarga qaraganda 2 barobar kam.
 
-Daromad detsillari bo'ylab umumiy maktab ta'limining umumiy iste'mol xarajatlaridagi ulushi qaralganda: 2-detsildan 9-detsilgacha ko'rsatkich sezilarli darajada farq qilmaydi, ammo eng quyi detsilda maktab ta'limi xarajatlarining ulushi nisbatan ancha yuqori **28%** ni tashkil qiladi. Eng yuqori detsilda esa, bu ko'rsatkich nisbatan kam **14.3%** ni tashkil qiladi. Ya'ni daromadning boshqa detsillari (2-9-detsillar) bilan solishtirganda, daromadning quyi detsilidagi oilalarda maktab ta'limi uchun qilingan xarajatlar boshqa xarajatlarni siqib chiqarayotgan bo'lishi mumkin.
+Daromad detsillari bo'ylab umumiy maktab ta'limining umumiy iste'mol xarajatlaridagi ulushi qaralganda: 2-detsildan 9-detsilgacha ko'rsatkich sezilarli darajada farq qilmaydi, ammo eng quyi detsilda maktab ta'limi xarajatlarining ulushi nisbatan ancha yuqori **28.4%** ni tashkil qiladi. Eng yuqori detsilda esa, bu ko'rsatkich nisbatan kam **14.3%** ni tashkil qiladi. Ya'ni daromadning boshqa detsillari (2-9-detsillar) bilan solishtirganda, daromadning quyi detsilidagi oilalarda maktab ta'limi uchun qilingan xarajatlar boshqa xarajatlarni siqib chiqarayotgan bo'lishi mumkin.
 
 ::: {.callout-tip collapse="true"}
 ## 6-rasm: Ta'lim xarajatlari va ularning iste'mol xarajatlaridagi ulushi
@@ -380,6 +378,8 @@ plot2 <- ggplotly(p2, tooltip = "text") %>%
 # Display both
 htmltools::tagList(plot1, plot2)
 ```
+
+*Ko'rsatkichlar bir oy uchun berilgan*
 
 :::
 
@@ -447,20 +447,12 @@ Tahlil natijalariga ko'ra, boy va kambag'al oilalardagi o'quvchilarning o'zlasht
 Tahlilning yana bir muhim natijalaridan biri bu boy va kambag'al oilalardagi o'quvchilar o'rtasidagi farqlar qishloqdagi o'quvchilarning nisbatan yuqori o'zlashtirishi hisobiga kamaymoqda. Demak, shaharda yashovchi o'quvchilarning qishloqdagi o'quvchilarga nisbatan yaxshi o'zlashtiriyotgani haqida tavsifiy natijalar aslida aholi yashash punkti tipidan boshqa omillarning notekis taqsimlanganligi tufayli bo'lishi mumkin.
 :::
 
-# Xulosa va tavsiyalar {#sec-xulosa}
+# Xulosa {#sec-xulosa}
 
-## Xulosa
 
 Tadqiqot natijalari O'zbekistonda ta'lim va kambag'allik o'rtasida kuchli bog'liqlik mavjudigiga ishora qiladi. Oilaning ijtimoiy-iqtisodiy statusiga qarab taqqoslanganda, yuqori daromadli oilalarning farzandlari past daromadli oilalarning farzandlariga nisbatan yaxshiroq o'zlashtirish ko'rsatkichlariga erishgan. Aholi yashash punkti va o'quvchilarning jinsini hisobga olib solishtirilganda ham akademik o'zlashtirishda nisbatan yuqori ijtimoiy-iqtisodiy statusga ega oiladagi o'quvchilar nisbatan ijtimoiy-iqtisodiy statusi quyiroq tengdoshlariga nisbatan yaxshiroq ko'rsatkichlarga ega bo'lishgan. Ushbu farqlarni tushuntirouvchi omillardan biri bu o'quvchilarning har xil ta'lim sharotitiga ega ekanliklari bo'lishi mumkin. Taqqoslanayotgan ikki toifa o'quvchilar o'rtasidagi o'zlashtirishdagi farqlar magnitudasiga ta'sir qiluvchi omillar tahlil qilinganda, o'quvchilar o'rtasidagi o'zlashtirish darajasidagi farqning asosiy qismi maktabdagi ta'lim sifati bilan tushuntiriladi. Shu bilan birga, ota-onalarning ta'lim jarayonidagi faol ishtiroki barcha ijtimoiy-iqtisodiy guruhlarda nisbatan teng darajada.
 
-## Tavsiyalar
-
-- Nisbatan quyi ijtimoiy-iqtisodiy statusga ega oila farzandlari o'rtacha o'zlashtirish ko'rsatkichi past bo'lgan maktablarda ta'lim olayotganini hisobga olish lozim. Shu ma'noda, o'rtacha akademik ko'rsatkichlari past bo'lgan maktablarda ta'lim sifatini yaxshilash nafaqat ta'lim tizimi islohoti sifatida balki **ijtimoiy himoya** siyosati sifatida ham muhim hisoblanadi.
-- Mavjud qonunchilik normalariga ko'ra daromad past aholi farzandlari uchun ta'lim imtiyozlari mavjud
-- Masalan, O'zbekiston Respublikasining 258-sonli farmoniga ko'ra, Ijtimoiy reyestrga kiritilgan oila farzandlari uchun 12 xil ta'limga oid imtiyozlar ko'zda tutilgan ([3-Ilova](#sec-ilova-3))
-- Bu imtiyozlarning tizimli tadbiq etilishini ko'rsatuvchi yagona monitoring platformasini yaratish maqsadga muvofiq
-- Bu platforma oila farzandlari uchun ta'lim imtiyozlaridan foydalanish darajasini hududlar va aholining boshqa demografik ko'rsatkichlari kesimida foydalanish darajasini kuzatish mumkin bo'ladi
-
+Umuman olganda, nisbatan quyi ijtimoiy-iqtisodiy statusga ega oila farzandlari o'rtacha o'zlashtirish ko'rsatkichi past bo'lgan maktablarda ta'lim olayotganini hisobga olish lozim. Shu ma'noda, o'rtacha akademik ko'rsatkichlari past bo'lgan maktablarda ta'lim sifatini yaxshilash nafaqat ta'lim tizimi islohoti sifatida balki **ijtimoiy himoya** siyosati sifatida ham muhim hisoblanadi. Mavjud qonunchilikka ko'ra daromad past aholi farzandlari uchun ta'lim imtiyozlari mavjud. Masalan, O'zbekiston Respublikasi Prezidentining 2025-yil 26-dekabrdagi 258-sonli farmoniga ko'ra, Ijtimoiy reyestrga kiritilgan oila farzandlari uchun 12 xil ta'limga oid imtiyozlar ko'zda tutilgan ([3-Ilova](#sec-ilova-3)). Bu imtiyozlarning tizimli tadbiq etilishini ko'rsatuvchi yagona monitoring platformasini yaratish maqsadga muvofiq. Bu platforma oila farzandlari uchun ta'lim imtiyozlaridan foydalanish darajasini hududlar va aholining boshqa demografik ko'rsatkichlari kesimida foydalanish darajasini kuzatish mumkin bo'ladi.
 
 
 # Ilovalar {#sec-ilovalar}
