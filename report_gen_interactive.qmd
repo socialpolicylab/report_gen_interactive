@@ -1,6 +1,8 @@
 ---
-title: "O'zbekistonda: Kambag'allik va Ta'lim"
-author: "Ulug'bek Tursunov, Ijtimoiy siyosat laboratoriyasi"
+title: "Oʻzbekistonda: Kambagʻallik va Ta'lim"
+author:
+  - name: "Ulugʻbek Tursunov, Ijtimoiy siyosat laboratoriyasi"
+author-title: "Muallif"
 format:
   html:
     theme:
@@ -13,7 +15,7 @@ format:
     number-sections: true
     number-depth: 1
     code-fold: true
-    code-summary: "Kodni ko'rsatish"
+    code-summary: "Kodni koʻrsatish"
     fig-width: 9
     fig-height: 6
     fig-dpi: 150
@@ -77,50 +79,50 @@ mics_ur_palette <- c("Shahar" = "#009E73", "Qishloq" = "#CC79A7")
 
 # Kirish {#sec-kirish}
 
-Ta'limning kambag'allikni kamaytirishdagi roli borasidagi o'rganishlar muhim tadqiqot yo'nalishi sifatida e'tirof etiladi. So'nggi o'n yilliklarda tadqiqotlar ta'limning inson kapitalini oshirish, daromadlar o'rtasidagi tengsizlikni kamaytirish va ijtimoiy mobillikni rag'batlantirishda muhim o'ringa ega ekanligi butun dunyoda, xususan, Xitoy, Braziliya va Janubiy Afrika kabi rivojlanayotgan mamlakatlarda qilingan tadqiqotlarda o'z tasdig'ini topib kelmoqda (@Vian_Dhanda_2024, @Dorte_Verner_2004, @Md_Mahbubur_Rahman_2024).
+Ta'limning kambagʻallikni kamaytirishdagi roli borasidagi oʻrganishlar muhim tadqiqot yoʻnalishi sifatida e'tirof etiladi. Soʻnggi oʻn yilliklarda tadqiqotlar ta'limning inson kapitalini oshirish, daromadlar oʻrtasidagi tengsizlikni kamaytirish va ijtimoiy mobillikni ragʻbatlantirishda muhim oʻringa ega ekanligi butun dunyoda, xususan, Xitoy, Braziliya va Janubiy Afrika kabi rivojlanayotgan mamlakatlarda qilingan tadqiqotlarda oʻz tasdigʻini topib kelmoqda (@Vian_Dhanda_2024, @Dorte_Verner_2004, @Md_Mahbubur_Rahman_2024).
 
-Global miqyosda, kambag'allik darajasi 1990-yildagi 43.6 foizdan 2023-yilda 10.2 foizga qisqarganiga qaramay( @WorldBankOpen), rivojlanayotgan malakatlarda xususan qishloq hududlarida ta'lim olish imkoniyati cheklanganligi bo'yicha muammolar saqlanib qolmoqda (@Xiaowen_Xie_2023; @Alessia_Spada_2023). COVID-19 pandemiyasi davrida ta'limdagi tengsizlik yanada yaqqolroq ko'rina boshladi va kuchaydi, bu esa ijtimoiy himoya va ta'lim sohalarida samarali siyosiy intervensiyalarning zarurligini ko'rsatmoqda (@terziPhilosophicalReflectionsChild2023; @beesonDoesTacklingPoverty2024).
+Global miqyosda, kambagʻallik darajasi 1990-yildagi 43.6 foizdan 2023-yilda 10.2 foizga qisqarganiga qaramay( @WorldBankOpen), rivojlanayotgan malakatlarda xususan qishloq hududlarida ta'lim olish imkoniyati cheklanganligi boʻyicha muammolar saqlanib qolmoqda (@Xiaowen_Xie_2023; @Alessia_Spada_2023). COVID-19 pandemiyasi davrida ta'limdagi tengsizlik yanada yaqqolroq koʻrina boshladi va kuchaydi, bu esa ijtimoiy himoya va ta'lim sohalarida samarali siyosiy intervensiyalarning zarurligini koʻrsatmoqda (@terziPhilosophicalReflectionsChild2023; @beesonDoesTacklingPoverty2024).
 
 Ushbu tadqiqotda biz tahlilni quyidagi ma'lumot manbalaridan foydalangan holda olib boramiz:
 
 ::: {.panel-tabset}
 
 ## PISA 2022
-PISA dasturi yordamida O'zbekistonda 2022-yil 15-yoshli o'quvchilarning o'zlashtirish ko'rsatkichlari ma'lumotlaridan foydalanib, o'quvchilarning ta'lim ko'rsatkichlari va oilaning umumiy iqtisodiy holati o'rtasidagi bog'liqlik o'rganiladi.
+PISA dasturi yordamida Oʻzbekistonda 2022-yil 15-yoshli oʻquvchilarning oʻzlashtirish koʻrsatkichlari ma'lumotlaridan foydalanib, oʻquvchilarning ta'lim koʻrsatkichlari va oilaning umumiy iqtisodiy holati oʻrtasidagi bogʻliqlik oʻrganiladi.
 
 ## HBS 2024
-Milliy statistika qo'mitasining 2024-yilgi Uy xo'jaligi daromadlari va xarajatlari so'rovidan o'quvchilar ta'lim olishi uchun xarajatlarni tahlil qilish uchun foydalaniladi.
+Milliy statistika qoʻmitasining 2024-yilgi Uy xoʻjaligi daromadlari va xarajatlari soʻrovidan oʻquvchilar ta'lim olishi uchun xarajatlarni tahlil qilish uchun foydalaniladi.
 
 ## MICS 2021-2022
-UNICEF hamda Milliy Statistika Qo'mitasi tomonidan o'tkazilgan multiindikator klaster kuzatuvi (MICS) so'rovidan oila a'zolarining o'quvchi ta'limidagi ishtirokini o'rganish uchun foydalaniladi.
+UNICEF hamda Milliy Statistika Qoʻmitasi tomonidan oʻtkazilgan multiindikator klaster kuzatuvi (MICS) soʻrovidan oila a'zolarining oʻquvchi ta'limidagi ishtirokini oʻrganish uchun foydalaniladi.
 
 :::
 
-Tahlil PISA 2022, HBS 2024 va MICS 2021-2022 ma'lumotlaridan kengroq ijtimoiy siyosat uchun diagnostika vositasi sifatida foydalanishni ko'zda tutadi. Asosiy maqsad O'zbekistonda maktab o'quvchilarining demografik va uy sharoitlaridagi tafovutlari o'quvchilarning o'zlashtirish ko'rsatkichlarida qanday namoyon bo'lishini aniqlashdir.
+Tahlil PISA 2022, HBS 2024 va MICS 2021-2022 ma'lumotlaridan kengroq ijtimoiy siyosat uchun diagnostika vositasi sifatida foydalanishni koʻzda tutadi. Asosiy maqsad Oʻzbekistonda maktab oʻquvchilarining demografik va uy sharoitlaridagi tafovutlari oʻquvchilarning oʻzlashtirish koʻrsatkichlarida qanday namoyon boʻlishini aniqlashdir.
 
-Ushbu muammolarni tahlil qilish orqali hisobot ta'limdagi to'siqlarni bevosita bartaraf etishi va inson kapitalini shakllantirishga hissa qo'shishi mumkin bo'lgan maqsadli, dalillarga asoslangan ijtimoiy himoya siyosatiga oid takliflarni ishlab chiqishga qaratilgan.
+Ushbu muammolarni tahlil qilish orqali hisobot ta'limdagi toʻsiqlarni bevosita bartaraf etishi va inson kapitalini shakllantirishga hissa qoʻshishi mumkin boʻlgan maqsadli, dalillarga asoslangan ijtimoiy himoya siyosatiga oid takliflarni ishlab chiqishga qaratilgan.
 
 # Tahlil va natijalar {#sec-tahlil}
 
-## O'quvchilarning ta'lim ko'rsatkichlari va ular yashayotgan oilalarning ijtimoiy-iqtisodiy statusi
+## Oʻquvchilarning ta'lim koʻrsatkichlari va ular yashayotgan oilalarning ijtimoiy-iqtisodiy statusi
 
-Kambag'allikni faqat monetar asoslarda emas, balki, ko'p o'lchamli miqyosda qaralganda, eng muhim omillardan biri bu ta'lim hisoblanadi. Iqtisodiy tadqiqotlar va ishlohotlar markazi hisoblagan Ko'p o'lchovli kambag'allik indeksi natijalariga ko'ra, kambag'allikka eng ko'p hissa qo'shayotgan omil bu ta'lim hisoblanadi @cerrandundpcountryofficeinuzbekistanUzbekistanPilotMultidimensional2023.
+Kambagʻallikni faqat monetar asoslarda emas, balki, koʻp oʻlchamli miqyosda qaralganda, eng muhim omillardan biri bu ta'lim hisoblanadi. Iqtisodiy tadqiqotlar va ishlohotlar markazi hisoblagan Koʻp oʻlchovli kambagʻallik indeksi natijalariga koʻra, kambagʻallikka eng koʻp hissa qoʻshayotgan omil bu ta'lim hisoblanadi @cerrandundpcountryofficeinuzbekistanUzbekistanPilotMultidimensional2023.
 
 
-Kambag'allikning ta'lim ko'rsatkichlariga ta'sirini baholash uchun ushbu hisobot asosiy tahliliy o'zgaruvchi sifatida PISA oilaning ijtimoiy-iqtisodiy statusi indeksidan (IIS) foydalanadi. IIS Iqtisodiy hamkorlik va taraqqiyot tashkiloti tomonidan yaratilgan murakkab indeks bo'lib, u o'quvchining ijtimoiy-iqtisodiy kelib chiqishini har tomonlama o'lchaydi hamda uchta asosiy tarkibiy qism asosida hisoblaydi:
+Kambagʻallikning ta'lim koʻrsatkichlariga ta'sirini baholash uchun ushbu hisobot asosiy tahliliy oʻzgaruvchi sifatida PISA oilaning ijtimoiy-iqtisodiy statusi indeksidan (IIS) foydalanadi. IIS Iqtisodiy hamkorlik va taraqqiyot tashkiloti tomonidan yaratilgan murakkab indeks boʻlib, u oʻquvchining ijtimoiy-iqtisodiy kelib chiqishini har tomonlama oʻlchaydi hamda uchta asosiy tarkibiy qism asosida hisoblaydi:
 
 1) **Ota-onalar ta'limi** - ota-onalar erishgan eng yuqori ta'lim darajasi
 2) **Ota-onaning kasbi** - Ota-onaning eng yuqori kasbiy maqomi
-3) **Uyda mavjud jihozlar** - Oilaning boyligi va uydagi madaniy va ta'lim resurslaridan foydalanish imkoniyati (masalan, kitoblar soni, o'qish uchun tinch joy borligi, internetga ulanish imkoniyati)
+3) **Uyda mavjud jihozlar** - Oilaning boyligi va uydagi madaniy va ta'lim resurslaridan foydalanish imkoniyati (masalan, kitoblar soni, oʻqish uchun tinch joy borligi, internetga ulanish imkoniyati)
 
-PISA natijalari ma'lumotlarini IIS indeksi nuqtayi nazaridan tahlil qilish orqali biz bolaning ijtimoiy-iqtisodiy kelib chiqishi uning bugungi kunda O'zbekistonda ta'lim olishi va o'zlashtirishi imkoniyatlariga qay darajada ta'sir qilishini aniq miqdoriy baholashimiz mumkin.
+PISA natijalari ma'lumotlarini IIS indeksi nuqtayi nazaridan tahlil qilish orqali biz bolaning ijtimoiy-iqtisodiy kelib chiqishi uning bugungi kunda Oʻzbekistonda ta'lim olishi va oʻzlashtirishi imkoniyatlariga qay darajada ta'sir qilishini aniq miqdoriy baholashimiz mumkin.
 
-### PISA 2-daraja o'zlashtirish ko'rsatkichlari
+### PISA 2-daraja oʻzlashtirish koʻrsatkichlari
 
-PISA tizimida o'qish, matematika va tabiiy fanlar bo'yicha o'quvchilar o'zlashtirish ko'rsatkichlari o'rganilgan. Ushbu fanlar bo'yicha o'zlashtirish ko'rsatkichlari turli darajalarga bo'linadi, bunda 2-daraja matematika, o'qish va tabiiy fanlar bo'yicha o'quvchilar bilimini o'lchash uchun muhim asos bo'lib xizmat qiladi. Bu daraja shunchaki statistik ko'rsatkich emas, u o'quvchilarning jamiyatda faol ishtirok etishi va o'z hissasini qo'shishi uchun fundamental deb hisoblangan muhim ko'nikma va bilimlarni o'zlashtirishini ifodalaydi.
-IISi 1-detsilidagi oila o'quvchilarining o'qish, matematika va tabiiy fanlar bo'yicha 2-darajada o'zlashtirish darajasi 10-detsildagi oila o'quvchilariga nisbatan qariyb 3 barobar past ekanligini ko'rishimiz mumkin. O'zlashtirish darajasi IISning 7-detsilidan boshlab sezilarli oshib bormoqda.
-IIS ning barcha detsillarida shahar hududida yashovchi o'quvchilar qishloqlarda yashovchi o'quvchilarga nisbatan o'qish, matematika va tabiiy fanlar bo'yicha 2-darajada o'zlashtirish darajasi yuqori ekanligini ko'rsatadi. Ayniqsa o'qish darajasida, shahar hududida yashovchi o'quvchilar qishloqlarda yashovchi o'quvchilarga nisbatan IIS barcha detsillarida yaxshi o'zlashtirmoqda. Matematika va tabiiy fanlarda esa, IIS ning birinchi detsildan boshlab farqlar juda kam, o'zlashtirish darajasidagi farqlar asosan IISning yuqori detsillarida ko'rinadi.
-O'zbekistonda IIS ning barcha detsillarida matematika fanidan o'g'il bolalar qiz bolalarga nisbatan o'zlashtirishi yuqori. O'qish borasida esa qiz bolalar o'g'il bolalarga nisbatan yaxshiroq o'zlashtirmoqda. Tabiiy fanlarda esa, dastlabki detsillarda o'g'il bolalar, yuqori detsillarda esa qiz bolalar yaxshiroq o'zlashtirgan. Bu yerda ham 1-rasmda qayd etilganidek, IISning 1-detsilidagi oila farzandlari boshqalarga nisbatan ancha past natijani qayd qilgan hamda o'zlashtirish darajasi ikkala jins bo'yicha ham IISning 7-detsilidan boshlab o'sib bormoqda.
+PISA tizimida oʻqish, matematika va tabiiy fanlar boʻyicha oʻquvchilar oʻzlashtirish koʻrsatkichlari oʻrganilgan. Ushbu fanlar boʻyicha oʻzlashtirish koʻrsatkichlari turli darajalarga boʻlinadi, bunda 2-daraja matematika, oʻqish va tabiiy fanlar boʻyicha oʻquvchilar bilimini oʻlchash uchun muhim asos boʻlib xizmat qiladi. Bu daraja shunchaki statistik koʻrsatkich emas, u oʻquvchilarning jamiyatda faol ishtirok etishi va oʻz hissasini qoʻshishi uchun fundamental deb hisoblangan muhim koʻnikma va bilimlarni oʻzlashtirishini ifodalaydi.
+IISi 1-detsilidagi oila oʻquvchilarining oʻqish, matematika va tabiiy fanlar boʻyicha 2-darajada oʻzlashtirish darajasi 10-detsildagi oila oʻquvchilariga nisbatan qariyb 3 barobar past ekanligini koʻrishimiz mumkin. Oʻzlashtirish darajasi IISning 7-detsilidan boshlab sezilarli oshib bormoqda.
+IIS ning barcha detsillarida shahar hududida yashovchi oʻquvchilar qishloqlarda yashovchi oʻquvchilarga nisbatan oʻqish, matematika va tabiiy fanlar boʻyicha 2-darajada oʻzlashtirish darajasi yuqori ekanligini koʻrsatadi. Ayniqsa oʻqish darajasida, shahar hududida yashovchi oʻquvchilar qishloqlarda yashovchi oʻquvchilarga nisbatan IIS barcha detsillarida yaxshi oʻzlashtirmoqda. Matematika va tabiiy fanlarda esa, IIS ning birinchi detsildan boshlab farqlar juda kam, oʻzlashtirish darajasidagi farqlar asosan IISning yuqori detsillarida koʻrinadi.
+Oʻzbekistonda IIS ning barcha detsillarida matematika fanidan oʻgʻil bolalar qiz bolalarga nisbatan oʻzlashtirishi yuqori. Oʻqish borasida esa qiz bolalar oʻgʻil bolalarga nisbatan yaxshiroq oʻzlashtirmoqda. Tabiiy fanlarda esa, dastlabki detsillarda oʻgʻil bolalar, yuqori detsillarda esa qiz bolalar yaxshiroq oʻzlashtirgan. Bu yerda ham 1-rasmda qayd etilganidek, IISning 1-detsilidagi oila farzandlari boshqalarga nisbatan ancha past natijani qayd qilgan hamda oʻzlashtirish darajasi ikkala jins boʻyicha ham IISning 7-detsilidan boshlab oʻsib bormoqda.
 
 ```{r}
 #| label: pisa-level2-load
@@ -134,7 +136,7 @@ level2_gender_all <- read_csv("tables/pisa_level2_gender.csv", show_col_types = 
 ```
 
 ::: {.callout-tip collapse="true"}
-## 1-3-rasmlar: PISA 2-daraja o'zlashtirish ko'rsatkichlari grafiklari
+## 1-3-rasmlar: PISA 2-daraja oʻzlashtirish koʻrsatkichlari grafiklari
 
 ::: {.panel-tabset}
 
@@ -142,7 +144,7 @@ level2_gender_all <- read_csv("tables/pisa_level2_gender.csv", show_col_types = 
 
 ```{r}
 #| label: level2-interactive
-#| fig-cap: "1-rasm. 2-darajaga erishgan o'quvchilar ulushi: IIS detsillari kesimida (PISA 2022, O'zbekiston)"
+#| fig-cap: "1-rasm. 2-darajaga erishgan oʻquvchilar ulushi: IIS detsillari kesimida (PISA 2022, Oʻzbekiston)"
 
 p <- ggplot(level2_all, aes(x = Decile_num, y = Percentage, color = Subject, group = Subject,
                              text = paste0("IIS Detsili: D", Decile_num,
@@ -173,11 +175,11 @@ ggplotly(p, tooltip = "text") %>%
 ```
 
 
-## Shahar/Qishloq bo'yicha 
+## Shahar/Qishloq boʻyicha 
 
 ```{r}
 #| label: level2-rural-interactive
-#| fig-cap: "2-rasm. 2-darajaga erishgan o'quvchilar ulushi: aholi yashash punkti turi kesimida"
+#| fig-cap: "2-rasm. 2-darajaga erishgan oʻquvchilar ulushi: aholi yashash punkti turi kesimida"
 
 p <- ggplot(level2_rural_all, aes(x = Decile_num, y = Percentage, color = rural, group = rural,
                                    text = paste0("Detsil: D", Decile_num,
@@ -207,11 +209,11 @@ ggplotly(p, tooltip = "text") %>%
 
 
 
-## Jins bo'yicha
+## Jins boʻyicha
 
 ```{r}
 #| label: level2-gender-interactive
-#| fig-cap: "3-rasm. 2-darajaga erishgan o'quvchilar ulushi: jins kesimida"
+#| fig-cap: "3-rasm. 2-darajaga erishgan oʻquvchilar ulushi: jins kesimida"
 
 p <- ggplot(level2_gender_all, aes(x = Decile_num, y = Percentage, color = Gender, group = Gender,
                                     text = paste0("Detsil: D", Decile_num,
@@ -245,29 +247,29 @@ ggplotly(p, tooltip = "text") %>%
 
 :::
 
-## O'quvchilarga uyda mavjud sharoit va oilaning ijtimoiy-iqtisodiy statusi {#sec-uy-sharoitlari}
+## Oʻquvchilarga uyda mavjud sharoit va oilaning ijtimoiy-iqtisodiy statusi {#sec-uy-sharoitlari}
 
-O'quvchilar ta'lim olishida ularga uyda yaratib berilayotgan sharoit muhim. Ayniqsa, hozirgi zamonaviy texnologiyalar ta'limda keng qo'llanilayotgan sharoitda, o'quvchilarga uyda ta'lim olish uchun yaratib berilayotgan shart-sharoitning ahamiyati yana oshdi.
+Oʻquvchilar ta'lim olishida ularga uyda yaratib berilayotgan sharoit muhim. Ayniqsa, hozirgi zamonaviy texnologiyalar ta'limda keng qoʻllanilayotgan sharoitda, oʻquvchilarga uyda ta'lim olish uchun yaratib berilayotgan shart-sharoitning ahamiyati yana oshdi.
 
-PISA savolnomasi asosida quyidagi savollarga o'quvchilarning javoblari IIS detsillari bo'yicha tahlil qilindi:
+PISA savolnomasi asosida quyidagi savollarga oʻquvchilarning javoblari IIS detsillari boʻyicha tahlil qilindi:
 
-1) O'z xonasi bormi?
-2) O'qish uchun kompyuteri (planshet, noutbuk) bormi?
+1) Oʻz xonasi bormi?
+2) Oʻqish uchun kompyuteri (planshet, noutbuk) bormi?
 3) Ta'limiy dasturlardan foydalanadimi?
 4) Uyda internet bormi?
 
 ::: {.callout-tip collapse="true"}
-## 4-rasm: O'quvchilar ta'lim olishi uchun uy sharoitlari
+## 4-rasm: Oʻquvchilar ta'lim olishi uchun uy sharoitlari
 
 ```{r}
 #| label: home-conditions-interactive
-#| fig-cap: "4-rasm. O'quvchilar ta'lim olishi uchun uydagi sharoit: IIS detsillari kesimida"
+#| fig-cap: "4-rasm. Oʻquvchilar ta'lim olishi uchun uydagi sharoit: IIS detsillari kesimida"
 
 percentages <- read_csv("tables/pisa_home_conditions.csv", show_col_types = FALSE)
 
 p <- ggplot(percentages, aes(x = Decile_num, y = Percent, color = Variable_label, group = Variable_label,
                               text = paste0("Detsil: D", Decile_num,
-                                           "<br>Ko'rsatkich: ", Variable_label,
+                                           "<br>Koʻrsatkich: ", Variable_label,
                                            "<br>Foiz: ", round(Percent, 1), "%"))) +
   geom_line(linewidth = 1.2) +
   geom_point(size = 3) +
@@ -276,7 +278,7 @@ p <- ggplot(percentages, aes(x = Decile_num, y = Percent, color = Variable_label
   labs(
     x = "IIS Detsili",
     y = "Foiz (%)",
-    color = "Ko'rsatkich"
+    color = "Koʻrsatkich"
   ) +
   theme_minimal(base_size = 14) +
   theme(legend.position = "top")
@@ -289,7 +291,7 @@ ggplotly(p, tooltip = "text") %>%
 :::
 
 
-IISning 1-detsilidagi oila farzandlarining taqriban uchdan bir qismida uyida kompyuter, planshet kabi bilim olish jarayonida qo'llanishi mumkin bo'lgan elektron vositalar mavjud bo'lsa, 10-detsilda bu ko'rsatkich qariyb **90%**ni tashkil qiladi. Eng katta farqlar o'qish uchun kompyuterning mavjudligi, ta'limiy dasturlardan foydalanish va uy internetga ulanganligida kuzatiladi. O'quvchilar uchun o'z xonasining mavjudligi IIS detsillari bo'yicha taqsimotida tengsizlik qolgan ko'rsatkichlarga nisbatan kamroq.
+IISning 1-detsilidagi oila farzandlarining taqriban uchdan bir qismida uyida kompyuter, planshet kabi bilim olish jarayonida qoʻllanishi mumkin boʻlgan elektron vositalar mavjud boʻlsa, 10-detsilda bu koʻrsatkich qariyb **90%**ni tashkil qiladi. Eng katta farqlar oʻqish uchun kompyuterning mavjudligi, ta'limiy dasturlardan foydalanish va uy internetga ulanganligida kuzatiladi. Oʻquvchilar uchun oʻz xonasining mavjudligi IIS detsillari boʻyicha taqsimotida tengsizlik qolgan koʻrsatkichlarga nisbatan kamroq.
 
 
 ### Kompyuter mavjudligi: shahar/qishloq kesimida
@@ -325,20 +327,20 @@ ggplotly(p, tooltip = "text") %>%
 
 :::
 
-Kompyuter mavjudligidagi farqlar aholi yashash punktlari turini hisobga olganda yanada oshgan: 1 va 2-detsillarda qishloqdagi o'quvchilarda kompyuterning mavjudligi shaharlik tengdoshlariga qaraganda sezilarli darajada past. 7, 8 va 9-detsillarda ham shaharda istiqomat qiluvchi o'quvchilarda kompyuter mavjudligi darajasi yuqori.
+Kompyuter mavjudligidagi farqlar aholi yashash punktlari turini hisobga olganda yanada oshgan: 1 va 2-detsillarda qishloqdagi oʻquvchilarda kompyuterning mavjudligi shaharlik tengdoshlariga qaraganda sezilarli darajada past. 7, 8 va 9-detsillarda ham shaharda istiqomat qiluvchi oʻquvchilarda kompyuter mavjudligi darajasi yuqori.
 
-## O'quvchilar ta'lim olish uchun xarajatlar, oila a'zolarning o'qish jarayonidagi ishtiroki va oilaning ijtimoiy iqtisodiy ahvoli {#sec-xarajatlar}
+## Oʻquvchilar ta'lim olish uchun xarajatlar, oila a'zolarning oʻqish jarayonidagi ishtiroki va oilaning ijtimoiy iqtisodiy ahvoli {#sec-xarajatlar}
 
-Milliy statistika qo'mitasining 2024-yilgi Uy xo'jaligi daromadlari va xarajatlari so'roviga ko'ra, jon boshiga daromad detsillari bo'ylab bir o'quvchiga to'g'ri keluvchi xarajatlari oshib boradi: eng quyi detsildagi oilalar bir o'quvchi uchun qiladigan xarajat eng yuqori detsildagi oilalarga qaraganda 2 barobar kam.
+Milliy statistika qoʻmitasining 2024-yilgi Uy xoʻjaligi daromadlari va xarajatlari soʻroviga koʻra, jon boshiga daromad detsillari boʻylab bir oʻquvchiga toʻgʻri keluvchi xarajatlari oshib boradi: eng quyi detsildagi oilalar bir oʻquvchi uchun qiladigan xarajat eng yuqori detsildagi oilalarga qaraganda 2 barobar kam.
 
-Daromad detsillari bo'ylab umumiy maktab ta'limining umumiy iste'mol xarajatlaridagi ulushi qaralganda: 2-detsildan 9-detsilgacha ko'rsatkich sezilarli darajada farq qilmaydi, ammo eng quyi detsilda maktab ta'limi xarajatlarining ulushi nisbatan ancha yuqori (**28.4%**). Eng yuqori detsilda esa, bu ko'rsatkich nisbatan kam (**14.3%**). Ya'ni daromadning boshqa detsillari (2-9-detsillar) bilan solishtirganda, daromadning quyi detsilidagi oilalarda maktab ta'limi uchun qilingan xarajatlar boshqa xarajatlarni siqib chiqarayotgan bo'lishi mumkin.
+Daromad detsillari boʻylab umumiy maktab ta'limining umumiy iste'mol xarajatlaridagi ulushi qaralganda: 2-detsildan 9-detsilgacha koʻrsatkich sezilarli darajada farq qilmaydi, ammo eng quyi detsilda maktab ta'limi xarajatlarining ulushi nisbatan ancha yuqori (**28.4%**). Eng yuqori detsilda esa, bu koʻrsatkich nisbatan kam (**14.3%**). Ya'ni daromadning boshqa detsillari (2-9-detsillar) bilan solishtirganda, daromadning quyi detsilidagi oilalarda maktab ta'limi uchun qilingan xarajatlar boshqa xarajatlarni siqib chiqarayotgan boʻlishi mumkin.
 
 ::: {.callout-tip collapse="true"}
 ## 6-rasm: Ta'lim xarajatlari va ularning iste'mol xarajatlaridagi ulushi
 
 ```{r}
 #| label: hbs-edu
-#| fig-cap: "6-rasm. O'quvchilar ta'lim olishi uchun xarajatlar va ushbu xarajatlarning umumiy iste'mol xarajatlaridagi ulushi (Uy xo'jaligi daromadlari va xarajatlari so'rovi, 2024)"
+#| fig-cap: "6-rasm. Oʻquvchilar ta'lim olishi uchun xarajatlar va ushbu xarajatlarning umumiy iste'mol xarajatlaridagi ulushi (Uy xoʻjaligi daromadlari va xarajatlari soʻrovi, 2024)"
 
 decile_edu_cost <- read_xlsx("tables/hbs_edu_2_decile_edu_cost.xlsx")
 ratio_by_decile <- read_xlsx("tables/hbs_edu_2_ratio_by_decile.xlsx")
@@ -351,7 +353,7 @@ p1 <- ggplot(decile_edu_cost, aes(x = decile, y = weighted_avg_edu_cost,
   geom_point(color = "steelblue", size = 3) +
   scale_x_continuous(breaks = 1:10) +
   scale_y_continuous(labels = function(x) format(x, big.mark = " ", scientific = FALSE)) +
-  labs(x = NULL, y = "Xarajat (UZS)", title = "Bir o'quvchiga to'g'ri keluvchi o'rtacha ta'lim xarajati") +
+  labs(x = NULL, y = "Xarajat (UZS)", title = "Bir oʻquvchiga toʻgʻri keluvchi oʻrtacha ta'lim xarajati") +
   theme_minimal(base_size = 12)
 
 # Plot 2: Share of education expenditure
@@ -379,25 +381,25 @@ plot2 <- ggplotly(p2, tooltip = "text") %>%
 htmltools::tagList(plot1, plot2)
 ```
 
-*Ko'rsatkichlar bir oy uchun berilgan*
+*Koʻrsatkichlar bir oy uchun berilgan*
 
 :::
 
-Ta'lim xarajatlari jinsiga ko'ra qiyoslansa: o'g'il bolalarga va qiz bolalarga qilingan xarajatlar o'rtasida sezilarli farq yo'q ([1-Ilova](#sec-ilova-1)). Lekin, aholi yashash punktlari turiga ko'ra solishtirilsa, shaharda yashovchi o'quvchilarga qilingan xarajatlar qishloq hududida yashovchi o'quvchilarga nisbatan daromadning barcha detsillari bo'ylab sezilarli darajada yuqori, hamda ushbu farq daromad detsillari oshgani sari o'sib boradi ([1-Ilova](#sec-ilova-1)).
+Ta'lim xarajatlari jinsiga koʻra qiyoslansa: oʻgʻil bolalarga va qiz bolalarga qilingan xarajatlar oʻrtasida sezilarli farq yoʻq ([1-Ilova](#sec-ilova-1)). Lekin, aholi yashash punktlari turiga koʻra solishtirilsa, shaharda yashovchi oʻquvchilarga qilingan xarajatlar qishloq hududida yashovchi oʻquvchilarga nisbatan daromadning barcha detsillari boʻylab sezilarli darajada yuqori, hamda ushbu farq daromad detsillari oshgani sari oʻsib boradi ([1-Ilova](#sec-ilova-1)).
 
-O'quvchilarning akademik o'zlashtirishining muhim omillaridan biri bu o'quvchilarning o'qish jarayonida oila a'zolarning ishtiroki hisoblanadi. UNICEF hamda Milliy Statistika Qo'mitasi tomonidan o'tkazilgan multiindikator klaster kuzatuvi (MICS) so'rovi asosida to'rtta asosiy ko'rsatkich tahlil qilindi: uyda bolalar kitoblari soni, uy vazifasiga yordam berish darajasi, maktab yig'ilishlarida qatnashish va o'qituvchilar bilan bolalarning o'zlashtirishini muhokama qilish ([2-Ilova](#sec-ilova-2)).
+Oʻquvchilarning akademik oʻzlashtirishining muhim omillaridan biri bu oʻquvchilarning oʻqish jarayonida oila a'zolarning ishtiroki hisoblanadi. UNICEF hamda Milliy Statistika Qoʻmitasi tomonidan oʻtkazilgan multiindikator klaster kuzatuvi (MICS) soʻrovi asosida toʻrtta asosiy koʻrsatkich tahlil qilindi: uyda bolalar kitoblari soni, uy vazifasiga yordam berish darajasi, maktab yigʻilishlarida qatnashish va oʻqituvchilar bilan bolalarning oʻzlashtirishini muhokama qilish ([2-Ilova](#sec-ilova-2)).
 
-Natijalar shuni ko'rsatadiki, ota-onalarning ta'lim jarayonidagi ishtiroki umuman olganda yuqori va farovonlik detsillari bo'ylab sezilarli darajada farq qilmaydi. Maktab yig'ilishlarida qatnashish va o'qituvchilar bilan suhbatlar barcha detsillarda 90–100% atrofida bo'lib, bu ijtimoiy-iqtisodiy holatdan qat'i nazar rasmiy maktab faoliyatida deyarli universal ishtirokni ko'rsatadi. Ota-onalarning ta'limdagi ishtirokini ko'rsatuvchi boshqa ko'rsatkichlar ham yuqori va farovonlik detsillari bo'ylab sezilarli darajada farq qilmaydi. O'g'il bolalar qizlarga qaraganda biroz ko'proq uy vazifasiga yordam oladi, ammo boshqa ko'rsatkichlarda o'quvchilarning jinsiga bog'liq farqlar yo'q. Xuddi shunday, shahar va qishloq xo'jaliklari barcha o'lchovlar bo'yicha o'xshash darajadagi ota-onalar jalb etilishini namoyish etadi. Umuman olganda, ushbu topilmalar O'zbekiston ta'limda ota-onalarning ishtirok etish darajasi nisbatan tekis taqsimlanganini ko'rsatadi.
+Natijalar shuni koʻrsatadiki, ota-onalarning ta'lim jarayonidagi ishtiroki umuman olganda yuqori va farovonlik detsillari boʻylab sezilarli darajada farq qilmaydi. Maktab yigʻilishlarida qatnashish va oʻqituvchilar bilan suhbatlar barcha detsillarda 90–100% atrofida boʻlib, bu ijtimoiy-iqtisodiy holatdan qat'i nazar rasmiy maktab faoliyatida deyarli universal ishtirokni koʻrsatadi. Ota-onalarning ta'limdagi ishtirokini koʻrsatuvchi boshqa koʻrsatkichlar ham yuqori va farovonlik detsillari boʻylab sezilarli darajada farq qilmaydi. Oʻgʻil bolalar qizlarga qaraganda biroz koʻproq uy vazifasiga yordam oladi, ammo boshqa koʻrsatkichlarda oʻquvchilarning jinsiga bogʻliq farqlar yoʻq. Xuddi shunday, shahar va qishloq xoʻjaliklari barcha oʻlchovlar boʻyicha oʻxshash darajadagi ota-onalar jalb etilishini namoyish etadi. Umuman olganda, ushbu topilmalar Oʻzbekiston ta'limda ota-onalarning ishtirok etish darajasi nisbatan tekis taqsimlanganini koʻrsatadi.
 
-## Yuqori iqtisodiy farovonlikka ega bo'lgan hamda quyi iqtisodiy farovonlikka ega bo'lgan oiladagi o'quvchilarning o'zlashtirish darajasidagi farqlarni tushuntirishda maktabdagi ta'lim sifatining ahamiyati {#sec-oaxaca}
+## Yuqori iqtisodiy farovonlikka ega boʻlgan hamda quyi iqtisodiy farovonlikka ega boʻlgan oiladagi oʻquvchilarning oʻzlashtirish darajasidagi farqlarni tushuntirishda maktabdagi ta'lim sifatining ahamiyati {#sec-oaxaca}
 
-Ma'lumki, o'quvchilarning o'zlashtirishidagi yana bir muhim omil bu maktabdagi ta'lim sifati hisoblanadi. Tadqiqotning ushbu qismida, nisbatan farovonligi yuqori va nisbatan farovonligi past oilalardagi o'quvchilarning o'zlashtirishadigi farqlarni tushuntirishda maktabdagi ta'lim sifatining ahamiyati o'rganiladi[^1].
+Ma'lumki, oʻquvchilarning oʻzlashtirishidagi yana bir muhim omil bu maktabdagi ta'lim sifati hisoblanadi. Tadqiqotning ushbu qismida, nisbatan farovonligi yuqori va nisbatan farovonligi past oilalardagi oʻquvchilarning oʻzlashtirishadigi farqlarni tushuntirishda maktabdagi ta'lim sifatining ahamiyati oʻrganiladi[^1].
 
-Buning uchun Oaxaka-Blaynder (ingliz tilida Oaxaca-Blinder) dekompozitsiya usuli[^2] yordamida maktabdagi ta'lim sifatining o'zlashtirishdagi farqlarga hissasini baholash mumkin. Bunda boy va kambag'al oilalardagi o'quvchilarning matematika fanidan o'zlashtirish darajasidagi farqlarga e'tibor beriladi.
+Buning uchun Oaxaka-Blaynder (ingliz tilida Oaxaca-Blinder) dekompozitsiya usuli[^2] yordamida maktabdagi ta'lim sifatining oʻzlashtirishdagi farqlarga hissasini baholash mumkin. Bunda boy va kambagʻal oilalardagi oʻquvchilarning matematika fanidan oʻzlashtirish darajasidagi farqlarga e'tibor beriladi.
 
-[^1]: Berilgan tahlillarda shartli ravishda, nisbatan farovonligi yuqori bo'lgan oilalarni (5-kvintil) "boy oila"lar deb ataladi. Nisbatan farovonlik darajasi past oilalarni esa "kambag'al oila"lar deb ataladi.
+[^1]: Berilgan tahlillarda shartli ravishda, nisbatan farovonligi yuqori boʻlgan oilalarni (5-kvintil) "boy oila"lar deb ataladi. Nisbatan farovonlik darajasi past oilalarni esa "kambagʻal oila"lar deb ataladi.
 
-[^2]:Oaxaka-Blaynder dekompozitsiyasi usuli qo'llanganda metodologik nuqtai nazaridan o'zgaruvchilarning endogen mustaqil o'zgaruvchilarni baholashdagi noxolislik muammosi saqlanib qoladi. Masalan, xususiy repetitorga borish boshqa biz kuzatmayotgan omillar ta'sirida yuz berayotgan bo'lishi mumkin. Ushbu kuzatilmagan o'zgaruvchilar o'z o'rnida o'quvchining matematikadan o'zlashtirishiga ta'sir qilayotgan bo'lishi mumkin.
+[^2]:Oaxaka-Blaynder dekompozitsiyasi usuli qoʻllanganda metodologik nuqtai nazaridan oʻzgaruvchilarning endogen mustaqil oʻzgaruvchilarni baholashdagi noxolislik muammosi saqlanib qoladi. Masalan, xususiy repetitorga borish boshqa biz kuzatmayotgan omillar ta'sirida yuz berayotgan boʻlishi mumkin. Ushbu kuzatilmagan oʻzgaruvchilar oʻz oʻrnida oʻquvchining matematikadan oʻzlashtirishiga ta'sir qilayotgan boʻlishi mumkin.
 
 
 ::: {.callout-tip collapse="true"}
@@ -412,7 +414,7 @@ gap_total <- oaxaca_df$gap_total[1]
 gap_se <- oaxaca_df$gap_se[1]
 
 p <- ggplot(oaxaca_df, aes(x = reorder(label, coef), y = coef,
-                            text = paste0("O'zgaruvchi: ", label,
+                            text = paste0("Oʻzgaruvchi: ", label,
                                          "<br>Hissa: ", round(coef, 1), " ball",
                                          "<br>95% CI: [", round(ci_lower, 1), ", ", round(ci_upper, 1), "]",
                                          "<br>Ulush: ", round(coef/gap_total*100, 1), "%"))) +
@@ -442,17 +444,17 @@ ggplotly(p, tooltip = "text") %>%
 
 ::: {.callout-tip}
 ## Asosiy natija
-Tahlil natijalariga ko'ra, boy va kambag'al oilalardagi o'quvchilarning o'zlashtirish darajasidagi farqlar asosan maktabdagi ta'lim sifati darajasi (matematikadan o'rtacha o'zlashtirish) farqlar bilan tushuntirish mumkin. Xususan, PISA so'roviga ko'ra, boy va kambag'al oilalardagi o'quvchilarning matematika fanidan o'zlashtirish darajasidagi o'rtacha **27.8 ball**ni tashkil qilgan bo'lsa, ushbu farqning qariyb **50%ga yaqini** maktabdagi ta'lim sifati bilan tushuntirilishi mumkin.
+Tahlil natijalariga koʻra, boy va kambagʻal oilalardagi oʻquvchilarning oʻzlashtirish darajasidagi farqlar asosan maktabdagi ta'lim sifati darajasi (matematikadan oʻrtacha oʻzlashtirish) farqlar bilan tushuntirish mumkin. Xususan, PISA soʻroviga koʻra, boy va kambagʻal oilalardagi oʻquvchilarning matematika fanidan oʻzlashtirish darajasidagi oʻrtacha **27.8 ball**ni tashkil qilgan boʻlsa, ushbu farqning qariyb **50%ga yaqini** maktabdagi ta'lim sifati bilan tushuntirilishi mumkin.
 
-Tahlilning yana bir muhim natijalaridan biri bu boy va kambag'al oilalardagi o'quvchilar o'rtasidagi farqlar qishloqdagi o'quvchilarning nisbatan yuqori o'zlashtirishi hisobiga kamaymoqda. Demak, shaharda yashovchi o'quvchilarning qishloqdagi o'quvchilarga nisbatan yaxshi o'zlashtiriyotgani haqida tavsifiy natijalar aslida aholi yashash punkti turidan boshqa omillarning notekis taqsimlanganligi tufayli bo'lishi mumkin.
+Tahlilning yana bir muhim natijalaridan biri bu boy va kambagʻal oilalardagi oʻquvchilar oʻrtasidagi farqlar qishloqdagi oʻquvchilarning nisbatan yuqori oʻzlashtirishi hisobiga kamaymoqda. Demak, shaharda yashovchi oʻquvchilarning qishloqdagi oʻquvchilarga nisbatan yaxshi oʻzlashtiriyotgani haqida tavsifiy natijalar aslida aholi yashash punkti turidan boshqa omillarning notekis taqsimlanganligi tufayli boʻlishi mumkin.
 :::
 
 # Xulosa {#sec-xulosa}
 
 
-Tadqiqot natijalari O'zbekistonda ta'lim va kambag'allik o'rtasida kuchli bog'liqlik mavjudigiga ishora qiladi. Oilaning ijtimoiy-iqtisodiy statusiga qarab taqqoslanganda, yuqori daromadli oilalarning farzandlari past daromadli oilalarning farzandlariga nisbatan yaxshiroq o'zlashtirish ko'rsatkichlariga erishgan. Aholi yashash punkti va o'quvchilarning jinsini hisobga olib solishtirilganda ham akademik o'zlashtirishda nisbatan yuqori ijtimoiy-iqtisodiy statusga ega oiladagi o'quvchilar nisbatan ijtimoiy-iqtisodiy statusi quyiroq tengdoshlariga nisbatan yaxshiroq ko'rsatkichlarga ega bo'lishgan. Ushbu farqlarni tushuntiruvchi omillardan biri bu o'quvchilarning har xil ta'lim sharoitiga ega ekanliklari bo'lishi mumkin. Taqqoslanayotgan ikki toifa o'quvchilar o'rtasidagi o'zlashtirishdagi farqlar magnitudasiga ta'sir qiluvchi omillar tahlil qilinganda, o'quvchilar o'rtasidagi o'zlashtirish darajasidagi farqning asosiy qismi maktabdagi ta'lim sifati bilan tushuntiriladi. Shu bilan birga, ota-onalarning ta'lim jarayonidagi faol ishtiroki barcha ijtimoiy-iqtisodiy guruhlarda nisbatan teng darajada.
+Tadqiqot natijalari Oʻzbekistonda ta'lim va kambagʻallik oʻrtasida kuchli bogʻliqlik mavjudigiga ishora qiladi. Oilaning ijtimoiy-iqtisodiy statusiga qarab taqqoslanganda, yuqori daromadli oilalarning farzandlari past daromadli oilalarning farzandlariga nisbatan yaxshiroq oʻzlashtirish koʻrsatkichlariga erishgan. Aholi yashash punkti va oʻquvchilarning jinsini hisobga olib solishtirilganda ham akademik oʻzlashtirishda nisbatan yuqori ijtimoiy-iqtisodiy statusga ega oiladagi oʻquvchilar nisbatan ijtimoiy-iqtisodiy statusi quyiroq tengdoshlariga nisbatan yaxshiroq koʻrsatkichlarga ega boʻlishgan. Ushbu farqlarni tushuntiruvchi omillardan biri bu oʻquvchilarning har xil ta'lim sharoitiga ega ekanliklari boʻlishi mumkin. Taqqoslanayotgan ikki toifa oʻquvchilar oʻrtasidagi oʻzlashtirishdagi farqlar magnitudasiga ta'sir qiluvchi omillar tahlil qilinganda, oʻquvchilar oʻrtasidagi oʻzlashtirish darajasidagi farqning asosiy qismi maktabdagi ta'lim sifati bilan tushuntiriladi. Shu bilan birga, ota-onalarning ta'lim jarayonidagi faol ishtiroki barcha ijtimoiy-iqtisodiy guruhlarda nisbatan teng darajada.
 
-Umuman olganda, nisbatan quyi ijtimoiy-iqtisodiy statusga ega oila farzandlari o'rtacha o'zlashtirish ko'rsatkichi past bo'lgan maktablarda ta'lim olayotganini hisobga olish lozim. Shu ma'noda, o'rtacha akademik ko'rsatkichlari past bo'lgan maktablarda ta'lim sifatini yaxshilash nafaqat ta'lim tizimi islohoti sifatida balki **ijtimoiy himoya** siyosati sifatida ham muhim hisoblanadi. Mavjud qonunchilikka ko'ra daromad past aholi farzandlari uchun ta'lim imtiyozlari mavjud. Masalan, O'zbekiston Respublikasi Prezidentining 2025-yil 26-dekabrdagi 258-sonli farmoniga ko'ra, Ijtimoiy reyestrga kiritilgan oila farzandlari uchun 12 xil ta'limga oid imtiyozlar ko'zda tutilgan ([3-Ilova](#sec-ilova-3)). Bu imtiyozlarning tizimli tadbiq etilishini ko'rsatuvchi yagona monitoring platformasini yaratish maqsadga muvofiq. Bu platforma oila farzandlari uchun ta'lim imtiyozlaridan foydalanish darajasini hududlar va aholining boshqa demografik ko'rsatkichlari kesimida foydalanish darajasini kuzatish mumkin bo'ladi.
+Umuman olganda, nisbatan quyi ijtimoiy-iqtisodiy statusga ega oila farzandlari oʻrtacha oʻzlashtirish koʻrsatkichi past boʻlgan maktablarda ta'lim olayotganini hisobga olish lozim. Shu ma'noda, oʻrtacha akademik koʻrsatkichlari past boʻlgan maktablarda ta'lim sifatini yaxshilash nafaqat ta'lim tizimi islohoti sifatida balki **ijtimoiy himoya** siyosati sifatida ham muhim hisoblanadi. Mavjud qonunchilikka koʻra daromad past aholi farzandlari uchun ta'lim imtiyozlari mavjud. Masalan, Oʻzbekiston Respublikasi Prezidentining 2025-yil 26-dekabrdagi 258-sonli farmoniga koʻra, Ijtimoiy reyestrga kiritilgan oila farzandlari uchun 12 xil ta'limga oid imtiyozlar koʻzda tutilgan ([3-Ilova](#sec-ilova-3)). Bu imtiyozlarning tizimli tadbiq etilishini koʻrsatuvchi yagona monitoring platformasini yaratish maqsadga muvofiq. Bu platforma oila farzandlari uchun ta'lim imtiyozlaridan foydalanish darajasini hududlar va aholining boshqa demografik koʻrsatkichlari kesimida foydalanish darajasini kuzatish mumkin boʻladi.
 
 
 # Ilovalar {#sec-ilovalar}
@@ -468,7 +470,7 @@ Umuman olganda, nisbatan quyi ijtimoiy-iqtisodiy statusga ega oila farzandlari o
 
 ```{r}
 #| label: hbs-gender
-#| fig-cap: "8-rasm. Bir o'quvchiga to'g'ri keluvchi o'rtacha ta'lim xarajati: jon boshiga daromad detsillari va jins kesimida (Uy xo'jaligi daromadlari va xarajatlari so'rovi, 2024)"
+#| fig-cap: "8-rasm. Bir oʻquvchiga toʻgʻri keluvchi oʻrtacha ta'lim xarajati: jon boshiga daromad detsillari va jins kesimida (Uy xoʻjaligi daromadlari va xarajatlari soʻrovi, 2024)"
 
 gender_decile_cost <- read_xlsx("tables/hbs_edu_2_gender_decile_cost.xlsx")
 
@@ -482,7 +484,7 @@ p <- ggplot(gender_decile_cost, aes(x = decile, y = weighted_avg_edu_cost, color
   scale_y_continuous(labels = function(x) format(x, big.mark = " ", scientific = FALSE)) +
   scale_color_manual(values = c("Qizlar" = "firebrick", "O'g'il bolalar" = "steelblue")) +
   labs(x = "Jon boshiga daromad detsillari",
-       y = "O'rtacha ta'lim xarajati (UZS)",
+       y = "Oʻrtacha ta'lim xarajati (UZS)",
        color = "Jins") +
   theme_minimal() +
   theme(legend.position = "top")
@@ -496,7 +498,7 @@ ggplotly(p, tooltip = "text") %>%
 
 ```{r}
 #| label: hbs-ur
-#| fig-cap: "9-rasm. Bir o'quvchiga to'g'ri keluvchi o'rtacha ta'lim xarajati: jon boshiga daromad detsillari va aholi yashash punkti turi kesimida (Uy xo'jaligi daromadlari va xarajatlari so'rovi, 2024)"
+#| fig-cap: "9-rasm. Bir oʻquvchiga toʻgʻri keluvchi oʻrtacha ta'lim xarajati: jon boshiga daromad detsillari va aholi yashash punkti turi kesimida (Uy xoʻjaligi daromadlari va xarajatlari soʻrovi, 2024)"
 
 urban_decile_avg_cost <- read_xlsx("tables/hbs_edu_2_urban_decile_avg_cost.xlsx")
 
@@ -510,7 +512,7 @@ p <- ggplot(urban_decile_avg_cost, aes(x = decile, y = weighted_avg_cost, color 
   scale_y_continuous(labels = function(x) format(x, big.mark = " ", scientific = FALSE)) +
   scale_color_manual(values = c("Shahar" = "steelblue", "Qishloq" = "firebrick")) +
   labs(x = "Jon boshiga daromad detsillari",
-       y = "O'rtacha ta'lim xarajati (UZS)",
+       y = "Oʻrtacha ta'lim xarajati (UZS)",
        color = "Hudud") +
   theme_minimal() +
   theme(legend.position = "top")
@@ -520,11 +522,11 @@ ggplotly(p, tooltip = "text") %>%
   layout(autosize = TRUE, legend = list(orientation = "h", x = 0.35, y = 1.1))
 ```
 
-### 1.3. Darslik va o'quv qurollari xarajatlari: shahar/qishloq kesimida
+### 1.3. Darslik va oʻquv qurollari xarajatlari: shahar/qishloq kesimida
 
 ```{r}
 #| label: hbs-text
-#| fig-cap: "10-rasm. Darslik va o'quv qurollari xarajatlari: jon boshiga daromad detsillari va aholi yashash punkti turi kesimida (Uy xo'jaligi daromadlari va xarajatlari so'rovi, 2024)"
+#| fig-cap: "10-rasm. Darslik va oʻquv qurollari xarajatlari: jon boshiga daromad detsillari va aholi yashash punkti turi kesimida (Uy xoʻjaligi daromadlari va xarajatlari soʻrovi, 2024)"
 
 urban_decile_textsupply_avg_cost <- read_xlsx("tables/hbs_edu_2_urban_decile_textsupply_avg_cost.xlsx")
 
@@ -557,7 +559,7 @@ ggplotly(p, tooltip = "text") %>%
 ::: {.callout-note collapse="true"}
 ## 2-Ilova: MICS Ma'lumotlari Tahlili
 
-### Farovonlik detsillari bo'yicha asosiy ko'rsatkichlar
+### Farovonlik detsillari boʻyicha asosiy koʻrsatkichlar
 
 ::: {.panel-tabset}
 
@@ -565,13 +567,13 @@ ggplotly(p, tooltip = "text") %>%
 
 ```{r books-interactive}
 #| label: books-interactive
-#| fig-cap: "11-rasm. Kitoblarning o'rtacha soni (interaktiv)"
+#| fig-cap: "11-rasm. Kitoblarning oʻrtacha soni (interaktiv)"
 
 books_by_decile <- read_csv("tables/mics_books_by_decile.csv", show_col_types = FALSE)
 
 p <- ggplot(books_by_decile, aes(x = windex10, y = avg_books,
                                   text = paste0("Farovonlik detsili: ", windex10,
-                                               "<br>O'rtacha kitoblar: ", round(avg_books, 1),
+                                               "<br>Oʻrtacha kitoblar: ", round(avg_books, 1),
                                                "<br>Kuzatuvlar soni: ", format(n, big.mark = " ")))) +
   geom_line(linewidth = 1.3, color = "#2C7FB8") +
   geom_point(size = 4, color = "#2C7FB8") +
@@ -580,7 +582,7 @@ p <- ggplot(books_by_decile, aes(x = windex10, y = avg_books,
   coord_cartesian(ylim = c(0, NA)) +
   labs(
     x = "Farovonlik detsili",
-    y = "Kitoblarning o'rtacha soni"
+    y = "Kitoblarning oʻrtacha soni"
   ) +
   theme_minimal(base_size = 14)
 
@@ -613,11 +615,11 @@ p <- ggplot(help_by_decile, aes(x = windex10, y = help_rate_pct,
 ggplotly(p, tooltip = "text") %>% plotly_config()
 ```
 
-#### Yig'ilishda qatnashish
+#### Yigʻilishda qatnashish
 
 ```{r meeting-interactive}
 #| label: meeting-interactive
-#| fig-cap: "13-rasm. Maktab yig'ilishida qatnashish darajasi (interaktiv)"
+#| fig-cap: "13-rasm. Maktab yigʻilishida qatnashish darajasi (interaktiv)"
 
 meeting_by_decile <- read_csv("tables/mics_meeting_by_decile.csv", show_col_types = FALSE)
 
@@ -632,7 +634,7 @@ p <- ggplot(meeting_by_decile, aes(x = windex10, y = attend_rate_pct,
   scale_y_continuous(limits = c(0, 100), labels = function(x) paste0(x, "%")) +
   labs(
     x = "Farovonlik detsili",
-    y = "Yig'ilishda qatnashish darajasi (%)"
+    y = "Yigʻilishda qatnashish darajasi (%)"
   ) +
   theme_minimal(base_size = 14)
 
@@ -665,28 +667,28 @@ p <- ggplot(progress_disc_by_decile, aes(x = windex10, y = progress_disc_rate_pc
 ggplotly(p, tooltip = "text") %>% plotly_config()
 ```
 
-#### Barcha ko'rsatkichlar
+#### Barcha koʻrsatkichlar
 
 ```{r all-mics-combined}
 #| label: all-mics
-#| fig-cap: "15-rasm. Barcha MICS ko'rsatkichlari birgalikda"
+#| fig-cap: "15-rasm. Barcha MICS koʻrsatkichlari birgalikda"
 
 all_mics <- bind_rows(
   help_by_decile %>% mutate(indicator = "Uy vazifasiga yordam", value = help_rate_pct),
-  meeting_by_decile %>% mutate(indicator = "Yig'ilishda qatnashish", value = attend_rate_pct),
+  meeting_by_decile %>% mutate(indicator = "Yigʻilishda qatnashish", value = attend_rate_pct),
   progress_disc_by_decile %>% mutate(indicator = "Progress muhokamasi", value = progress_disc_rate_pct)
 )
 
 p <- ggplot(all_mics, aes(x = windex10, y = value, color = indicator, group = indicator,
                            text = paste0("Detsil: ", windex10,
-                                        "<br>Ko'rsatkich: ", indicator,
+                                        "<br>Koʻrsatkich: ", indicator,
                                         "<br>Qiymat: ", round(value, 1), "%"))) +
   geom_line(linewidth = 1.2) +
   geom_point(size = 3) +
   scale_x_continuous(breaks = 1:10) +
   scale_y_continuous(limits = c(0, 100), labels = function(x) paste0(x, "%")) +
   scale_color_brewer(palette = "Set2") +
-  labs(x = "Farovonlik detsili", y = "Foiz (%)", color = "Ko'rsatkich") +
+  labs(x = "Farovonlik detsili", y = "Foiz (%)", color = "Koʻrsatkich") +
   theme_minimal(base_size = 14) +
   theme(legend.position = "top")
 
@@ -697,7 +699,7 @@ ggplotly(p, tooltip = "text") %>%
 
 :::
 
-### Jins bo'yicha tahlil
+### Jins boʻyicha tahlil
 
 ::: {.panel-tabset}
 
@@ -717,7 +719,7 @@ p <- ggplot(books_by_decile_gender, aes(x = windex10, y = avg_books, color = gen
   scale_color_manual(values = mics_gender_palette) +
   scale_x_continuous(breaks = 1:10) +
   coord_cartesian(ylim = c(0, NA)) +
-  labs(x = "Farovonlik detsili", y = "Kitoblarning o'rtacha soni", color = "Jinsi") +
+  labs(x = "Farovonlik detsili", y = "Kitoblarning oʻrtacha soni", color = "Jinsi") +
   theme_minimal(base_size = 14) +
   theme(legend.position = "top")
 
@@ -747,7 +749,7 @@ p <- ggplot(help_by_decile_gender, aes(x = windex10, y = rate_pct, color = gende
 ggplotly(p, tooltip = "text") %>% plotly_config()
 ```
 
-#### Yig'ilish
+#### Yigʻilish
 
 ```{r meeting-gender-interactive}
 #| label: meeting-gender-interactive
@@ -795,7 +797,7 @@ ggplotly(p, tooltip = "text") %>% plotly_config()
 
 :::
 
-### Shahar/Qishloq bo'yicha tahlil
+### Shahar/Qishloq boʻyicha tahlil
 
 ::: {.panel-tabset}
 
@@ -815,7 +817,7 @@ p <- ggplot(books_by_decile_ur, aes(x = windex10, y = avg_books, color = area, g
   scale_color_manual(values = mics_ur_palette, drop = FALSE) +
   scale_x_continuous(breaks = 1:10) +
   coord_cartesian(ylim = c(0, NA)) +
-  labs(x = "Farovonlik detsili", y = "Kitoblarning o'rtacha soni", color = "Hudud") +
+  labs(x = "Farovonlik detsili", y = "Kitoblarning oʻrtacha soni", color = "Hudud") +
   theme_minimal(base_size = 14) +
   theme(legend.position = "top")
 
@@ -845,7 +847,7 @@ p <- ggplot(help_by_decile_ur, aes(x = windex10, y = rate_pct, color = area, gro
 ggplotly(p, tooltip = "text") %>% plotly_config()
 ```
 
-#### Yig'ilish
+#### Yigʻilish
 
 ```{r meeting-ur-interactive}
 #| label: meeting-ur-interactive
@@ -910,31 +912,31 @@ imtiyozlar_df <- data.frame(
   `№` = 1:12,
   `Imtiyoz turi` = c(
     "Maktabgacha ta'lim tashkilotlariga imtiyozli qabul",
-    "Oliy ta'lim kirish test sinovlari to'lovidan ozod etish",
+    "Oliy ta'lim kirish test sinovlari toʻlovidan ozod etish",
     "Ta'lim kreditini garov va kafilliksiz olish",
     "Talabalar turar joyi xarajatlarini qoplash",
-    "\"El-yurt umidi\" jamg'armasi kvotalari",
+    "\"El-yurt umidi\" jamgʻarmasi kvotalari",
     "Xotin-qizlar uchun oliy ta'lim imtiyozlari",
-    "Kasblarga o'qitish stipendiyasi",
+    "Kasblarga oʻqitish stipendiyasi",
     "Zamonaviy bilim va kasb-hunar kurslari",
-    "Mehnat va ijtimoiy munosabatlar akademiyasida bepul o'qish",
-    "\"Yangi O'zbekiston\" universiteti imtiyozlari",
+    "Mehnat va ijtimoiy munosabatlar akademiyasida bepul oʻqish",
+    "\"Yangi Oʻzbekiston\" universiteti imtiyozlari",
     "\"Prezident iqtidorli farzandlari\" dasturi",
-    "Sport maktablarida bepul mashg'ulotlar"
+    "Sport maktablarida bepul mashgʻulotlar"
   ),
   Tavsifi = c(
     "Ijtimoiy reyestrga kiritilgan oilalar farzandlari davlat maktabgacha ta'lim tashkilotlariga imtiyozli asosda qabul qilinadi",
-    "Ijtimoiy reyestrga kiritilgan oilalar a'zolari oliy ta'lim muassasalariga o'qishga qabul qilishda o'tkaziladigan kirish test sinovlarida ishtirok etish uchun undiriladigan to'lovlardan ozod etiladi",
-    "Ijtimoiy reyestrga kiritilgan oilalar farzandlaridan ta'lim krediti uchun garov va kafilliklar talab etilmaydi. \"3\" va undan yuqori o'zlashtirish bahosi bo'lganda kredit to'lov-kontrakt summasi miqdorida ajratiladi",
-    "2025/2026 o'quv yilidan boshlab Ijtimoiy reyestrga kiritilgan oilalar farzandlarining davlat oliy ta'lim muassasalari talabalar turar joylaridagi yashash xarajatlari Davlat byudjeti hisobidan qoplab beriladi",
-    "2025-yildan boshlab \"El-yurt umidi\" jamg'armasi tomonidan Ijtimoiy reyestrga kiritilgan oilalarning farzandlari uchun xorijda ta'lim olish bo'yicha alohida kvotalar ajratiladi",
+    "Ijtimoiy reyestrga kiritilgan oilalar a'zolari oliy ta'lim muassasalariga oʻqishga qabul qilishda oʻtkaziladigan kirish test sinovlarida ishtirok etish uchun undiriladigan toʻlovlardan ozod etiladi",
+    "Ijtimoiy reyestrga kiritilgan oilalar farzandlaridan ta'lim krediti uchun garov va kafilliklar talab etilmaydi. \"3\" va undan yuqori oʻzlashtirish bahosi boʻlganda kredit toʻlov-kontrakt summasi miqdorida ajratiladi",
+    "2025/2026 oʻquv yilidan boshlab Ijtimoiy reyestrga kiritilgan oilalar farzandlarining davlat oliy ta'lim muassasalari talabalar turar joylaridagi yashash xarajatlari Davlat byudjeti hisobidan qoplab beriladi",
+    "2025-yildan boshlab \"El-yurt umidi\" jamgʻarmasi tomonidan Ijtimoiy reyestrga kiritilgan oilalarning farzandlari uchun xorijda ta'lim olish boʻyicha alohida kvotalar ajratiladi",
     "Ijtimoiy himoya yagona reyestriga kiritilgan oilalarning xotin-qizlariga ajratiladigan ta'lim kreditlari uchun garov va kafilliklar talab etilmaydi",
-    "Bandlikka ko'maklashish davlat jamg'armasi mablag'lari hisobidan kasblarga o'qitish maqsadida ajratiladigan stipendiyalar muddati uch oydan ko'p davom etadigan o'quv kurslariga qabul qilingan Ijtimoiy reyestrga kiritilgan oilalarning ishsiz a'zolariga to'lanadi",
-    "Ijtimoiy himoya yagona reyestri axborot tizimiga kiritilgan oilalar farzandlari bo'lgan yoshlarga axborot texnologiyalari sohasida tahsil olishga ajratiladigan ta'lim krediti uchun garov va kafillik talab etilmaydi",
-    "Har yili 20 nafardan kam bo'lmagan, Akademiyaga kirish imtihonlarida yuqori ball to'plagan, Ijtimoiy reyestrga kiritilgan oilalarning farzandlari muassis granti asosida bepul o'qishga qabul qilinadi",
-    "Ijtimoiy reyestrga kiritilgan oilalarning farzandlariga \"Yangi O'zbekiston\" universitetida davlat granti asosida ta'lim olishi uchun kvotalar ajratiladi",
+    "Bandlikka koʻmaklashish davlat jamgʻarmasi mablagʻlari hisobidan kasblarga oʻqitish maqsadida ajratiladigan stipendiyalar muddati uch oydan koʻp davom etadigan oʻquv kurslariga qabul qilingan Ijtimoiy reyestrga kiritilgan oilalarning ishsiz a'zolariga toʻlanadi",
+    "Ijtimoiy himoya yagona reyestri axborot tizimiga kiritilgan oilalar farzandlari boʻlgan yoshlarga axborot texnologiyalari sohasida tahsil olishga ajratiladigan ta'lim krediti uchun garov va kafillik talab etilmaydi",
+    "Har yili 20 nafardan kam boʻlmagan, Akademiyaga kirish imtihonlarida yuqori ball toʻplagan, Ijtimoiy reyestrga kiritilgan oilalarning farzandlari muassis granti asosida bepul oʻqishga qabul qilinadi",
+    "Ijtimoiy reyestrga kiritilgan oilalarning farzandlariga \"Yangi Oʻzbekiston\" universitetida davlat granti asosida ta'lim olishi uchun kvotalar ajratiladi",
     "Ijtimoiy reyestrga kiritilgan oilalarning farzandlari \"Prezident iqtidorli farzandlari\" dasturi doirasida ta'lim olishida ustuvorlik beriladi",
-    "Ijtimoiy reyestrga kiritilgan oilalarning farzandlariga sport maktablarida mashg'ulotlar bepul o'tkaziladi"
+    "Ijtimoiy reyestrga kiritilgan oilalarning farzandlariga sport maktablarida mashgʻulotlar bepul oʻtkaziladi"
   ),
   `Huquqiy asosi` = c(
     "PQ-330, 9-band",
@@ -974,9 +976,9 @@ datatable(imtiyozlar_df,
 
 1. Yuqoridagi barcha imtiyozlar Ijtimoiy reyestrning uchala toifasi uchun amal qiladi:
    - Davlat ta'minotidagi oila
-   - Kambag'al oila
-   - Kambag'allik chegarasidagi oila (12 oy davomida)
-2. "Kambag'allik chegarasidagi oila" toifasidagi oilalar uchun imtiyozlar ular reyestrga kiritilgan sanadan 12 oy davomida qo'llaniladi.
+   - Kambagʻal oila
+   - Kambagʻallik chegarasidagi oila (12 oy davomida)
+2. "Kambagʻallik chegarasidagi oila" toifasidagi oilalar uchun imtiyozlar ular reyestrga kiritilgan sanadan 12 oy davomida qoʻllaniladi.
 3. Imtiyozlardan foydalanish uchun oilaning Ijtimoiy reyestrga kiritilganligi tasdiqlanishi kerak.
 :::
 
@@ -992,14 +994,14 @@ sources_df <- data.frame(
   `Ma'lumot turi` = c("PISA", "HBS", "MICS"),
   Manba = c(
     "OECD Programme for International Student Assessment",
-    "Milliy statistika qo'mitasi - Uy xo'jaligi daromadlari va xarajatlari so'rovi",
-    "UNICEF/Milliy statistika qo'mitasi - Multiindikator klaster so'rovi"
+    "Milliy statistika qoʻmitasi - Uy xoʻjaligi daromadlari va xarajatlari soʻrovi",
+    "UNICEF/Milliy statistika qoʻmitasi - Multiindikator klaster soʻrovi"
   ),
   Yil = c("2022", "2024", "2021-2022"),
   Qamrov = c(
-    "15-yoshli o'quvchilar",
-    "Uy xo'jaliklari",
-    "Uy xo'jaliklari va bolalar"
+    "15-yoshli oʻquvchilar",
+    "Uy xoʻjaliklari",
+    "Uy xoʻjaliklari va bolalar"
   ),
   check.names = FALSE
 )
