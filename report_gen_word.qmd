@@ -27,8 +27,6 @@ library(dplyr)
 library(readr)
 library(readxl)
 library(ggplot2)
-library(flextable)
-
 theme_set(theme_minimal(base_size = 12))
 
 mics_gender_palette <- c("Erkak" = "#0072B2", "Ayol" = "#D55E00")
@@ -641,16 +639,7 @@ imtiyozlar_df <- data.frame(
   check.names = FALSE
 )
 
-flextable(imtiyozlar_df) %>%
-  set_table_properties(layout = "autofit") %>%
-  fontsize(size = 9, part = "all") %>%
-  bold(part = "header") %>%
-  align(align = "center", part = "header") %>%
-  align(j = 1, align = "center", part = "body") %>%
-  width(j = 1, width = 0.4) %>%
-  width(j = 2, width = 1.5) %>%
-  width(j = 3, width = 3.5) %>%
-  width(j = 4, width = 1.2)
+knitr::kable(imtiyozlar_df)
 ```
 
 **MUHIM IZOHLAR:**
@@ -684,12 +673,5 @@ sources_df <- data.frame(
   check.names = FALSE
 )
 
-flextable(sources_df) %>%
-  set_table_properties(layout = "autofit") %>%
-  bold(part = "header") %>%
-  align(align = "center", part = "header") %>%
-  width(j = 1, width = 1.0) %>%
-  width(j = 2, width = 3.0) %>%
-  width(j = 3, width = 1.0) %>%
-  width(j = 4, width = 1.5)
+knitr::kable(sources_df)
 ```
