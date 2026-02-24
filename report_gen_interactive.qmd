@@ -79,20 +79,20 @@ mics_ur_palette <- c("Shahar" = "#009E73", "Qishloq" = "#CC79A7")
 
 Ta'limning kambag'allikni kamaytirishdagi roli borasidagi o'rganishlar muhim tadqiqot yo'nalishi sifatida e'tirof etiladi. So'nggi o'n yilliklarda tadqiqotlar ta'limning inson kapitalini oshirish, daromadlar o'rtasidagi tengsizlikni kamaytirish va ijtimoiy mobillikni rag'batlantirishda muhim o'ringa ega ekanligi butun dunyoda, xususan, Xitoy, Braziliya va Janubiy Afrika kabi rivojlanayotgan mamlakatlarda qilingan tadqiqotlarda o'z tasdig'ini topib kelmoqda (@Vian_Dhanda_2024, @Dorte_Verner_2004, @Md_Mahbubur_Rahman_2024).
 
-Global miqyosda, kambag'allik darajasi 1990-yildagi 43.6 foizdan 2023-yilda 10.2 foizga qisqarganiga qaramay( @WorldBankOpen), rivojlanayotgan malakatlarda xususan qishloq hududlarida ta'lim olish imkoniyati cheklanganligi bo'yicha muammolar saqlanib qolmoqda (@Xiaowen_Xie_2023; @Alessia_Spada_2023). COVID-19 pandemiyasi davrida ta'limdagi tengsizlik yanada yaqqolroq ko'rina boshladi va kuchaydi, bu esa ijtimoiy himoya va ta'lim sohalarida samarali siyosiy intervensiyalarning dolzarb zaruratini ko'rsatmoqda (@terziPhilosophicalReflectionsChild2023; @beesonDoesTacklingPoverty2024).
+Global miqyosda, kambag'allik darajasi 1990-yildagi 43.6 foizdan 2023-yilda 10.2 foizga qisqarganiga qaramay( @WorldBankOpen), rivojlanayotgan malakatlarda xususan qishloq hududlarida ta'lim olish imkoniyati cheklanganligi bo'yicha muammolar saqlanib qolmoqda (@Xiaowen_Xie_2023; @Alessia_Spada_2023). COVID-19 pandemiyasi davrida ta'limdagi tengsizlik yanada yaqqolroq ko'rina boshladi va kuchaydi, bu esa ijtimoiy himoya va ta'lim sohalarida samarali siyosiy intervensiyalarning zarurligini ko'rsatmoqda (@terziPhilosophicalReflectionsChild2023; @beesonDoesTacklingPoverty2024).
 
-Ushbu tadqiqotda biz quyidagi ma'lumot manbalaridan foydalangan holda tahlilni olib boramiz:
+Ushbu tadqiqotda biz tahlilni quyidagi ma'lumot manbalaridan foydalangan holda olib boramiz:
 
 ::: {.panel-tabset}
 
 ## PISA 2022
-PISA dasturi yordamida O'zbekistonda 2022-yil 15-yoshli o'quvchilarning o'zlashtirish ko'rsatkichlari ma'lumotlaridan foydalanib, o'quvchilarning ta'lim ko'rsatkichlari va oilaning umumiy iqtisodiy holati o'rtasidagi bog'liqlikni o'rganamiz.
+PISA dasturi yordamida O'zbekistonda 2022-yil 15-yoshli o'quvchilarning o'zlashtirish ko'rsatkichlari ma'lumotlaridan foydalanib, o'quvchilarning ta'lim ko'rsatkichlari va oilaning umumiy iqtisodiy holati o'rtasidagi bog'liqlik o'rganiladi.
 
 ## HBS 2024
-Milliy statistika qo'mitasining 2024-yilgi Uy xo'jaligi daromadlari va xarajatlari so'rovnomasidan o'quvchilar ta'lim olishi uchun xarajatlarni tahlil qilish uchun foydalaniladi.
+Milliy statistika qo'mitasining 2024-yilgi Uy xo'jaligi daromadlari va xarajatlari so'rovidan o'quvchilar ta'lim olishi uchun xarajatlarni tahlil qilish uchun foydalaniladi.
 
 ## MICS 2021-2022
-UNICEF hamda Milliy Statistika Qo'mitasi tomonidan o'tkazilgan multiindikator klaster kuzatuvi (MICS) so'rovnomasidan oila a'zolarining o'quvchi ta'limidagi ishtirokini o'rganish uchun foydalaniladi.
+UNICEF hamda Milliy Statistika Qo'mitasi tomonidan o'tkazilgan multiindikator klaster kuzatuvi (MICS) so'rovidan oila a'zolarining o'quvchi ta'limidagi ishtirokini o'rganish uchun foydalaniladi.
 
 :::
 
@@ -107,11 +107,11 @@ Ushbu muammolarni tahlil qilish orqali hisobot ta'limdagi to'siqlarni bevosita b
 Kambag'allikni faqat monetar asoslarda emas, balki, ko'p o'lchamli miqyosda qaralganda, eng muhim omillardan biri bu ta'lim hisoblanadi. Iqtisodiy tadqiqotlar va ishlohotlar markazi hisoblagan Ko'p o'lchovli kambag'allik indeksi natijalariga ko'ra, kambag'allikka eng ko'p hissa qo'shayotgan omil bu ta'lim hisoblanadi @cerrandundpcountryofficeinuzbekistanUzbekistanPilotMultidimensional2023.
 
 
-Kambag'allikning ta'limga ko'rsatkichlariga ta'sirini baholash uchun ushbu hisobot asosiy tahliliy o'zgaruvchi sifatida PISA oilaning ijtimoiy-iqtisodiy statusi indeksidan (IIS) foydalanadi. IIS Iqtisodiy hamkorlik va taraqqiyot tashkiloti tomonidan yaratilgan murakkab indeks bo'lib, u o'quvchining ijtimoiy-iqtisodiy kelib chiqishini har tomonlama o'lchaydi hamda uchta asosiy tarkibiy qism asosida hisoblanadi:
+Kambag'allikning ta'lim ko'rsatkichlariga ta'sirini baholash uchun ushbu hisobot asosiy tahliliy o'zgaruvchi sifatida PISA oilaning ijtimoiy-iqtisodiy statusi indeksidan (IIS) foydalanadi. IIS Iqtisodiy hamkorlik va taraqqiyot tashkiloti tomonidan yaratilgan murakkab indeks bo'lib, u o'quvchining ijtimoiy-iqtisodiy kelib chiqishini har tomonlama o'lchaydi hamda uchta asosiy tarkibiy qism asosida hisoblaydi:
 
 1) **Ota-onalar ta'limi** - ota-onalar erishgan eng yuqori ta'lim darajasi
 2) **Ota-onaning kasbi** - Ota-onaning eng yuqori kasbiy maqomi
-3) **Uyda mavjud jihozlar** - Oilaning boyligi va uydagi madaniy va ta'lim resurslaridan foydalanish imkoniyati (masalan, kitoblar soni, tinch o'quv joyiga kirish imkoniyati, internetga ulanish imkoniyati)
+3) **Uyda mavjud jihozlar** - Oilaning boyligi va uydagi madaniy va ta'lim resurslaridan foydalanish imkoniyati (masalan, kitoblar soni, o'qish uchun tinch joy borligi, internetga ulanish imkoniyati)
 
 PISA natijalari ma'lumotlarini IIS indeksi nuqtayi nazaridan tahlil qilish orqali biz bolaning ijtimoiy-iqtisodiy kelib chiqishi uning bugungi kunda O'zbekistonda ta'lim olishi va o'zlashtirishi imkoniyatlariga qay darajada ta'sir qilishini aniq miqdoriy baholashimiz mumkin.
 
@@ -177,7 +177,7 @@ ggplotly(p, tooltip = "text") %>%
 
 ```{r}
 #| label: level2-rural-interactive
-#| fig-cap: "2-rasm. 2-darajaga erishgan o'quvchilar ulushi: aholi yashash punkti tipi kesimida"
+#| fig-cap: "2-rasm. 2-darajaga erishgan o'quvchilar ulushi: aholi yashash punkti turi kesimida"
 
 p <- ggplot(level2_rural_all, aes(x = Decile_num, y = Percentage, color = rural, group = rural,
                                    text = paste0("Detsil: D", Decile_num,
@@ -245,15 +245,15 @@ ggplotly(p, tooltip = "text") %>%
 
 :::
 
-## O'quvchilarga uyda mavjud sharoitlar va oilaning ijtimoiy-iqtisodiy statusi {#sec-uy-sharoitlari}
+## O'quvchilarga uyda mavjud sharoit va oilaning ijtimoiy-iqtisodiy statusi {#sec-uy-sharoitlari}
 
-O'quvchilar ta'lim olishida ularga uyda yaratib berilayotgan sharoit muhim ahamiyat kasb etadi. Ayniqsa, hozirgi zamonaviy texnologiyalar ta'limda keng qo'llanilayotgan sharoitda, o'quvchilarga uyda ta'lim olish uchun yaratib berilayotgan shart-sharoitlarning ahamiyati yana oshdi.
+O'quvchilar ta'lim olishida ularga uyda yaratib berilayotgan sharoit muhim. Ayniqsa, hozirgi zamonaviy texnologiyalar ta'limda keng qo'llanilayotgan sharoitda, o'quvchilarga uyda ta'lim olish uchun yaratib berilayotgan shart-sharoitning ahamiyati yana oshdi.
 
 PISA savolnomasi asosida quyidagi savollarga o'quvchilarning javoblari IIS detsillari bo'yicha tahlil qilindi:
 
 1) O'z xonasi bormi?
 2) O'qish uchun kompyuteri (planshet, noutbuk) bormi?
-3) Ta'lim dasturiy ta'minotlaridan foydalanadimi?
+3) Ta'limiy dasturlardan foydalanadimi?
 4) Uyda internet bormi?
 
 ::: {.callout-tip collapse="true"}
@@ -261,7 +261,7 @@ PISA savolnomasi asosida quyidagi savollarga o'quvchilarning javoblari IIS detsi
 
 ```{r}
 #| label: home-conditions-interactive
-#| fig-cap: "4-rasm. O'quvchilar ta'lim olishi uchun uy sharoitlari: IIS detsillari kesimida"
+#| fig-cap: "4-rasm. O'quvchilar ta'lim olishi uchun uydagi sharoit: IIS detsillari kesimida"
 
 percentages <- read_csv("tables/pisa_home_conditions.csv", show_col_types = FALSE)
 
@@ -289,7 +289,7 @@ ggplotly(p, tooltip = "text") %>%
 :::
 
 
-IISning 1-detsilidagi oila farzandlarining taqriban uchdan bir qismida uyida kompyuter, planshet kabi bilim olish jarayonida qo'llanishi mumkin bo'lgan elektron vositalar mavjud bo'lsa, 10-detsilda bu ko'rsatkich qariyb **90%**ni tashkil qiladi. Eng katta farqlar o'qish uchun kompyuterning mavjudligi, ta'limga oid dasturiy ta'minotlaridan foydalanish va uy internetga ulanganligida kuzatiladi. O'quvchilar uchun o'z xonasining mavjudligi IIS detsillari bo'yicha taqsimotida tengsizlik qolgan ko'rsatkichlarga nisbatan kamroq.
+IISning 1-detsilidagi oila farzandlarining taqriban uchdan bir qismida uyida kompyuter, planshet kabi bilim olish jarayonida qo'llanishi mumkin bo'lgan elektron vositalar mavjud bo'lsa, 10-detsilda bu ko'rsatkich qariyb **90%**ni tashkil qiladi. Eng katta farqlar o'qish uchun kompyuterning mavjudligi, ta'limiy dasturlardan foydalanish va uy internetga ulanganligida kuzatiladi. O'quvchilar uchun o'z xonasining mavjudligi IIS detsillari bo'yicha taqsimotida tengsizlik qolgan ko'rsatkichlarga nisbatan kamroq.
 
 
 ### Kompyuter mavjudligi: shahar/qishloq kesimida
@@ -299,7 +299,7 @@ IISning 1-detsilidagi oila farzandlarining taqriban uchdan bir qismida uyida kom
 
 ```{r}
 #| label: computer-rural-interactive
-#| fig-cap: "5-rasm. Kompyuter mavjudligi: aholi yashash punkti tipi va IIS detsillari kesimida"
+#| fig-cap: "5-rasm. Kompyuter mavjudligi: aholi yashash punkti turi va IIS detsillari kesimida"
 
 computer_rural <- read_csv("tables/pisa_computer_rural.csv", show_col_types = FALSE)
 
@@ -325,20 +325,20 @@ ggplotly(p, tooltip = "text") %>%
 
 :::
 
-**Izoh:** Kompyuter mavjudligidagi farqlar aholi yashash punktlar tipini hisobga olganda yanada oshgan: 1 va 2-detsillarda qishloqdagi o'quvchilarda kompyuterning mavjudligi shaharlik tengdoshlariga qaraganda sezilarli darajada past. 7, 8 va 9-detsillarda ham shaharda istiqomat qiluvchi o'quvchilarda kompyuter mavjudligi darajasi yuqori.
+Kompyuter mavjudligidagi farqlar aholi yashash punktlari turini hisobga olganda yanada oshgan: 1 va 2-detsillarda qishloqdagi o'quvchilarda kompyuterning mavjudligi shaharlik tengdoshlariga qaraganda sezilarli darajada past. 7, 8 va 9-detsillarda ham shaharda istiqomat qiluvchi o'quvchilarda kompyuter mavjudligi darajasi yuqori.
 
-## O'quvchilarga ta'lim olish uchun xarajatlar, oila a'zolarning o'qish jarayonidagi ishtiroki va oilaning ijtimoiy iqtisodiy ahvoli {#sec-xarajatlar}
+## O'quvchilar ta'lim olish uchun xarajatlar, oila a'zolarning o'qish jarayonidagi ishtiroki va oilaning ijtimoiy iqtisodiy ahvoli {#sec-xarajatlar}
 
-Milliy statistika qo'mitasining 2024-yilgi Uy xo'jaligi daromadlari va xarajatlari so'rovnomasiga ko'ra, jon boshiga daromad detsillari bo'ylab bir o'quvchiga to'g'ri keluvchi xarajatlari oshib boradi: eng quyi detsildagi oilalar bir o'quvchi uchun qiladigan xarajat eng yuqori detsildagi oilalarga qaraganda 2 barobar kam.
+Milliy statistika qo'mitasining 2024-yilgi Uy xo'jaligi daromadlari va xarajatlari so'roviga ko'ra, jon boshiga daromad detsillari bo'ylab bir o'quvchiga to'g'ri keluvchi xarajatlari oshib boradi: eng quyi detsildagi oilalar bir o'quvchi uchun qiladigan xarajat eng yuqori detsildagi oilalarga qaraganda 2 barobar kam.
 
-Daromad detsillari bo'ylab umumiy maktab ta'limining umumiy iste'mol xarajatlaridagi ulushi qaralganda: 2-detsildan 9-detsilgacha ko'rsatkich sezilarli darajada farq qilmaydi, ammo eng quyi detsilda maktab ta'limi xarajatlarining ulushi nisbatan ancha yuqori **28.4%** ni tashkil qiladi. Eng yuqori detsilda esa, bu ko'rsatkich nisbatan kam **14.3%** ni tashkil qiladi. Ya'ni daromadning boshqa detsillari (2-9-detsillar) bilan solishtirganda, daromadning quyi detsilidagi oilalarda maktab ta'limi uchun qilingan xarajatlar boshqa xarajatlarni siqib chiqarayotgan bo'lishi mumkin.
+Daromad detsillari bo'ylab umumiy maktab ta'limining umumiy iste'mol xarajatlaridagi ulushi qaralganda: 2-detsildan 9-detsilgacha ko'rsatkich sezilarli darajada farq qilmaydi, ammo eng quyi detsilda maktab ta'limi xarajatlarining ulushi nisbatan ancha yuqori (**28.4%**). Eng yuqori detsilda esa, bu ko'rsatkich nisbatan kam (**14.3%**). Ya'ni daromadning boshqa detsillari (2-9-detsillar) bilan solishtirganda, daromadning quyi detsilidagi oilalarda maktab ta'limi uchun qilingan xarajatlar boshqa xarajatlarni siqib chiqarayotgan bo'lishi mumkin.
 
 ::: {.callout-tip collapse="true"}
 ## 6-rasm: Ta'lim xarajatlari va ularning iste'mol xarajatlaridagi ulushi
 
 ```{r}
 #| label: hbs-edu
-#| fig-cap: "6-rasm. O'quvchilar ta'lim olishi uchun xarajatlar va ushbu xarajatlarning umumiy iste'mol xarajatlaridagi ulushi (Uy xo'jaligi daromadlari va xarajatlari so'rovnomasi, 2024)"
+#| fig-cap: "6-rasm. O'quvchilar ta'lim olishi uchun xarajatlar va ushbu xarajatlarning umumiy iste'mol xarajatlaridagi ulushi (Uy xo'jaligi daromadlari va xarajatlari so'rovi, 2024)"
 
 decile_edu_cost <- read_xlsx("tables/hbs_edu_2_decile_edu_cost.xlsx")
 ratio_by_decile <- read_xlsx("tables/hbs_edu_2_ratio_by_decile.xlsx")
@@ -383,9 +383,9 @@ htmltools::tagList(plot1, plot2)
 
 :::
 
-Ta'lim xarajatlarining jinsiga ko'ra qiyoslansa: o'g'il bolalarga va qiz bolalarga qilingan xarajatlar o'rtasida sezilarli farq yo'q ([1-Ilova](#sec-ilova-1)). Lekin, aholi yashash punktlari tipiga ko'ra solishtirilsa, shaharda yashovchi o'quvchilarga qilingan xarajatlar qishloq hududida yashovchi o'quvchilarga nisbatan daromadning barcha detsillari bo'ylab sezilarli darajada yuqori, hamda ushbu farq daromad detsillari oshgani sari o'sib boradi ([1-Ilova](#sec-ilova-1)).
+Ta'lim xarajatlari jinsiga ko'ra qiyoslansa: o'g'il bolalarga va qiz bolalarga qilingan xarajatlar o'rtasida sezilarli farq yo'q ([1-Ilova](#sec-ilova-1)). Lekin, aholi yashash punktlari turiga ko'ra solishtirilsa, shaharda yashovchi o'quvchilarga qilingan xarajatlar qishloq hududida yashovchi o'quvchilarga nisbatan daromadning barcha detsillari bo'ylab sezilarli darajada yuqori, hamda ushbu farq daromad detsillari oshgani sari o'sib boradi ([1-Ilova](#sec-ilova-1)).
 
-O'quvchilarning akademik o'zlashtirishining muhim omillaridan biri bu o'quvchilarning o'qish jarayonida oila a'zolarning ishtiroki hisoblanadi. UNICEF hamda Milliy Statistika Qo'mitasi tomonidan o'tkazilgan multiindikator klaster kuzatuvi (MICS) so'rovnomasi asosida to'rtta asosiy ko'rsatkich tahlil qilindi: uyda bolalar kitoblari soni, uy vazifasiga yordam berish darajasi, maktab yig'ilishlarida qatnashish va o'qituvchilar bilan bolalarning o'zlashtirishini muhokama qilish ([2-Ilova](#sec-ilova-2)).
+O'quvchilarning akademik o'zlashtirishining muhim omillaridan biri bu o'quvchilarning o'qish jarayonida oila a'zolarning ishtiroki hisoblanadi. UNICEF hamda Milliy Statistika Qo'mitasi tomonidan o'tkazilgan multiindikator klaster kuzatuvi (MICS) so'rovi asosida to'rtta asosiy ko'rsatkich tahlil qilindi: uyda bolalar kitoblari soni, uy vazifasiga yordam berish darajasi, maktab yig'ilishlarida qatnashish va o'qituvchilar bilan bolalarning o'zlashtirishini muhokama qilish ([2-Ilova](#sec-ilova-2)).
 
 Natijalar shuni ko'rsatadiki, ota-onalarning ta'lim jarayonidagi ishtiroki umuman olganda yuqori va farovonlik detsillari bo'ylab sezilarli darajada farq qilmaydi. Maktab yig'ilishlarida qatnashish va o'qituvchilar bilan suhbatlar barcha detsillarda 90–100% atrofida bo'lib, bu ijtimoiy-iqtisodiy holatdan qat'i nazar rasmiy maktab faoliyatida deyarli universal ishtirokni ko'rsatadi. Ota-onalarning ta'limdagi ishtirokini ko'rsatuvchi boshqa ko'rsatkichlar ham yuqori va farovonlik detsillari bo'ylab sezilarli darajada farq qilmaydi. O'g'il bolalar qizlarga qaraganda biroz ko'proq uy vazifasiga yordam oladi, ammo boshqa ko'rsatkichlarda o'quvchilarning jinsiga bog'liq farqlar yo'q. Xuddi shunday, shahar va qishloq xo'jaliklari barcha o'lchovlar bo'yicha o'xshash darajadagi ota-onalar jalb etilishini namoyish etadi. Umuman olganda, ushbu topilmalar O'zbekiston ta'limda ota-onalarning ishtirok etish darajasi nisbatan tekis taqsimlanganini ko'rsatadi.
 
@@ -442,15 +442,15 @@ ggplotly(p, tooltip = "text") %>%
 
 ::: {.callout-tip}
 ## Asosiy natija
-Tahlil natijalariga ko'ra, boy va kambag'al oilalardagi o'quvchilarning o'zlashtirish darajasidagi farqlar asosan maktabdagi ta'lim sifati darajasi (matematikadan o'rtacha o'zlashtirish) farqlar bilan tushuntirish mumkin. Xususan, PISA so'rovnomasiga ko'ra, boy va kambag'al oilalardagi o'quvchilarning matematika fanidan o'zlashtirish darajasidagi o'rtacha **27.8 ball**ni tashkil qilgan bo'lsa, ushbu farqning qariyb **50%ga yaqini** maktabdagi ta'lim sifati bilan tushuntirilishi mumkin.
+Tahlil natijalariga ko'ra, boy va kambag'al oilalardagi o'quvchilarning o'zlashtirish darajasidagi farqlar asosan maktabdagi ta'lim sifati darajasi (matematikadan o'rtacha o'zlashtirish) farqlar bilan tushuntirish mumkin. Xususan, PISA so'roviga ko'ra, boy va kambag'al oilalardagi o'quvchilarning matematika fanidan o'zlashtirish darajasidagi o'rtacha **27.8 ball**ni tashkil qilgan bo'lsa, ushbu farqning qariyb **50%ga yaqini** maktabdagi ta'lim sifati bilan tushuntirilishi mumkin.
 
-Tahlilning yana bir muhim natijalaridan biri bu boy va kambag'al oilalardagi o'quvchilar o'rtasidagi farqlar qishloqdagi o'quvchilarning nisbatan yuqori o'zlashtirishi hisobiga kamaymoqda. Demak, shaharda yashovchi o'quvchilarning qishloqdagi o'quvchilarga nisbatan yaxshi o'zlashtiriyotgani haqida tavsifiy natijalar aslida aholi yashash punkti tipidan boshqa omillarning notekis taqsimlanganligi tufayli bo'lishi mumkin.
+Tahlilning yana bir muhim natijalaridan biri bu boy va kambag'al oilalardagi o'quvchilar o'rtasidagi farqlar qishloqdagi o'quvchilarning nisbatan yuqori o'zlashtirishi hisobiga kamaymoqda. Demak, shaharda yashovchi o'quvchilarning qishloqdagi o'quvchilarga nisbatan yaxshi o'zlashtiriyotgani haqida tavsifiy natijalar aslida aholi yashash punkti turidan boshqa omillarning notekis taqsimlanganligi tufayli bo'lishi mumkin.
 :::
 
 # Xulosa {#sec-xulosa}
 
 
-Tadqiqot natijalari O'zbekistonda ta'lim va kambag'allik o'rtasida kuchli bog'liqlik mavjudigiga ishora qiladi. Oilaning ijtimoiy-iqtisodiy statusiga qarab taqqoslanganda, yuqori daromadli oilalarning farzandlari past daromadli oilalarning farzandlariga nisbatan yaxshiroq o'zlashtirish ko'rsatkichlariga erishgan. Aholi yashash punkti va o'quvchilarning jinsini hisobga olib solishtirilganda ham akademik o'zlashtirishda nisbatan yuqori ijtimoiy-iqtisodiy statusga ega oiladagi o'quvchilar nisbatan ijtimoiy-iqtisodiy statusi quyiroq tengdoshlariga nisbatan yaxshiroq ko'rsatkichlarga ega bo'lishgan. Ushbu farqlarni tushuntirouvchi omillardan biri bu o'quvchilarning har xil ta'lim sharotitiga ega ekanliklari bo'lishi mumkin. Taqqoslanayotgan ikki toifa o'quvchilar o'rtasidagi o'zlashtirishdagi farqlar magnitudasiga ta'sir qiluvchi omillar tahlil qilinganda, o'quvchilar o'rtasidagi o'zlashtirish darajasidagi farqning asosiy qismi maktabdagi ta'lim sifati bilan tushuntiriladi. Shu bilan birga, ota-onalarning ta'lim jarayonidagi faol ishtiroki barcha ijtimoiy-iqtisodiy guruhlarda nisbatan teng darajada.
+Tadqiqot natijalari O'zbekistonda ta'lim va kambag'allik o'rtasida kuchli bog'liqlik mavjudigiga ishora qiladi. Oilaning ijtimoiy-iqtisodiy statusiga qarab taqqoslanganda, yuqori daromadli oilalarning farzandlari past daromadli oilalarning farzandlariga nisbatan yaxshiroq o'zlashtirish ko'rsatkichlariga erishgan. Aholi yashash punkti va o'quvchilarning jinsini hisobga olib solishtirilganda ham akademik o'zlashtirishda nisbatan yuqori ijtimoiy-iqtisodiy statusga ega oiladagi o'quvchilar nisbatan ijtimoiy-iqtisodiy statusi quyiroq tengdoshlariga nisbatan yaxshiroq ko'rsatkichlarga ega bo'lishgan. Ushbu farqlarni tushuntiruvchi omillardan biri bu o'quvchilarning har xil ta'lim sharoitiga ega ekanliklari bo'lishi mumkin. Taqqoslanayotgan ikki toifa o'quvchilar o'rtasidagi o'zlashtirishdagi farqlar magnitudasiga ta'sir qiluvchi omillar tahlil qilinganda, o'quvchilar o'rtasidagi o'zlashtirish darajasidagi farqning asosiy qismi maktabdagi ta'lim sifati bilan tushuntiriladi. Shu bilan birga, ota-onalarning ta'lim jarayonidagi faol ishtiroki barcha ijtimoiy-iqtisodiy guruhlarda nisbatan teng darajada.
 
 Umuman olganda, nisbatan quyi ijtimoiy-iqtisodiy statusga ega oila farzandlari o'rtacha o'zlashtirish ko'rsatkichi past bo'lgan maktablarda ta'lim olayotganini hisobga olish lozim. Shu ma'noda, o'rtacha akademik ko'rsatkichlari past bo'lgan maktablarda ta'lim sifatini yaxshilash nafaqat ta'lim tizimi islohoti sifatida balki **ijtimoiy himoya** siyosati sifatida ham muhim hisoblanadi. Mavjud qonunchilikka ko'ra daromad past aholi farzandlari uchun ta'lim imtiyozlari mavjud. Masalan, O'zbekiston Respublikasi Prezidentining 2025-yil 26-dekabrdagi 258-sonli farmoniga ko'ra, Ijtimoiy reyestrga kiritilgan oila farzandlari uchun 12 xil ta'limga oid imtiyozlar ko'zda tutilgan ([3-Ilova](#sec-ilova-3)). Bu imtiyozlarning tizimli tadbiq etilishini ko'rsatuvchi yagona monitoring platformasini yaratish maqsadga muvofiq. Bu platforma oila farzandlari uchun ta'lim imtiyozlaridan foydalanish darajasini hududlar va aholining boshqa demografik ko'rsatkichlari kesimida foydalanish darajasini kuzatish mumkin bo'ladi.
 
@@ -468,7 +468,7 @@ Umuman olganda, nisbatan quyi ijtimoiy-iqtisodiy statusga ega oila farzandlari o
 
 ```{r}
 #| label: hbs-gender
-#| fig-cap: "8-rasm. Bir o'quvchiga to'g'ri keluvchi o'rtacha ta'lim xarajati: jon boshiga daromad detsillari va jins kesimida (Uy xo'jaligi daromadlari va xarajatlari so'rovnomasi, 2024)"
+#| fig-cap: "8-rasm. Bir o'quvchiga to'g'ri keluvchi o'rtacha ta'lim xarajati: jon boshiga daromad detsillari va jins kesimida (Uy xo'jaligi daromadlari va xarajatlari so'rovi, 2024)"
 
 gender_decile_cost <- read_xlsx("tables/hbs_edu_2_gender_decile_cost.xlsx")
 
@@ -496,7 +496,7 @@ ggplotly(p, tooltip = "text") %>%
 
 ```{r}
 #| label: hbs-ur
-#| fig-cap: "9-rasm. Bir o'quvchiga to'g'ri keluvchi o'rtacha ta'lim xarajati: jon boshiga daromad detsillari va aholi yashash punkti tipi kesimida (Uy xo'jaligi daromadlari va xarajatlari so'rovnomasi, 2024)"
+#| fig-cap: "9-rasm. Bir o'quvchiga to'g'ri keluvchi o'rtacha ta'lim xarajati: jon boshiga daromad detsillari va aholi yashash punkti turi kesimida (Uy xo'jaligi daromadlari va xarajatlari so'rovi, 2024)"
 
 urban_decile_avg_cost <- read_xlsx("tables/hbs_edu_2_urban_decile_avg_cost.xlsx")
 
@@ -520,11 +520,11 @@ ggplotly(p, tooltip = "text") %>%
   layout(autosize = TRUE, legend = list(orientation = "h", x = 0.35, y = 1.1))
 ```
 
-### 1.3. Darslik va kantselyariya xarajatlari: shahar/qishloq kesimida
+### 1.3. Darslik va o'quv qurollari xarajatlari: shahar/qishloq kesimida
 
 ```{r}
 #| label: hbs-text
-#| fig-cap: "10-rasm. Darslik va kantselyariya xarajatlari: jon boshiga daromad detsillari va aholi yashash punkti tipi kesimida (Uy xo'jaligi daromadlari va xarajatlari so'rovnomasi, 2024)"
+#| fig-cap: "10-rasm. Darslik va o'quv qurollari xarajatlari: jon boshiga daromad detsillari va aholi yashash punkti turi kesimida (Uy xo'jaligi daromadlari va xarajatlari so'rovi, 2024)"
 
 urban_decile_textsupply_avg_cost <- read_xlsx("tables/hbs_edu_2_urban_decile_textsupply_avg_cost.xlsx")
 
@@ -898,13 +898,13 @@ ggplotly(p, tooltip = "text") %>% plotly_config()
 <div id="sec-ilova-3" style="scroll-margin-top: 20px;"></div>
 
 ::: {.callout-note collapse="true"}
-## 3-Ilova: Ijtimoiy reestrga kiritilgan oilalar uchun ta'lim sohasidagi imtiyozlar
+## 3-Ilova: Ijtimoiy reyestrga kiritilgan oilalar uchun ta'lim sohasidagi imtiyozlar
 
 **PF-258, 26.12.2025 asosida**
 
 ```{r}
 #| label: tbl-imtiyozlar
-#| tbl-cap: "Ijtimoiy reestrga kiritilgan oilalar uchun ta'lim sohasidagi imtiyozlar"
+#| tbl-cap: "Ijtimoiy reyestrga kiritilgan oilalar uchun ta'lim sohasidagi imtiyozlar"
 
 imtiyozlar_df <- data.frame(
   `№` = 1:12,
@@ -923,18 +923,18 @@ imtiyozlar_df <- data.frame(
     "Sport maktablarida bepul mashg'ulotlar"
   ),
   Tavsifi = c(
-    "Ijtimoiy reestrga kiritilgan oilalar farzandlari davlat maktabgacha ta'lim tashkilotlariga imtiyozli asosda qabul qilinadi",
-    "Ijtimoiy reestrga kiritilgan oilalar a'zolari oliy ta'lim muassasalariga o'qishga qabul qilishda o'tkaziladigan kirish test sinovlarida ishtirok etish uchun undiriladigan to'lovlardan ozod etiladi",
-    "Ijtimoiy reestrga kiritilgan oilalar farzandlaridan ta'lim krediti uchun garov va kafilliklar talab etilmaydi. \"3\" va undan yuqori o'zlashtirish bahosi bo'lganda kredit to'lov-kontrakt summasi miqdorida ajratiladi",
-    "2025/2026 o'quv yilidan boshlab Ijtimoiy reestrga kiritilgan oilalar farzandlarining davlat oliy ta'lim muassasalari talabalar turar joylaridagi yashash xarajatlari Davlat byudjeti hisobidan qoplab beriladi",
-    "2025-yildan boshlab \"El-yurt umidi\" jamg'armasi tomonidan Ijtimoiy reestrga kiritilgan oilalarning farzandlari uchun xorijda ta'lim olish bo'yicha alohida kvotalar ajratiladi",
-    "Ijtimoiy himoya yagona reestriga kiritilgan oilalarning xotin-qizlariga ajratiladigan ta'lim kreditlari uchun garov va kafilliklar talab etilmaydi",
-    "Bandlikka ko'maklashish davlat jamg'armasi mablag'lari hisobidan kasblarga o'qitish maqsadida ajratiladigan stipendiyalar muddati uch oydan ko'p davom etadigan o'quv kurslariga qabul qilingan Ijtimoiy reestrga kiritilgan oilalarning ishsiz a'zolariga to'lanadi",
-    "Ijtimoiy himoya yagona reestri axborot tizimiga kiritilgan oilalar farzandlari bo'lgan yoshlarga axborot texnologiyalari sohasida tahsil olishga ajratiladigan ta'lim krediti uchun garov va kafillik talab etilmaydi",
-    "Har yili 20 nafardan kam bo'lmagan, Akademiyaga kirish imtihonlarida yuqori ball to'plagan, Ijtimoiy reestrga kiritilgan oilalarning farzandlari muassis granti asosida bepul o'qishga qabul qilinadi",
-    "Ijtimoiy reestrga kiritilgan oilalarning farzandlariga \"Yangi O'zbekiston\" universitetida davlat granti asosida ta'lim olishi uchun kvotalar ajratiladi",
-    "Ijtimoiy reestrga kiritilgan oilalarning farzandlari \"Prezident iqtidorli farzandlari\" dasturi doirasida ta'lim olishida ustuvorlik beriladi",
-    "Ijtimoiy reestrga kiritilgan oilalarning farzandlariga sport maktablarida mashg'ulotlar bepul o'tkaziladi"
+    "Ijtimoiy reyestrga kiritilgan oilalar farzandlari davlat maktabgacha ta'lim tashkilotlariga imtiyozli asosda qabul qilinadi",
+    "Ijtimoiy reyestrga kiritilgan oilalar a'zolari oliy ta'lim muassasalariga o'qishga qabul qilishda o'tkaziladigan kirish test sinovlarida ishtirok etish uchun undiriladigan to'lovlardan ozod etiladi",
+    "Ijtimoiy reyestrga kiritilgan oilalar farzandlaridan ta'lim krediti uchun garov va kafilliklar talab etilmaydi. \"3\" va undan yuqori o'zlashtirish bahosi bo'lganda kredit to'lov-kontrakt summasi miqdorida ajratiladi",
+    "2025/2026 o'quv yilidan boshlab Ijtimoiy reyestrga kiritilgan oilalar farzandlarining davlat oliy ta'lim muassasalari talabalar turar joylaridagi yashash xarajatlari Davlat byudjeti hisobidan qoplab beriladi",
+    "2025-yildan boshlab \"El-yurt umidi\" jamg'armasi tomonidan Ijtimoiy reyestrga kiritilgan oilalarning farzandlari uchun xorijda ta'lim olish bo'yicha alohida kvotalar ajratiladi",
+    "Ijtimoiy himoya yagona reyestriga kiritilgan oilalarning xotin-qizlariga ajratiladigan ta'lim kreditlari uchun garov va kafilliklar talab etilmaydi",
+    "Bandlikka ko'maklashish davlat jamg'armasi mablag'lari hisobidan kasblarga o'qitish maqsadida ajratiladigan stipendiyalar muddati uch oydan ko'p davom etadigan o'quv kurslariga qabul qilingan Ijtimoiy reyestrga kiritilgan oilalarning ishsiz a'zolariga to'lanadi",
+    "Ijtimoiy himoya yagona reyestri axborot tizimiga kiritilgan oilalar farzandlari bo'lgan yoshlarga axborot texnologiyalari sohasida tahsil olishga ajratiladigan ta'lim krediti uchun garov va kafillik talab etilmaydi",
+    "Har yili 20 nafardan kam bo'lmagan, Akademiyaga kirish imtihonlarida yuqori ball to'plagan, Ijtimoiy reyestrga kiritilgan oilalarning farzandlari muassis granti asosida bepul o'qishga qabul qilinadi",
+    "Ijtimoiy reyestrga kiritilgan oilalarning farzandlariga \"Yangi O'zbekiston\" universitetida davlat granti asosida ta'lim olishi uchun kvotalar ajratiladi",
+    "Ijtimoiy reyestrga kiritilgan oilalarning farzandlari \"Prezident iqtidorli farzandlari\" dasturi doirasida ta'lim olishida ustuvorlik beriladi",
+    "Ijtimoiy reyestrga kiritilgan oilalarning farzandlariga sport maktablarida mashg'ulotlar bepul o'tkaziladi"
   ),
   `Huquqiy asosi` = c(
     "PQ-330, 9-band",
@@ -972,12 +972,12 @@ datatable(imtiyozlar_df,
 ::: {.callout-warning appearance="simple"}
 **MUHIM IZOHLAR:**
 
-1. Yuqoridagi barcha imtiyozlar Ijtimoiy reestrning uchala toifasi uchun amal qiladi:
+1. Yuqoridagi barcha imtiyozlar Ijtimoiy reyestrning uchala toifasi uchun amal qiladi:
    - Davlat ta'minotidagi oila
    - Kambag'al oila
    - Kambag'allik chegarasidagi oila (12 oy davomida)
-2. "Kambag'allik chegarasidagi oila" toifasidagi oilalar uchun imtiyozlar ular reestrga kiritilgan sanadan 12 oy davomida qo'llaniladi.
-3. Imtiyozlardan foydalanish uchun oilaning Ijtimoiy reestrga kiritilganligi tasdiqlanishi kerak.
+2. "Kambag'allik chegarasidagi oila" toifasidagi oilalar uchun imtiyozlar ular reyestrga kiritilgan sanadan 12 oy davomida qo'llaniladi.
+3. Imtiyozlardan foydalanish uchun oilaning Ijtimoiy reyestrga kiritilganligi tasdiqlanishi kerak.
 :::
 
 :::
@@ -992,8 +992,8 @@ sources_df <- data.frame(
   `Ma'lumot turi` = c("PISA", "HBS", "MICS"),
   Manba = c(
     "OECD Programme for International Student Assessment",
-    "Milliy statistika qo'mitasi - Uy xo'jaligi daromadlari va xarajatlari so'rovnomasi",
-    "UNICEF/Milliy statistika qo'mitasi - Multiindikator klaster so'rovnomasi"
+    "Milliy statistika qo'mitasi - Uy xo'jaligi daromadlari va xarajatlari so'rovi",
+    "UNICEF/Milliy statistika qo'mitasi - Multiindikator klaster so'rovi"
   ),
   Yil = c("2022", "2024", "2021-2022"),
   Qamrov = c(
