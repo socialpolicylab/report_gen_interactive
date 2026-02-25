@@ -1,5 +1,5 @@
 ---
-title: "Oʻzbekistonda: Kambagʻallik va Ta'lim"
+title: "Oʻzbekistonda kambagʻallikning oʻquvchilar ta'limiga ta'siri"
 author:
   - name: "Ulugʻbek Tursunov, Ijtimoiy siyosat laboratoriyasi"
 author-title: "Muallif"
@@ -79,9 +79,13 @@ mics_ur_palette <- c("Shahar" = "#659961", "Qishloq" = "#f39200")
 
 # Kirish {#sec-kirish}
 
-Ta'limning kambagʻallikni kamaytirishdagi roli borasidagi oʻrganishlar muhim tadqiqot yoʻnalishi sifatida e'tirof etiladi. Soʻnggi oʻn yilliklarda tadqiqotlar ta'limning inson kapitalini oshirish, daromadlar oʻrtasidagi tengsizlikni kamaytirish va ijtimoiy mobillikni ragʻbatlantirishda muhim oʻringa ega ekanligi butun dunyoda, xususan, Xitoy, Braziliya va Janubiy Afrika kabi rivojlanayotgan mamlakatlarda qilingan tadqiqotlarda oʻz tasdigʻini topib kelmoqda (@Vian_Dhanda_2024, @Dorte_Verner_2004, @Md_Mahbubur_Rahman_2024).
+Ta'lim va kambagʻallik o'rtasidagi ikki tomonlama bogʻlanish mavjud: kambagʻallik xoh u mutloq daromadlarda ifodalansin, xoh u oilaning jamiyatda toʻlaqonli faoliyatini ifodalovchi koʻrsatchiklar jamlanmasida ifodalansin, oilada tarbiyalanayotgan farzandning akademik koʻrsatkichlariga salbiy ta'sir qiladi. Oʻz navbatida oʻquvchilarning asosiy ta'limda past oʻzlashtirishi kelajakdagi yuqori daromad olish imkoniyatlarini cheklaydi. Shu ma'noda, ta'lim avlodlararo daromad mobilligi zanjirining muhim qismi sifatida e'tirof etiladi. 
 
-Global miqyosda, kambagʻallik darajasi 1990-yildagi 43.6 foizdan 2023-yilda 10.2 foizga qisqarganiga qaramay( @WorldBankOpen), rivojlanayotgan malakatlarda xususan qishloq hududlarida ta'lim olish imkoniyati cheklanganligi boʻyicha muammolar saqlanib qolmoqda (@Xiaowen_Xie_2023; @Alessia_Spada_2023). COVID-19 pandemiyasi davrida ta'limdagi tengsizlik yanada yaqqolroq koʻrina boshladi va kuchaydi, bu esa ijtimoiy himoya va ta'lim sohalarida samarali siyosiy intervensiyalarning zarurligini koʻrsatmoqda (@terziPhilosophicalReflectionsChild2023; @beesonDoesTacklingPoverty2024).
+Tadqiqotda bu ikki tomonlama bog'liqlikning faqat bir tomoniga: kambag'allikning, oiladagi farzandning akademik ko'rsatkichlariga ta'siri tahlil qilinadi. Tahlilda oilaning ijtimoiy-iqtisodiy ahvoli va oʻquvchilarning akademik ko'rsatkichlari o'rtasida bog'liqlik boshqa demografik ko'rsatkichlar(aholi yashash punkti turi, jinsi)ni hisobga olgan holda o'rganiladi. Shundan soʻng, daromad darajasiga qarab oilalarning ta'lim xarajatlari hamda farzandlar ta'limida bevosita ishtirok etish darajasi taqqoslanadi. Bundan tashqari, tahlil oxirida nisbatan ijtimoiy-iqtisodiy ahvoli yuqori hamda nisbatan ijtimoiy-iqtisodiy ahvoli past oilalardagi oʻquvchilar oʻzalshtirishidagi farqlar hamda ushbu farqlarga ta'sir qiluvchi omillar tahlil qilinadi.       
+
+Metodologik nuqtai nazaridan qayd etish joizki, tadqiqotda kambagʻallikning ta'limga ta'siri asosan tavsifiy (deskriptiv) metodlar yordamida oʻrganiladi. Bizningcha, mavjud ma'lumotlardan kelib chiqqan holda, mutloq sabab-oqibat munosabatini oʻrnatish  imkonsiz. Chunki, biz bevosita kuzata olmaydigan omillar (masalan, irsiy omillar) oilaning hozirgi ijtimoiy-iqtisodiy ahvoli va shu oiladagi oʻquvchilarning akademik koʻrsatkichlariga ta'sir qilayotgan boʻlishi mumkin.  
+
+
 
 Ushbu tadqiqotda biz tahlilni quyidagi ma'lumot manbalaridan foydalangan holda olib boramiz:
 
