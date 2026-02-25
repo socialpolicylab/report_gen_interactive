@@ -30,6 +30,9 @@ csl: chicago-author-date-17th-edition.csl
 bibliography-title: "Foydalanilgan adabiyotlar"
 mainfont: "Times New Roman"
 lang: uz
+language:
+  section-title-references: "Foydalanilgan adabiyotlar"
+  section-title-footnotes: "Izohlar"
 execute:
   echo: false
   warning: false
